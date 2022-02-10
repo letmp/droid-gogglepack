@@ -44,7 +44,11 @@
         "snippets": [
             {
                 "language": "Droid",
-                "path": "./snippets/snippets.code-snippets"
+                "path": "./snippets/droidcomponents.code-snippets"
+            },
+            {
+                "language": "Droid",
+                "path": "./snippets/circuits.code-snippets"
             }
         ] 
     }

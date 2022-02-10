@@ -1,0 +1,154 @@
+{
+    "B32 Comment": {
+        "prefix": ["B32 Comment"],
+        "body": [
+            "# BEGIN DROIDCOMPONENT B32",
+            "# B1: [${1:VARIABLENAME}] ${2:description of the register}",
+            "# B2: [${3:}] ${4:}",
+            "# B3: [${5:}] ${6:}",
+            "# B4: [${7:}] ${8:}",
+            "# B5: [${9:}] ${10:}",
+            "# B6: [${11:}] ${12:}",
+            "# B7: [${13:}] ${14:}",
+            "# B8: [${15:}] ${16:}",
+            "# B9: [${17:}] ${18:}",
+            "# B10: [${19:}] ${20:}",
+            "# B11: [${21:}] ${22:}",
+            "# B12: [${23:}] ${24:}",
+            "# B13: [${25:}] ${26:}",
+            "# B14: [${27:}] ${28:}",
+            "# B15: [${29:}] ${30:}",
+            "# B16: [${31:}] ${32:}",
+            "# B17: [${33:}] ${34:}",
+            "# B18: [${35:}] ${36:}",
+            "# B19: [${37:}] ${38:}",
+            "# B20: [${39:}] ${40:}",
+            "# B21: [${41:}] ${42:}",
+            "# B22: [${43:}] ${44:}",
+            "# B23: [${45:}] ${46:}",
+            "# B24: [${47:}] ${48:}",
+            "# B25: [${49:}] ${50:}",
+            "# B26: [${51:}] ${52:}",
+            "# B27: [${53:}] ${54:}",
+            "# B28: [${55:}] ${56:}",
+            "# B29: [${57:}] ${58:}",
+            "# B30: [${59:}] ${60:}",
+            "# B31: [${61:}] ${62:}",
+            "# B32: [${63:}] ${64:}",
+            "# END DROIDCOMPONENT"
+            ],
+        "description": "add register description"
+    },
+    "Description Comment": {
+        "prefix": ["DESCRIPTION Comment"],
+        "body": [
+            "# BEGIN DROIDCOMPONENT DESCRIPTION",
+            "# ${0:Describe something here",
+            "# END DROIDCOMPONENT"
+            ],
+        "description": "add patch description"
+    },
+    "M4 Comment": {
+        "prefix": ["M4 Comment"],
+        "body": [
+            "# BEGIN DROIDCOMPONENT M4",
+            "# F1: [${1:VARIABLENAME}] ${2:description of the register}",
+            "# F2: [${3:}] ${4:}",
+            "# F3: [${5:}] ${6:}",
+            "# F4: [${7:}] ${8:}",
+            "# END DROIDCOMPONENT"
+            ],
+        "description": "add register description"
+    },
+    "G8 Comment": {
+        "prefix": ["G8 Comment"],
+        "body": [
+            "# BEGIN DROIDCOMPONENT G8",
+            "# G1: [${1:VARIABLE1}] ${2:IN} ${3:an input register}",
+            "# G2: [${4:VARIABLE2}] ${5:OUT} ${6:an output register}",
+            "# G3: [${7:}] ${8:}",
+            "# G4: [${9:}] ${10:}",
+            "# G5: [${11:}] ${12:}",
+            "# G6: [${13:}] ${14:}",
+            "# G7: [${15:}] ${16:}",
+            "# G8: [${17:}] ${18:}",
+            "# END DROIDCOMPONENT"
+            ],
+        "description": "add register description"
+    },
+    "MASTER Comment": {
+        "prefix": ["MASTER Comment"],
+        "body": [
+            "# BEGIN DROIDCOMPONENT MASTER",
+            "# I1: [${1:VARIABLENAME}] ${2:description of the register}",
+            "# I2: [${3:}] ${4:}",
+            "# I3: [${5:}] ${6:}",
+            "# I4: [${7:}] ${8:}",
+            "# I5: [${9:}] ${10:}",
+            "# I6: [${11:}] ${12:}",
+            "# I7: [${13:}] ${14:}",
+            "# I8: [${15:}] ${16:}",
+            "# O1: [${17:}] ${18:}",
+            "# O2: [${19:}] ${20:}",
+            "# O3: [${21:}] ${22:}",
+            "# O4: [${23:}] ${24:}",
+            "# O5: [${25:}] ${26:}",
+            "# O6: [${27:}] ${28:}",
+            "# O7: [${29:}] ${30:}",
+            "# O8: [${31:}] ${32:}",
+            "# END DROIDCOMPONENT"
+            ],
+        "description": "add register description"
+    },
+    "P10 Comment": {
+        "prefix": ["P10 Comment"],
+        "body": [
+            "# BEGIN DROIDCOMPONENT P10",
+            "# P1: [${1:VARIABLENAME}] ${2:description of the register}",
+            "# P2: [${3:}] ${4:}",
+            "# P3: [${5:}] ${6:}",
+            "# P4: [${7:}] ${8:}",
+            "# P5: [${9:}] ${10:}",
+            "# P6: [${11:}] ${12:}",
+            "# P7: [${13:}] ${14:}",
+            "# P8: [${15:}] ${16:}",
+            "# P9: [${17:}] ${18:}",
+            "# P10: [${19:}] ${20:}",
+            "# END DROIDCOMPONENT"
+            ],
+        "description": "add register description"
+    },
+    "P2B8 Comment": {
+        "prefix": ["P2B8 Comment"],
+        "body": [
+            "# BEGIN DROIDCOMPONENT P2B8",
+            "# P1: [${1:VARIABLENAME}] ${2:description of the register}",
+            "# P2: [${3:}] ${4:}",
+            "# B1: [${5:}] ${6:}",
+            "# B2: [${7:}] ${8:}",
+            "# B3: [${9:}] ${10:}",
+            "# B4: [${11:}] ${12:}",
+            "# B5: [${13:}] ${14:}",
+            "# B6: [${15:}] ${16:}",
+            "# B7: [${17:}] ${18:}",
+            "# B8: [${19:}] ${20:}",
+            "# END DROIDCOMPONENT"
+            ],
+        "description": "add register description"
+    },
+    "X7 Comment": {
+        "prefix": ["X7 Comment"],
+        "body": [
+            "# BEGIN DROIDCOMPONENT X7",
+            "# M1: [${1:VARIABLENAME}] ${2:description of the register}",
+            "# M2: [${3:}] ${4:}",
+            "# G9: [${5:}] ${6:}",
+            "# G10: [${7:}] ${8:}",
+            "# G11: [${9:}] ${10:}",
+            "# G12: [${11:}] ${12:}",
+            "# END DROIDCOMPONENT"
+            ],
+        "description": "add register description"
+    },
+    
+}
