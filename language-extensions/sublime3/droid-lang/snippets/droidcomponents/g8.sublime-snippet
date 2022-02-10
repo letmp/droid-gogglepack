@@ -1,0 +1,17 @@
+<snippet>
+	<description>add register description</description>
+	<content>
+<![CDATA[# BEGIN DROIDCOMPONENT G8
+# G1: [${1:VARIABLENAME}] ${2:description of the register}
+# G2: [${3:}] ${4:}
+# G3: [${5:}] ${6:}
+# G4: [${7:}] ${8:}
+# G5: [${9:}] ${10:}
+# G6: [${11:}] ${12:}
+# G7: [${13:}] ${14:}
+# G8: [${15:}] ${16:}
+# END DROIDCOMPONENT 
+]]></content>
+	<tabTrigger>G8 Comment</tabTrigger>
+	<scope>source.droid</scope>
+</snippet>

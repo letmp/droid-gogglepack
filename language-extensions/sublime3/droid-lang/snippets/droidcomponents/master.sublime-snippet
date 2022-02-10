@@ -1,0 +1,25 @@
+<snippet>
+	<description>add register description</description>
+	<content>
+<![CDATA[# BEGIN DROIDCOMPONENT MASTER
+# I1: [${1:VARIABLENAME}] ${2:description of the register}
+# I2: [${3:}] ${4:}
+# I3: [${5:}] ${6:}
+# I4: [${7:}] ${8:}
+# I5: [${9:}] ${10:}
+# I6: [${11:}] ${12:}
+# I7: [${13:}] ${14:}
+# I8: [${15:}] ${16:}
+# O1: [${17:}] ${18:}
+# O2: [${19:}] ${20:}
+# O3: [${21:}] ${22:}
+# O4: [${23:}] ${24:}
+# O5: [${25:}] ${26:}
+# O6: [${27:}] ${28:}
+# O7: [${29:}] ${30:}
+# O8: [${31:}] ${32:}
+# END DROIDCOMPONENT 
+]]></content>
+	<tabTrigger>MASTER Comment</tabTrigger>
+	<scope>source.droid</scope>
+</snippet>

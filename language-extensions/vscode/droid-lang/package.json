@@ -1,0 +1,51 @@
+{
+    "name": "droid-lang",
+    "displayName": "Droid Extension",
+    "description": "Provides syntax highlighting and snippets for Droid files",
+    "version": "0.0.1",
+    "publisher": "le_tmp@gmx.de",
+    "keywords": [
+        "Droid",
+        "Modular",
+        "Eurorack"
+    ],
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets",
+        "Themes"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "Droid",
+            "aliases": ["Droid", "Droid"],
+            "extensions": [".ini"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "Droid",
+            "scopeName": "source.droid",
+            "path": "./syntaxes/droid.tmLanguage.json"
+        }],
+        "themes": [
+            {
+                "label": "Droidokai Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/droidokai-dark-color-theme.json"
+            },
+            {
+                "label": "Droidokai Light",
+                "uiTheme": "vs",
+                "path": "./themes/droidokai-light-color-theme.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "Droid",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ] 
+    }
+}

@@ -1,0 +1,10 @@
+<snippet>
+	<description>add patch description</description>
+	<content>
+<![CDATA[# BEGIN DROIDCOMPONENT DESCRIPTION
+# ${0:Describe something here}
+# END DROIDCOMPONENT 
+]]></content>
+	<tabTrigger>DESCRIPTION Comment</tabTrigger>
+	<scope>source.droid</scope>
+</snippet>

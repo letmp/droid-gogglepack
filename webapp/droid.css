@@ -1,0 +1,410 @@
+/*  ================================================================ 
+        GLOBAL CSS VARIABLES
+    ================================================================*/
+
+    :root {
+        --multiplier: 0.763; /* fits U to A4 height */
+        --U: calc(44.45mm * var(--multiplier));
+        --3U: calc(var(--U) * 3);
+        --HP: calc(5.08mm * var(--multiplier));
+        --gridUnit: calc(var(--HP) / 4);
+        
+        --padding: var(--gridUnit);
+        --padding-menu: calc(2 * var(--gridUnit));
+        --padding-sheet: calc(1 * var(--gridUnit));
+        --padding-modal: 16px;
+        --margin-droidComponent: var(--gridUnit);
+        --margin-register: 1px;
+        --margin-exportContent: 16px;
+        
+        --border-radius: 4px;
+        
+        --hp-description-min:   calc(4 * var(--HP) * 2.5);
+        --hp-description:       calc(4 * var(--HP) * 4);
+        --hp-master-min:        calc(8 * var(--HP) * 2.5);
+        --hp-master:            calc(8 * var(--HP) * 3);
+        --hp-g8-min:            calc(4 * var(--HP) * 2.5);
+        --hp-g8:                calc(4 * var(--HP) * 3);
+        --hp-p2b8-min:          calc(5 * var(--HP) * 2.5);
+        --hp-p2b8:              calc(5 * var(--HP) * 3);
+        --hp-p10-min:           calc(5 * var(--HP) * 2.5);
+        --hp-p10:               calc(5 * var(--HP) * 3);
+        --hp-p4b2-min:          calc(5 * var(--HP) * 2.5);
+        --hp-p4b2:              calc(5 * var(--HP) * 3);
+        --hp-b32-min:           calc(10 * var(--HP) * 2.5);
+        --hp-b32:               calc(10 * var(--HP) * 3);
+        --hp-m4-min:            calc(8 * var(--HP) * 2.5);
+        --hp-m4:                calc(8 * var(--HP) * 3);
+        --hp-x7-min:            calc(4 * var(--HP) * 2.5);
+        --hp-x7:                calc(4 * var(--HP) * 3);
+
+        --animation-time: 0.75s;
+        --animation-time-modal: 0.3s;
+
+        
+        --color-border: #b1b1b1;
+        --color-border-modal: #6e00ff;
+        
+        --color-background: #e8e8e8;
+        --color-background-menu: #6e00ff;
+        --color-background-description: #efefef;
+        --color-background-modal: #ffffff;
+        --color-background-exportContent: #eaeaea;
+
+        --color-drag-highlight: #feffb1;
+        --color-description: #0071b3;
+        --color-changeType: #838383;
+        --color-var-name: #b70042;
+        --color-var-description: #838383;
+        --color-export-header: #6e00ff;
+        --color-export-description: #838383;
+
+        --color-bAdd: #47207a;
+        --color-bDel: #f13800;
+        --color-bLinebreak: #6e00ff;
+        --color-bClose: #000000;
+    }
+
+
+/*  ================================================================ 
+        GENERAL RULES
+    ================================================================*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+
+    @page { size: A4 landscape }
+
+    @media print{
+        .noprint, .noprint * {display: none !important; }
+        body {
+            transform-origin: center !important;
+            transform: scale(1) !important;
+            width: 100% !important;
+        }
+        .flexContent{padding: 0px;}
+        .lineBreak{height: 0px;}
+        .droidComponent.description {border-color: #ffffff !important;}
+
+    }
+
+    @media screen{
+        body:after {
+            content:"\A";
+            white-space: pre; /* or pre-wrap */
+        }
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size:100%;
+        
+    }
+
+    * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+
+    ::-webkit-scrollbar { width: 8px; background: #f1f1f1; }
+    ::-webkit-scrollbar-thumb { border-radius: 10px; background-color: #a9a9a9;}
+
+    input:focus, select:focus, textarea:focus, button:focus {
+        outline: none;
+    }
+
+    .noTransition { transition: all 0s !important;}
+    .visible { opacity: 1.0 !important; visibility: visible !important;}
+    .invisible { display: none !important;}
+
+
+/*  ================================================================ 
+        DROIDCOMPONENT SIZE DEFS
+    ================================================================*/
+
+    .droidComponent.description { 
+        width: var(--hp-description);
+        min-width: var(--hp-description-min);
+        background: var(--color-background-description);
+        border-color: var(--color-background-description);}
+    .droidComponent.description .dragSlot { flex: 0 1 calc(100% / 1 - var(--margin-register) * 2);}
+    .droidComponent.description{ justify-content: flex-start !important; align-content: flex-start !important;}
+    .droidComponent.description textarea{ font-size: 0.6rem !important;}
+    .droidComponent.description .content{ width: 100%}
+
+    .droidComponent.master { width: var(--hp-master); min-width: var(--hp-master-min);}
+    .droidComponent.master .dragSlot { flex: 0 1 calc(100% / 4 - var(--margin-register) * 2);}
+    /*.master .register {min-height: 86px;}*/
+
+    .droidComponent.g8 { width: var(--hp-g8); min-width: var(--hp-g8-min);}
+    .droidComponent.g8 .dragSlot { flex: 0 1 calc(100% / 2 - var(--margin-register) * 2);}
+    /*.g8 .register {min-height: 86px;}*/
+
+    .droidComponent.x7 { width: var(--hp-x7); min-width: var(--hp-x7-min);}
+    .droidComponent.x7 .dragSlot { flex: 0 1 calc(100% / 2 - var(--margin-register) * 2);}
+    /*.x7 .register {min-height: 115px;}*/
+
+    .droidComponent.p2b8 { width: var(--hp-p2b8); min-width: var(--hp-p2b8-min);}
+    .droidComponent.p2b8 .dragSlot { flex: 0 1 calc(100% / 2 - var(--margin-register) * 2);}
+    .droidComponent.p2b8 .dragSlot:nth-child(n+0):nth-child(-n+2) { flex: 0 1 calc(100% / 1.9 - var(--margin-register) * 2) ;}
+    .droidComponent.p2b8 .register {min-height: 56px;}
+
+    .droidComponent.p10 { width: var(--hp-p10); min-width: var(--hp-p10-min);}
+    .droidComponent.p10 .dragSlot { flex: 0 1 calc(100% / 2 - var(--margin-register) * 2);}
+    .droidComponent.p10 .dragSlot:nth-child(n+0):nth-child(-n+2) { flex: 0 1 calc(100% / 1.9 - var(--margin-register) * 2) ;}
+    .droidComponent.p10 .register {min-height: 56px;}
+
+    .droidComponent.p4b2 { width: var(--hp-p4b2); min-width: var(--hp-p4b2-min);}
+    .droidComponent.p4b2 .dragSlot { flex: 0 1 calc(100% / 1.9 - var(--margin-register) * 2);}
+    .droidComponent.p4b2 .dragSlot:nth-child(n+5):nth-child(-n+6) { flex: 0 1 calc(100% / 2 - var(--margin-register) * 2) ;}
+    .droidComponent.p4b2 .register {min-height: 68px;}
+
+
+    .droidComponent.b32 { width: var(--hp-b32); min-width: var(--hp-b32-min);}
+    .droidComponent.b32 .dragSlot { flex: 0 1 calc(100% / 4 - var(--margin-register) * 2);}
+
+    .droidComponent.m4 { width: var(--hp-m4); min-width: var(--hp-m4-min);}
+    .droidComponent.m4 .dragSlot { flex: 0 1 calc(100% / 4 - var(--margin-register) * 2);}
+    .droidComponent.m4 .register {min-height: 350px;}
+
+
+/*  ================================================================ 
+        SHEETS LAYOUT
+    ================================================================*/
+
+.menu {
+    position: fixed;
+    padding: var(--padding-menu) 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: all var(--animation-time) ease;
+    background: var(--color-background-menu);
+    color: #fff;
+    width: calc(2 * var(--padding-sheet));
+    margin-top: calc(2 * var(--padding-sheet));
+}
+.menu * {opacity: 0; transition: all var(--animation-time) ease; cursor: pointer}
+.menu:hover { width: 32px; padding: var(--padding-menu)}
+.menu:hover * {opacity: 1}
+
+/*  ================================================================ 
+        SHEETS LAYOUT
+    ================================================================*/
+
+    .flexContent {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding: var(--padding-sheet);
+    }
+
+    .lineBreak {
+        height: 4px;
+        background: var(--color-background);
+        flex-basis: 100%;
+        cursor: pointer;
+    }
+    .lineBreak:hover{ background: var(--color-bDel); opacity: 0.5;}
+
+    .dragSlot[data-type="droidComponent"]{
+        height: var(--3U);
+        min-width: calc(2 * var(--HP));
+        margin: var(--margin-droidComponent);
+    }
+    .dragSlot-over { opacity: 0.3 !important; }
+
+    .dragSlot-highlight { 
+        background: var(--color-drag-highlight) !important;
+        opacity: 1;
+    }
+    .dragSlot-highlight .dragItem { 
+        background: none !important;
+        pointer-events: none; 
+    }
+
+    .dragItem {
+        transition: all var(--animation-time) ease;
+        border: solid 1px var(--color-border); 
+        border-radius: var(--border-radius);
+    }
+
+
+/*  ================================================================ 
+        DROIDCOMPONENTS LAYOUT
+    ================================================================*/
+
+    .droidComponent {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-end; /*stretch*/
+        height: 100%;
+        background-color: var(--color-background);
+        border-radius: var(--border-radius);
+        padding: var(--padding);
+        overflow: hidden;
+    }
+
+    .droidComponent .header {
+        height: 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 0.6rem;
+        white-space: pre;
+        cursor: move;
+    }
+    .droidComponent .header i { font-style: normal !important;}
+    .droidComponent .header .ctrl:nth-child(odd) { width: 2.2rem; float: left; text-align: left;}
+    .droidComponent .header .ctrl:nth-child(even) { width: 2.2rem; float: right; text-align: right;}
+    .droidComponent .header .ctrl i { font-size: 0.8rem; margin-right: 4px; cursor: pointer;}
+
+
+    .droidComponent .dragSlot {margin: var(--margin-register);}
+
+
+/*  =============================================================== 
+        REGISTERS LAYOUT
+    ================================================================*/
+
+    .droidComponent .content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: flex-end;
+        /*overflow: hidden;*/
+    }
+
+    .register{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        overflow-wrap: break-word;
+        padding:var(--padding);
+        height: 100%;
+    }
+
+    .register > div:nth-of-type(1) {
+      flex: 0 0 25px;
+      cursor: move;
+    }
+    .register > div:nth-of-type(2) {
+      flex: 1 0 0;
+      font-size: 0.7rem;
+    }
+    .register > div:nth-of-type(2) div{cursor: move;}
+    .register > div:nth-of-type(3) {
+      flex: 1 1 100%;
+    }
+    .register i { 
+        font-size: 1.3rem;
+        font-style: normal;
+    }
+    .register textarea, .description textarea{ 
+        display: block; 
+        width: 100%;
+        border: none;
+        background: none;
+        resize: none;
+        overflow:hidden;
+        font-size: 0.5rem;
+        overflow-wrap: break-word;
+        padding: 0; margin: 0;
+        height: 0.55rem;
+    }
+
+    .iChangeType{ font-size:0.6rem !important; color: var(--color-changeType); float: right; cursor: pointer}
+    textarea.varName {color: var(--color-var-name); }
+    textarea.varDescription {color: var(--color-var-description);}
+    textarea.description {color: var(--color-description); height: 22rem !important;}
+
+
+/*  ================================================================ 
+        MODAL LAYOUT
+    ================================================================*/
+    #modal {
+        transition: all var(--animation-time-modal) ease;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%; height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4);
+    }
+    .modalContent {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background: var(--color-background-modal);
+        border: solid 4px var(--color-border-modal);
+        border-radius: var(--border-radius);
+        padding: var(--padding-modal);
+        text-align: center;
+    }
+    .modalContent .message {
+        font-size: 0.9rem;
+        margin: 0px 0px 16px;
+    }
+
+    .exportContent {
+        text-align: left;
+    }
+    .exportContent .header {
+        font-size: 0.7rem;
+        margin-right: 5px;
+        color: var(--color-export-header);
+    }
+    .exportContent .description {
+        font-size: 0.5rem;
+        color: var(--color-export-description);
+    }
+    .exportContent textarea{ 
+        font-family: 'Consolas';
+        display: block; 
+        width: 370px;
+        border: 1px solid var(--color-border);
+        background: var(--color-background-exportContent);
+        font-size: 0.5rem;
+        padding: 0; margin: 0;
+        height: 6rem;
+        margin-bottom: var(--margin-exportContent);
+    }
+
+    .modalContent .actions {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 10px;
+        width: 370px;
+    }
+    .modalContent .actions button{
+        flex: 1 1 90px;
+    }
+    .modalContent .actions i{
+        font-style: normal !important;
+        font-size: 0.7rem;
+    }
+    .modalContent .actions i::before{ margin-right: 5px;}
+    .bColorAdd{color: var(--color-bAdd);}
+    .bColorDel{color: var(--color-bDel);}
+    .bColorLinebreak{color: var(--color-bLinebreak);}
+    .bColorClose{color: var(--color-bClose);}
+    .bLoadCache{color: var(--color-bAdd)}

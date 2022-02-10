@@ -1,0 +1,16 @@
+{
+    "working_dir": "${project_path:${folder:${file_path}}}",
+    "shell": true,
+    "osx":
+    {
+        "cmd": ["cd '$packages/droid-lang/buildscript/'  && ./droidcopy.sh $file $file_path/$file_base_name.html ./droid.html"]
+    },
+    "windows":
+    {
+        "shell_cmd": "cd $packages/droid-lang/buildscript/ && powershell ./droidcopy.ps1 $file $file_path/$file_base_name.html ./droid.html",
+    },
+    "linux":
+    {
+        "cmd": ["cd '$packages/droid-lang/buildscript/'  && ./droidcopy.sh $file $file_path/$file_base_name.html ./droid.html"]
+    }
+}

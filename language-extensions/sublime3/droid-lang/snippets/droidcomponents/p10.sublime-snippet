@@ -1,0 +1,19 @@
+<snippet>
+	<description>add register description</description>
+	<content>
+<![CDATA[# BEGIN DROIDCOMPONENT P10
+# P1: [${1:VARIABLENAME}] ${2:description of the register}
+# P2: [${3:}] ${4:}
+# P3: [${5:}] ${6:}
+# P4: [${7:}] ${8:}
+# P5: [${9:}] ${10:}
+# P6: [${11:}] ${12:}
+# P7: [${13:}] ${14:}
+# P8: [${15:}] ${16:}
+# P9: [${17:}] ${18:}
+# P10: [${19:}] ${20:}
+# END DROIDCOMPONENT 
+]]></content>
+	<tabTrigger>P10 Comment</tabTrigger>
+	<scope>source.droid</scope>
+</snippet>

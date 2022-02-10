@@ -1,0 +1,1106 @@
+%YAML 1.2
+---
+name: Droid
+scope: source.droid
+file_extensions: [ ini ]
+
+contexts:
+  main:
+    - include: basics
+    - include: controllers
+    - include: compare
+    - include: chord
+    - include: buttongroup
+    - include: burst
+    - include: midiout
+    - include: clocktool
+    - include: lfo
+    - include: random
+    - include: arpeggio
+    - include: sample
+    - include: fold
+    - include: droid
+    - include: superjust
+    - include: sequencer
+    - include: switchedpot
+    - include: matrixmixer
+    - include: slew
+    - include: quantizer
+    - include: nudge
+    - include: calibrator
+    - include: motoquencer
+    - include: contour
+    - include: notebuttons
+    - include: adc
+    - include: crossfader
+    - include: spring
+    - include: explin
+    - include: minifonion
+    - include: pot
+    - include: math
+    - include: euklid
+    - include: notchedpot
+    - include: dac
+    - include: fourstatebutton
+    - include: bernoulli
+    - include: transient
+    - include: octave
+    - include: timing
+    - include: midithrough
+    - include: copy
+    - include: midifileplayer
+    - include: cvlooper
+    - include: button
+    - include: mixer
+    - include: queue
+    - include: midiin
+    - include: switch
+    - include: togglebutton
+    - include: triggerdelay
+    - include: motorfader
+    - include: logic
+    - include: algoquencer
+    - include: illegals
+
+  basics:
+    - include: comment
+    - include: numeric
+    - include: ioregister
+    - include: cable
+    - include: punct
+
+  comment:
+    - match: '(//.*)'
+      captures:
+        0: comment.droid
+    - match: '(#.*)'
+      captures:
+        0: comment.droid
+
+  numeric:
+    - match: '(on|off|-?([0-9]|[1-9][0-9]*)(.[0-9]+)?[V\x{0025}]?)'
+      captures:
+        0: constant.numeric.droid
+
+  ioregister:
+    - match: '([ionION][1-8])'
+      captures:
+        0: support.constant.droid
+    - match: '([rR](3[0-2]|[1-2]?[0-9]|[0-9]))'
+      captures:
+        0: support.constant.droid
+    - match: '([gG](1[012]|[1-9]))'
+      captures:
+        0: support.constant.droid
+    - match: '([xX]1)'
+      captures:
+        0: support.constant.droid
+    - match: '([lbLB](1[1-6]|[1-9]).([1-2][0-9]|3[0-2]|[1-9]))'
+      captures:
+        0: support.constant.droid
+    - match: '([psPS](1[1-6]|[1-9]).(10|[1-9]))'
+      captures:
+        0: support.constant.droid
+
+  cable:
+    - match: '(_[A-Za-z0-9]*)'
+      captures:
+        0: constant.other.droid
+
+  punct:
+    - match: '([\x{003d}\x{002b}-\x{002f}\x{002a}\s])'
+      captures:
+        0: punctuation.droid
+
+  controllers:
+    - match: '(\[p2b8\]|\[p4b2\]|\[b32\]|\[p10\]|\[s10\]|\[m4\]|\[x7\])'
+      captures:
+        0: support.class.droid
+
+  illegals:
+    - match: '([^\s])'
+      captures:
+        0: invalid.droid
+
+  compare:
+    - match: '(\[compare\])'
+      push: inside_compare
+      captures:
+        0: support.class.droid
+
+  inside_compare:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(compare|ifequal|ifgreater|ifless|input|precision)'
+      captures:
+        0: support.variable.droid
+    - match: '(output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  chord:
+    - match: '(\[chord\])'
+      push: inside_chord
+      captures:
+        0: support.class.droid
+
+  inside_chord:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(degree|inversion|pitch|root|select1|select11|select13|select3|select5|select7|select9|selectfill1|selectfill2|selectfill3|selectfill4|selectfill5|spread|transpose|trigger|tuningmode|tuningpitch)'
+      captures:
+        0: support.variable.droid
+    - match: '(output1|output2|output3|output4|output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  buttongroup:
+    - match: '(\[buttongroup\])'
+      push: inside_buttongroup
+      captures:
+        0: support.class.droid
+
+  inside_buttongroup:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(button1[0-6]|button[1-9]|button|maxactive|minactive|select|selectat|value1[0-6]|value[1-9]|value)'
+      captures:
+        0: support.variable.droid
+    - match: '(buttonpress|led1[0-6]|led[1-9]|led|longpress|output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  burst:
+    - match: '(\[burst\])'
+      push: inside_burst
+      captures:
+        0: support.class.droid
+
+  inside_burst:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(count|hz|output|rate|reset|skip|taptempo|trigger)'
+      captures:
+        0: support.variable.droid
+    - match: '(output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  midiout:
+    - match: '(\[midiout\])'
+      push: inside_midiout
+      captures:
+        0: support.class.droid
+
+  inside_midiout:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(activesensing|allnotesoff|allsoundoff|bank|cc[1-4]|cc|ccnumber[1-4]|ccnumber|channel|channelpressure|clock|damper|gate[1-8]|gate|highestnote|legato|lowestnote|midiclock|modwheel|note1[0-9]|note[1-9]|note|notegate1[0-6]|notegate[1-9]|notegate|noteoffvelocity[1-8]|noteoffvelocity|pitch[1-8]|pitch|pitchbend|pitchbendrange|pitchstabilization|pitchtracking|portamento|pressure[1-8]|pressure|program|programchange|running|soft|sostenuto|start|stop|systemreset|triggerdelay|updaterate|usb|velocity[1-8]|velocity|volume)'
+      captures:
+        0: support.variable.droid
+    - include: basics
+
+  clocktool:
+    - match: '(\[clocktool\])'
+      push: inside_clocktool
+      captures:
+        0: support.class.droid
+
+  inside_clocktool:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(clock|delay|divide|dutycycle|gatelength|multiply|reset)'
+      captures:
+        0: support.variable.droid
+    - match: '(inputpitch|outputpitch|output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  lfo:
+    - match: '(\[lfo\])'
+      push: inside_lfo
+      captures:
+        0: support.class.droid
+
+  inside_lfo:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(bipolar|hz|level|offset|phase|pulsewidth|randomize|rate|skew|sync|syncphase|taptempo|waveform)'
+      captures:
+        0: support.variable.droid
+    - match: '(cosine|output|paraboloid|ramp|sawtooth|sine|square|triangle)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  random:
+    - match: '(\[random\])'
+      push: inside_random
+      captures:
+        0: support.class.droid
+
+  inside_random:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(clock|maximum|minimum|steps)'
+      captures:
+        0: support.variable.droid
+    - match: '(output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  arpeggio:
+    - match: '(\[arpeggio\])'
+      push: inside_arpeggio
+      captures:
+        0: support.class.droid
+
+  inside_arpeggio:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(butterfly|clock|degree|direction|drop|octaves|pattern|pingpong|pitch|range|reset|root|select11|select13|select1|select3|select5|select7|select9|selectfill[1-5]|startnote|transpose|tuningmode|tuningpitch)'
+      captures:
+        0: support.variable.droid
+    - match: '(output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  sample:
+    - match: '(\[sample\])'
+      push: inside_sample
+      captures:
+        0: support.class.droid
+
+  inside_sample:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(bypass|gate|input|sample|timewindow)'
+      captures:
+        0: support.variable.droid
+    - match: '(output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  fold:
+    - match: '(\[fold\])'
+      push: inside_fold
+      captures:
+        0: support.class.droid
+
+  inside_fold:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(foldby|input|maximum|minimum)'
+      captures:
+        0: support.variable.droid
+    - match: '(output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  droid:
+    - match: '(\[droid\])'
+      push: inside_droid
+      captures:
+        0: support.class.droid
+
+  inside_droid:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(ledbrightness|lpfilter[1-8]|lpfilter|maxslope[1-8]|maxslope)'
+      captures:
+        0: support.variable.droid
+    - match: '(controllererrors)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  superjust:
+    - match: '(\[superjust\])'
+      push: inside_superjust
+      captures:
+        0: support.class.droid
+
+  inside_superjust:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(bypass|input[1-8]|input|transpose|tuningmode|tuningpitch)'
+      captures:
+        0: support.variable.droid
+    - match: '(output[1-8]|output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  sequencer:
+    - match: '(\[sequencer\])'
+      push: inside_sequencer
+      captures:
+        0: support.class.droid
+
+  inside_sequencer:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(chaintonext|clock|cv[1-8]|cv|gate[1-8]|gate|gatelength|outputscaling|pitch[1-8]|pitch|repeat[1-8]|repeat|reset|slew[1-8]|slew|stages|steps|transpose)'
+      captures:
+        0: support.variable.droid
+    - match: '(cvoutput|gateoutput|pitchoutput)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  switchedpot:
+    - match: '(\[switchedpot\])'
+      push: inside_switchedpot
+      captures:
+        0: support.class.droid
+
+  inside_switchedpot:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(pot|bipolar|switch[1-8]|switch)'
+      captures:
+        0: support.variable.droid
+    - match: '(output[1-8]|output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  matrixmixer:
+    - match: '(\[matrixmixer\])'
+      push: inside_matrixmixer
+      captures:
+        0: support.class.droid
+
+  inside_matrixmixer:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(input[1-4]|input|auxin[1-4]|auxin|mixmax|button1[1-4]|button2[1-4]|button3[1-4]|button4[1-4]|button1|button2|button3|button4)'
+      captures:
+        0: support.variable.droid
+    - match: '(output[1-4]|output|led1[1-4]|led2[1-4]|led3[1-4]|led4[1-4]|led1|led2|led3|led4)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  slew:
+    - match: '(\[slew\])'
+      push: inside_slew
+      captures:
+        0: support.class.droid
+
+  inside_slew:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(input|slew|slewup|slewdown|gate)'
+      captures:
+        0: support.variable.droid
+    - match: '(exponential|linear|scurve)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  quantizer:
+    - match: '(\[quantizer\])'
+      push: inside_quantizer
+      captures:
+        0: support.class.droid
+
+  inside_quantizer:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(input|trigger|steps|bypass)'
+      captures:
+        0: support.variable.droid
+    - match: '(output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  nudge:
+    - match: '(\[nudge\])'
+      push: inside_nudge
+      captures:
+        0: support.class.droid
+
+  inside_nudge:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(buttonup|buttondown|amount|startvalue|minimum|maximum|wrap|offset|reset|persist)'
+      captures:
+        0: support.variable.droid
+    - match: '(ledup|leddown|output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  calibrator:
+    - match: '(\[calibrator\])'
+      push: inside_calibrator
+      captures:
+        0: support.class.droid
+
+  inside_calibrator:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(input|nudgeup|nudgedown|nudgeamount|reset|tune[0-8]|tune|tunelowtail|tunehightail)'
+      captures:
+        0: support.variable.droid
+    - match: '(output|ledup|leddown)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  motoquencer:
+    - match: '(\[motoquencer\])'
+      push: inside_motoquencer
+      captures:
+        0: support.class.droid
+
+  inside_motoquencer:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(root|degree|select1|select3|select5|select7|select9|select11|select13|select|selectfill[1-5]|tuningmode|tuningpitch|transpose|selectat|faderblock1|faderblock2|clock|pitchbase|pitchrange|bar|stepoffset|autoreset|fadermode|buttonmode|quantize|snapshot|recall|clear|cvdefault[1-3]|cvdefault)'
+      captures:
+        0: support.variable.droid
+    - match: '(pitch|gate[1-3]|gate|cv[1-3]|cv)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  contour:
+    - match: '(\[contour\])'
+      push: inside_contour
+      captures:
+        0: support.class.droid
+
+  inside_contour:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(gate|trigger|retrigger|startfromzero|abortattack|loop|predelay|attack|attackshape|hold|decay|decayshape|sustain|swell|swelltime|swelllevel|swellshape|release|releaseshape|level|velocity|pitch|taptempo|shape|zerocrossing)'
+      captures:
+        0: support.variable.droid
+    - match: '(output|negated|inverted|endofpredelay|endofattack|endofhold|endofdecay|endofrelease)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  notebuttons:
+    - match: '(\[notebuttons\])'
+      push: inside_notebuttons
+      captures:
+        0: support.class.droid
+
+  inside_notebuttons:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(button1[0-2]|button[1-9]|button|clock)'
+      captures:
+        0: support.variable.droid
+    - match: '(led1[0-2]|led[1-9]|led|output|semitone)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  adc:
+    - match: '(\[adc\])'
+      push: inside_adc
+      captures:
+        0: support.class.droid
+
+  inside_adc:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(input|minimum|maximum)'
+      captures:
+        0: support.variable.droid
+    - match: '(bit1[0-2]|bit[1-9]|bit)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  crossfader:
+    - match: '(\[crossfader\])'
+      push: inside_crossfader
+      captures:
+        0: support.class.droid
+
+  inside_crossfader:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(input[1-8]|input|fade)'
+      captures:
+        0: support.variable.droid
+    - match: '(output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  spring:
+    - match: '(\[spring\])'
+      push: inside_spring
+      captures:
+        0: support.class.droid
+
+  inside_spring:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(mass|gravity|springforce|flowresistance|friction|speed|shove|shoveforce|reset|startvelocity|startposition)'
+      captures:
+        0: support.variable.droid
+    - match: '(velocity|position)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  explin:
+    - match: '(\[explin\])'
+      push: inside_explin
+      captures:
+        0: support.class.droid
+
+  inside_explin:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(input|startvalue|endvalue|mix)'
+      captures:
+        0: support.variable.droid
+    - match: '(output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  minifonion:
+    - match: '(\[minifonion\])'
+      push: inside_minifonion
+      captures:
+        0: support.class.droid
+
+  inside_minifonion:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(root|degree|select11|select13|select1|select3|select5|select7|select9|select|selectfill[1-5]|selectfill|tuningmode|tuningpitch|transpose|input|trigger|bypass|noteshift|selectnoteshift)'
+      captures:
+        0: support.variable.droid
+    - match: '(output|notechange)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  pot:
+    - match: '(\[pot\])'
+      push: inside_pot
+      captures:
+        0: support.class.droid
+
+  inside_pot:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(select|selectat|pot|outputscale|notch|slope|ledgauge)'
+      captures:
+        0: support.variable.droid
+    - match: '(output|bipolar|absbipolar|lefthalf|righthalf|lefthalfinv|righthalfinv|onchange)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  math:
+    - match: '(\[math\])'
+      push: inside_math
+      captures:
+        0: support.class.droid
+
+  inside_math:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(input1|input2)'
+      captures:
+        0: support.variable.droid
+    - match: '(sum|difference|product|quotient|modulo|power|average|maximum|minimum|negation|reciprocal|amount|sine|cosine|square|root|logarithm|round|floor|ceil)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  euklid:
+    - match: '(\[euklid\])'
+      push: inside_euklid
+      captures:
+        0: support.class.droid
+
+  inside_euklid:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(clock|reset|length|beats|offset)'
+      captures:
+        0: support.variable.droid
+    - match: '(output|offbeats)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  notchedpot:
+    - match: '(\[notchedpot\])'
+      push: inside_notchedpot
+      captures:
+        0: support.class.droid
+
+  inside_notchedpot:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(pot|notch)'
+      captures:
+        0: support.variable.droid
+    - match: '(output|bipolar|absbipolar|lefthalf|righthalf|lefthalfinv|righthalfinv)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  dac:
+    - match: '(\[dac\])'
+      push: inside_dac
+      captures:
+        0: support.class.droid
+
+  inside_dac:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(bit1[0-2]|bit[1-9]|bit|minimum|maximum)'
+      captures:
+        0: support.variable.droid
+    - match: '(output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  fourstatebutton:
+    - match: '(\[fourstatebutton\])'
+      push: inside_fourstatebutton
+      captures:
+        0: support.class.droid
+
+  inside_fourstatebutton:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(button|reset|value[1-4]|value|startvalue)'
+      captures:
+        0: support.variable.droid
+    - match: '(output|led)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  bernoulli:
+    - match: '(\[bernoulli\])'
+      push: inside_bernoulli
+      captures:
+        0: support.class.droid
+
+  inside_bernoulli:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(input|distribution)'
+      captures:
+        0: support.variable.droid
+    - match: '(output1|output2|output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  transient:
+    - match: '(\[transient\])'
+      push: inside_transient
+      captures:
+        0: support.class.droid
+
+  inside_transient:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(start|end|duration|loop|pingpong|freeze|reset|clock)'
+      captures:
+        0: support.variable.droid
+    - match: '(output|phase|endoftransient)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  octave:
+    - match: '(\[octave\])'
+      push: inside_octave
+      captures:
+        0: support.class.droid
+
+  inside_octave:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(input|spread|detune|fifths)'
+      captures:
+        0: support.variable.droid
+    - match: '(output1|output2|output3|output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  timing:
+    - match: '(\[timing\])'
+      push: inside_timing
+      captures:
+        0: support.class.droid
+
+  inside_timing:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(clock|reset|timing[1-8]|timing)'
+      captures:
+        0: support.variable.droid
+    - match: '(output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  midithrough:
+    - match: '(\[midithrough\])'
+      push: inside_midithrough
+      captures:
+        0: support.class.droid
+
+  inside_midithrough:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(fromusb|tousb)'
+      captures:
+        0: support.variable.droid
+    - include: basics
+
+  copy:
+    - match: '(\[copy\])'
+      push: inside_copy
+      captures:
+        0: support.class.droid
+
+  inside_copy:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(input|minimum|maximum)'
+      captures:
+        0: support.variable.droid
+    - match: '(output|inverted)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  midifileplayer:
+    - match: '(\[midifileplayer\])'
+      push: inside_midifileplayer
+      captures:
+        0: support.class.droid
+
+  inside_midifileplayer:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(channel|tuningmode|tuningpitch|transpose|holdvelocity|pitchbendrange|bendpitch|roundrobin|voiceallocation|ccnumber[1-4]|ccnumber|lowestnote|highestnote|note1[0-6]|note[1-9]|note|file|track|clock|reset|loop|end|speed)'
+      captures:
+        0: support.variable.droid
+    - match: '(pitch[1-8]|pitch|velocity[1-8]|velocity|pressure[1-8]|pressure|gate[1-8]|gate|trigger[1-8]|trigger|cc[1-4]|cc|notegate1[0-6]|notegate[1-9]|notegate|pitchbend|programchange|program|bank|modwheel|volume|clockout|midiclock|endoftrack|error)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  cvlooper:
+    - match: '(\[cvlooper\])'
+      push: inside_cvlooper
+      captures:
+        0: support.class.droid
+
+  inside_cvlooper:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(cvin|gatein|clock|reset|length|tapespeed|loopswitch|pause|overlay|overdub|bypass)'
+      captures:
+        0: support.variable.droid
+    - match: '(cvout|gateout)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  button:
+    - match: '(\[button\])'
+      push: inside_button
+      captures:
+        0: support.class.droid
+
+  inside_button:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(select|selectat|button|reset|onvalue|offvalue|value[1-4]|value|doubleclickmode|states|startvalue)'
+      captures:
+        0: support.variable.droid
+    - match: '(led|output|inverted|negated|longpress)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  mixer:
+    - match: '(\[mixer\])'
+      push: inside_mixer
+      captures:
+        0: support.class.droid
+
+  inside_mixer:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(input[1-8]|input)'
+      captures:
+        0: support.variable.droid
+    - match: '(output|maximum|minimum|average)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  queue:
+    - match: '(\[queue\])'
+      push: inside_queue
+      captures:
+        0: support.class.droid
+
+  inside_queue:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(input|clock|outputpos[1-8]|outputpos)'
+      captures:
+        0: support.variable.droid
+    - match: '(output[1-8]|output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  midiin:
+    - match: '(\[midiin\])'
+      push: inside_midiin
+      captures:
+        0: support.class.droid
+
+  inside_midiin:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(channel|tuningmode|tuningpitch|transpose|holdvelocity|pitchbendrange|bendpitch|roundrobin|voiceallocation|ccnumber[1-4]|ccnumber|lowestnote|highestnote|note1[0-6]|note[1-9]|note|usb|channel|systemreset)'
+      captures:
+        0: support.variable.droid
+    - match: '(pitch[1-8]|pitch|velocity[1-8]|velocity|pressure[1-8]|pressure|gate[1-8]|gate|trigger[1-8]|trigger|cc[1-4]|cc|notegate1[0-6]|notegate[1-9]|notegate|pitchbend|programchange|program|program|bank|modwheel|volume|clock16|clock8t|clock8|clock4|clock|midiclock|start|stop|running|active)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  switch:
+    - match: '(\[switch\])'
+      push: inside_switch
+      captures:
+        0: support.class.droid
+
+  inside_switch:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(input[1-8]|input|forward|backward|reset|offset)'
+      captures:
+        0: support.variable.droid
+    - match: '(output[1-8]|output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  togglebutton:
+    - match: '(\[togglebutton\])'
+      push: inside_togglebutton
+      captures:
+        0: support.class.droid
+
+  inside_togglebutton:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(button|reset[1-4]|reset|onvalue|offvalue|doubleclickmode|startvalue|switch)'
+      captures:
+        0: support.variable.droid
+    - match: '(led|output[1-4]|output|inverted|negated)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  triggerdelay:
+    - match: '(\[triggerdelay\])'
+      push: inside_triggerdelay
+      captures:
+        0: support.class.droid
+
+  inside_triggerdelay:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(input|delay|gatelength|repeats|mute|clock)'
+      captures:
+        0: support.variable.droid
+    - match: '(output|overflow)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  motorfader:
+    - match: '(\[motorfader\])'
+      push: inside_motorfader
+      captures:
+        0: support.class.droid
+
+  inside_motorfader:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(select|selectat|fader|block|startvalue|notches|brightness|color)'
+      captures:
+        0: support.variable.droid
+    - match: '(output)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  logic:
+    - match: '(\[logic\])'
+      push: inside_logic
+      captures:
+        0: support.class.droid
+
+  inside_logic:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(input[1-8]|input|threshold|lowvalue|highvalue|countvalue)'
+      captures:
+        0: support.variable.droid
+    - match: '(and|or|xor|nand|nor|negated|count|countlow)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
+  algoquencer:
+    - match: '(\[algoquencer\])'
+      push: inside_algoquencer
+      captures:
+        0: support.class.droid
+
+  inside_algoquencer:
+    - match: '(?=\[)'
+      pop: true
+      captures:
+        0: support.class.droid
+    - match: '(select|selectat|clock|reset|button1[0-6]|button[1-9]|button|length|pattern|nextpattern|prevpattern|reroll|pitchlow|pitchhigh|pitchresolution|gatelength|lengthbutton|repeats|branches|mutebutton|unmutebutton|accentbutton|alternatebutton|alternatebars|accentlow|accenthigh|activity|variation|dejavu|morphs|offbeats|distribution|fills|fillorder|rolls|rollcount|rollsteps|rollstartvelo|loadpreset|savepreset|preset|pitch1[0-6]|pitch[1-9]|pitch)'
+      captures:
+        0: support.variable.droid
+    - match: '(trigger|gate|pitch|accent|led1[0-6]|led[1-9]|led|barled[1-4]|barled|rollvelocity|startofbar|muteled|unmuteled|morphled|fillsled|branch)'
+      captures:
+        0: support.other.variable.droid
+    - include: basics
+
