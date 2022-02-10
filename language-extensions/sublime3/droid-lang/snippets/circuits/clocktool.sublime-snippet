@@ -1,0 +1,18 @@
+<snippet>
+  <description>Clock divider / multiplier / shifter</description>
+  <content>
+<![CDATA[[clocktool]
+	clock = ${1:}
+	reset = ${2:}
+	divide = ${3:}
+	multiply = ${4:}
+	dutycycle = ${5:}
+	gatelength = ${6:}
+	delay = ${7:}
+	output = ${8:}
+	inputpitch = ${9:}
+	outputpitch = ${10:}
+]]></content>
+  <tabTrigger>[clocktool]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

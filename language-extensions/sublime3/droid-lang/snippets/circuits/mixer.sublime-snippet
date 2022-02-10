@@ -1,0 +1,21 @@
+<snippet>
+  <description>CV mixer</description>
+  <content>
+<![CDATA[[mixer]
+	input1 = ${1:}
+	input2 = ${2:}
+	input3 = ${3:}
+	input4 = ${4:}
+	input5 = ${5:}
+	input6 = ${6:}
+	input7 = ${7:}
+	input8 = ${8:}
+	input = ${9:}
+	output = ${10:}
+	maximum = ${11:}
+	minimum = ${12:}
+	average = ${13:}
+]]></content>
+  <tabTrigger>[mixer]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

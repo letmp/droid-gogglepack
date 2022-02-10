@@ -1,0 +1,14 @@
+<snippet>
+  <description>Sample \& Hold Circuit</description>
+  <content>
+<![CDATA[[sample]
+	input = ${1:}
+	sample = ${2:}
+	gate = ${3:}
+	timewindow = ${4:}
+	bypass = ${5:}
+	output = ${6:}
+]]></content>
+  <tabTrigger>[sample]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

@@ -1,0 +1,64 @@
+<snippet>
+  <description>Eight step sequencer</description>
+  <content>
+<![CDATA[[sequencer]
+	clock = ${1:}
+	reset = ${2:}
+	stages = ${3:}
+	steps = ${4:}
+	transpose = ${5:}
+	outputscaling = ${6:}
+	gatelength = ${7:}
+	pitch1 = ${8:}
+	pitch2 = ${9:}
+	pitch3 = ${10:}
+	pitch4 = ${11:}
+	pitch5 = ${12:}
+	pitch6 = ${13:}
+	pitch7 = ${14:}
+	pitch8 = ${15:}
+	pitch = ${16:}
+	cv1 = ${17:}
+	cv2 = ${18:}
+	cv3 = ${19:}
+	cv4 = ${20:}
+	cv5 = ${21:}
+	cv6 = ${22:}
+	cv7 = ${23:}
+	cv8 = ${24:}
+	cv = ${25:}
+	gate1 = ${26:}
+	gate2 = ${27:}
+	gate3 = ${28:}
+	gate4 = ${29:}
+	gate5 = ${30:}
+	gate6 = ${31:}
+	gate7 = ${32:}
+	gate8 = ${33:}
+	gate = ${34:}
+	slew1 = ${35:}
+	slew2 = ${36:}
+	slew3 = ${37:}
+	slew4 = ${38:}
+	slew5 = ${39:}
+	slew6 = ${40:}
+	slew7 = ${41:}
+	slew8 = ${42:}
+	slew = ${43:}
+	repeat1 = ${44:}
+	repeat2 = ${45:}
+	repeat3 = ${46:}
+	repeat4 = ${47:}
+	repeat5 = ${48:}
+	repeat6 = ${49:}
+	repeat7 = ${50:}
+	repeat8 = ${51:}
+	repeat = ${52:}
+	chaintonext = ${53:}
+	pitchoutput = ${54:}
+	cvoutput = ${55:}
+	gateoutput = ${56:}
+]]></content>
+  <tabTrigger>[sequencer]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

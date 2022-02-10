@@ -1,0 +1,23 @@
+<snippet>
+  <description>Modify -- ``nudge'' -- a value using two buttons</description>
+  <content>
+<![CDATA[[nudge]
+	select = ${1:}
+	selectat = ${2:}
+	buttonup = ${3:}
+	buttondown = ${4:}
+	amount = ${5:}
+	startvalue = ${6:}
+	minimum = ${7:}
+	maximum = ${8:}
+	wrap = ${9:}
+	offset = ${10:}
+	reset = ${11:}
+	persist = ${12:}
+	ledup = ${13:}
+	leddown = ${14:}
+	output = ${15:}
+]]></content>
+  <tabTrigger>[nudge]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

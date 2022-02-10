@@ -1,0 +1,19 @@
+<snippet>
+  <description>Morph between 8 inputs</description>
+  <content>
+<![CDATA[[crossfader]
+	input1 = ${1:}
+	input2 = ${2:}
+	input3 = ${3:}
+	input4 = ${4:}
+	input5 = ${5:}
+	input6 = ${6:}
+	input7 = ${7:}
+	input8 = ${8:}
+	input = ${9:}
+	fade = ${10:}
+	output = ${11:}
+]]></content>
+  <tabTrigger>[crossfader]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

@@ -1,0 +1,24 @@
+<snippet>
+  <description>AD Converter with 12 bits</description>
+  <content>
+<![CDATA[[adc]
+	input = ${1:}
+	minimum = ${2:}
+	maximum = ${3:}
+	bit1 = ${4:}
+	bit2 = ${5:}
+	bit3 = ${6:}
+	bit4 = ${7:}
+	bit5 = ${8:}
+	bit6 = ${9:}
+	bit7 = ${10:}
+	bit8 = ${11:}
+	bit9 = ${12:}
+	bit10 = ${13:}
+	bit11 = ${14:}
+	bit12 = ${15:}
+	bit = ${16:}
+]]></content>
+  <tabTrigger>[adc]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

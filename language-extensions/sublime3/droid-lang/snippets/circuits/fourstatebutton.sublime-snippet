@@ -1,0 +1,18 @@
+<snippet>
+  <description>Button switching through 4 states (OBSOLETE)</description>
+  <content>
+<![CDATA[[fourstatebutton]
+	button = ${1:}
+	reset = ${2:}
+	value1 = ${3:}
+	value2 = ${4:}
+	value3 = ${5:}
+	value4 = ${6:}
+	value = ${7:}
+	startvalue = ${8:}
+	output = ${9:}
+	led = ${10:}
+]]></content>
+  <tabTrigger>[fourstatebutton]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

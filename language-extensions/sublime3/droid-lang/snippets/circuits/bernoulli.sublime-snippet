@@ -1,0 +1,12 @@
+<snippet>
+  <description>Random gate distributor</description>
+  <content>
+<![CDATA[[bernoulli]
+	input = ${1:}
+	distribution = ${2:}
+	output1 = ${3:}
+	output2 = ${4:}
+]]></content>
+  <tabTrigger>[bernoulli]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

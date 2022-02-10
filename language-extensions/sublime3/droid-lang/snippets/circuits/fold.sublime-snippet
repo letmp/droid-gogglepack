@@ -1,0 +1,13 @@
+<snippet>
+  <description>CV folder -- keep (pitch) CV within certain bounds</description>
+  <content>
+<![CDATA[[fold]
+	input = ${1:}
+	foldby = ${2:}
+	minimum = ${3:}
+	maximum = ${4:}
+	output = ${5:}
+]]></content>
+  <tabTrigger>[fold]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

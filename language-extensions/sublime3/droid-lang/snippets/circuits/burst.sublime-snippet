@@ -1,0 +1,16 @@
+<snippet>
+  <description>Generate burst of pulses</description>
+  <content>
+<![CDATA[[burst]
+	rate = ${1:}
+	taptempo = ${2:}
+	hz = ${3:}
+	trigger = ${4:}
+	reset = ${5:}
+	count = ${6:}
+	skip = ${7:}
+	output = ${8:}
+]]></content>
+  <tabTrigger>[burst]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

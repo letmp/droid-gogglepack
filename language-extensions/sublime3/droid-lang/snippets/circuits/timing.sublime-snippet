@@ -1,0 +1,20 @@
+<snippet>
+  <description>Shuffle/swing and complex timing generator</description>
+  <content>
+<![CDATA[[timing]
+	clock = ${1:}
+	reset = ${2:}
+	timing1 = ${3:}
+	timing2 = ${4:}
+	timing3 = ${5:}
+	timing4 = ${6:}
+	timing5 = ${7:}
+	timing6 = ${8:}
+	timing7 = ${9:}
+	timing8 = ${10:}
+	timing = ${11:}
+	output = ${12:}
+]]></content>
+  <tabTrigger>[timing]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

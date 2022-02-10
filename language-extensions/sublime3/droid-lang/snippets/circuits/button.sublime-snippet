@@ -1,0 +1,27 @@
+<snippet>
+  <description>Do all sorts of useful things with buttons</description>
+  <content>
+<![CDATA[[button]
+	select = ${1:}
+	selectat = ${2:}
+	button = ${3:}
+	reset = ${4:}
+	onvalue = ${5:}
+	offvalue = ${6:}
+	value1 = ${7:}
+	value2 = ${8:}
+	value3 = ${9:}
+	value4 = ${10:}
+	value = ${11:}
+	doubleclickmode = ${12:}
+	states = ${13:}
+	startvalue = ${14:}
+	led = ${15:}
+	output = ${16:}
+	inverted = ${17:}
+	negated = ${18:}
+	longpress = ${19:}
+]]></content>
+  <tabTrigger>[button]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

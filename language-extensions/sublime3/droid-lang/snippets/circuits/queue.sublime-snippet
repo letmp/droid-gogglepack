@@ -1,0 +1,28 @@
+<snippet>
+  <description>Clocked CV shift register</description>
+  <content>
+<![CDATA[[queue]
+	input = ${1:}
+	clock = ${2:}
+	outputpos1 = ${3:}
+	outputpos2 = ${4:}
+	outputpos3 = ${5:}
+	outputpos4 = ${6:}
+	outputpos5 = ${7:}
+	outputpos6 = ${8:}
+	outputpos7 = ${9:}
+	outputpos8 = ${10:}
+	outputpos = ${11:}
+	output1 = ${12:}
+	output2 = ${13:}
+	output3 = ${14:}
+	output4 = ${15:}
+	output5 = ${16:}
+	output6 = ${17:}
+	output7 = ${18:}
+	output8 = ${19:}
+	output = ${20:}
+]]></content>
+  <tabTrigger>[queue]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

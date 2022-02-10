@@ -1,0 +1,27 @@
+<snippet>
+  <description>Create on/off buttons (OBSOLETE)</description>
+  <content>
+<![CDATA[[togglebutton]
+	button = ${1:}
+	reset1 = ${2:}
+	reset2 = ${3:}
+	reset3 = ${4:}
+	reset4 = ${5:}
+	reset = ${6:}
+	onvalue = ${7:}
+	offvalue = ${8:}
+	doubleclickmode = ${9:}
+	startvalue = ${10:}
+	switch = ${11:}
+	led = ${12:}
+	output1 = ${13:}
+	output2 = ${14:}
+	output3 = ${15:}
+	output4 = ${16:}
+	output = ${17:}
+	inverted = ${18:}
+	negated = ${19:}
+]]></content>
+  <tabTrigger>[togglebutton]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

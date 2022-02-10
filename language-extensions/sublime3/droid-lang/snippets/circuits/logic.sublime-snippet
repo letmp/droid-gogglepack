@@ -1,0 +1,29 @@
+<snippet>
+  <description>Logic operations utility</description>
+  <content>
+<![CDATA[[logic]
+	input1 = ${1:}
+	input2 = ${2:}
+	input3 = ${3:}
+	input4 = ${4:}
+	input5 = ${5:}
+	input6 = ${6:}
+	input7 = ${7:}
+	input8 = ${8:}
+	input = ${9:}
+	threshold = ${10:}
+	lowvalue = ${11:}
+	highvalue = ${12:}
+	countvalue = ${13:}
+	and = ${14:}
+	or = ${15:}
+	xor = ${16:}
+	nand = ${17:}
+	nor = ${18:}
+	negated = ${19:}
+	count = ${20:}
+	countlow = ${21:}
+]]></content>
+  <tabTrigger>[logic]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

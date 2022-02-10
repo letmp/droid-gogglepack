@@ -1,0 +1,17 @@
+<snippet>
+  <description>Helper circuit for pots (OBSOLETE)</description>
+  <content>
+<![CDATA[[notchedpot]
+	pot = ${1:}
+	notch = ${2:}
+	output = ${3:}
+	bipolar = ${4:}
+	absbipolar = ${5:}
+	lefthalf = ${6:}
+	righthalf = ${7:}
+	lefthalfinv = ${8:}
+	righthalfinv = ${9:}
+]]></content>
+  <tabTrigger>[notchedpot]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

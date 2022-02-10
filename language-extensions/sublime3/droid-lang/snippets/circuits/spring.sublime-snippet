@@ -1,0 +1,21 @@
+<snippet>
+  <description>Physical spring simulation</description>
+  <content>
+<![CDATA[[spring]
+	mass = ${1:}
+	gravity = ${2:}
+	springforce = ${3:}
+	flowresistance = ${4:}
+	friction = ${5:}
+	speed = ${6:}
+	shove = ${7:}
+	shoveforce = ${8:}
+	reset = ${9:}
+	startvelocity = ${10:}
+	startposition = ${11:}
+	velocity = ${12:}
+	position = ${13:}
+]]></content>
+  <tabTrigger>[spring]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

@@ -1,0 +1,31 @@
+<snippet>
+  <description>Math utility circuit</description>
+  <content>
+<![CDATA[[math]
+	input1 = ${1:}
+	input2 = ${2:}
+	input = ${3:}
+	sum = ${4:}
+	difference = ${5:}
+	product = ${6:}
+	quotient = ${7:}
+	modulo = ${8:}
+	power = ${9:}
+	average = ${10:}
+	maximum = ${11:}
+	minimum = ${12:}
+	negation = ${13:}
+	reciprocal = ${14:}
+	amount = ${15:}
+	sine = ${16:}
+	cosine = ${17:}
+	square = ${18:}
+	root = ${19:}
+	logarithm = ${20:}
+	round = ${21:}
+	floor = ${22:}
+	ceil = ${23:}
+]]></content>
+  <tabTrigger>[math]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

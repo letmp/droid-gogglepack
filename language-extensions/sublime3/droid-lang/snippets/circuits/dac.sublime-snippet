@@ -1,0 +1,24 @@
+<snippet>
+  <description>DA Converter with 12 bits</description>
+  <content>
+<![CDATA[[dac]
+	bit1 = ${1:}
+	bit2 = ${2:}
+	bit3 = ${3:}
+	bit4 = ${4:}
+	bit5 = ${5:}
+	bit6 = ${6:}
+	bit7 = ${7:}
+	bit8 = ${8:}
+	bit9 = ${9:}
+	bit10 = ${10:}
+	bit11 = ${11:}
+	bit12 = ${12:}
+	bit = ${13:}
+	minimum = ${14:}
+	maximum = ${15:}
+	output = ${16:}
+]]></content>
+  <tabTrigger>[dac]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

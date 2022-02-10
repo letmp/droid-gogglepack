@@ -1,0 +1,39 @@
+<snippet>
+  <description>Note Selection Buttons</description>
+  <content>
+<![CDATA[[notebuttons]
+	select = ${1:}
+	selectat = ${2:}
+	button1 = ${3:}
+	button2 = ${4:}
+	button3 = ${5:}
+	button4 = ${6:}
+	button5 = ${7:}
+	button6 = ${8:}
+	button7 = ${9:}
+	button8 = ${10:}
+	button9 = ${11:}
+	button10 = ${12:}
+	button11 = ${13:}
+	button12 = ${14:}
+	button = ${15:}
+	clock = ${16:}
+	led1 = ${17:}
+	led2 = ${18:}
+	led3 = ${19:}
+	led4 = ${20:}
+	led5 = ${21:}
+	led6 = ${22:}
+	led7 = ${23:}
+	led8 = ${24:}
+	led9 = ${25:}
+	led10 = ${26:}
+	led11 = ${27:}
+	led12 = ${28:}
+	led = ${29:}
+	output = ${30:}
+	semitone = ${31:}
+]]></content>
+  <tabTrigger>[notebuttons]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

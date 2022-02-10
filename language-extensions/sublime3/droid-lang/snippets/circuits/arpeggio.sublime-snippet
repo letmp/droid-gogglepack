@@ -1,0 +1,37 @@
+<snippet>
+  <description>Arpeggiator -- pattern based melody generator</description>
+  <content>
+<![CDATA[[arpeggio]
+	root = ${1:}
+	degree = ${2:}
+	select1 = ${3:}
+	select3 = ${4:}
+	select5 = ${5:}
+	select7 = ${6:}
+	select9 = ${7:}
+	select11 = ${8:}
+	select13 = ${9:}
+	selectfill1 = ${10:}
+	selectfill2 = ${11:}
+	selectfill3 = ${12:}
+	selectfill4 = ${13:}
+	selectfill5 = ${14:}
+	tuningmode = ${15:}
+	tuningpitch = ${16:}
+	transpose = ${17:}
+	pitch = ${18:}
+	range = ${19:}
+	clock = ${20:}
+	reset = ${21:}
+	pattern = ${22:}
+	direction = ${23:}
+	pingpong = ${24:}
+	butterfly = ${25:}
+	drop = ${26:}
+	octaves = ${27:}
+	startnote = ${28:}
+	output = ${29:}
+]]></content>
+  <tabTrigger>[arpeggio]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

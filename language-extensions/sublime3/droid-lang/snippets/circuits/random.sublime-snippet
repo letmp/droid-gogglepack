@@ -1,0 +1,13 @@
+<snippet>
+  <description>Random number generator</description>
+  <content>
+<![CDATA[[random]
+	clock = ${1:}
+	minimum = ${2:}
+	maximum = ${3:}
+	steps = ${4:}
+	output = ${5:}
+]]></content>
+  <tabTrigger>[random]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

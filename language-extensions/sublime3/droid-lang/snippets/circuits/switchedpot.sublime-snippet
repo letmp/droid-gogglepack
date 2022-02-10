@@ -1,0 +1,28 @@
+<snippet>
+  <description>Overlay pot with multiple functions (OBSOLETE)</description>
+  <content>
+<![CDATA[[switchedpot]
+	pot = ${1:}
+	bipolar = ${2:}
+	switch1 = ${3:}
+	switch2 = ${4:}
+	switch3 = ${5:}
+	switch4 = ${6:}
+	switch5 = ${7:}
+	switch6 = ${8:}
+	switch7 = ${9:}
+	switch8 = ${10:}
+	switch = ${11:}
+	output1 = ${12:}
+	output2 = ${13:}
+	output3 = ${14:}
+	output4 = ${15:}
+	output5 = ${16:}
+	output6 = ${17:}
+	output7 = ${18:}
+	output8 = ${19:}
+	output = ${20:}
+]]></content>
+  <tabTrigger>[switchedpot]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

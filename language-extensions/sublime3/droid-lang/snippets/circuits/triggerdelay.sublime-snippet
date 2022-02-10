@@ -1,0 +1,16 @@
+<snippet>
+  <description>Trigger Delay with multi tap and optional clocking</description>
+  <content>
+<![CDATA[[triggerdelay]
+	input = ${1:}
+	delay = ${2:}
+	gatelength = ${3:}
+	repeats = ${4:}
+	mute = ${5:}
+	clock = ${6:}
+	output = ${7:}
+	overflow = ${8:}
+]]></content>
+  <tabTrigger>[triggerdelay]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

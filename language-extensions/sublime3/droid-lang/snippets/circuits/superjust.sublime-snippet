@@ -1,0 +1,30 @@
+<snippet>
+  <description>Perfect intonation of up to eight voices</description>
+  <content>
+<![CDATA[[superjust]
+	input1 = ${1:}
+	input2 = ${2:}
+	input3 = ${3:}
+	input4 = ${4:}
+	input5 = ${5:}
+	input6 = ${6:}
+	input7 = ${7:}
+	input8 = ${8:}
+	input = ${9:}
+	tuningmode = ${10:}
+	tuningpitch = ${11:}
+	bypass = ${12:}
+	transpose = ${13:}
+	output1 = ${14:}
+	output2 = ${15:}
+	output3 = ${16:}
+	output4 = ${17:}
+	output5 = ${18:}
+	output6 = ${19:}
+	output7 = ${20:}
+	output8 = ${21:}
+	output = ${22:}
+]]></content>
+  <tabTrigger>[superjust]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

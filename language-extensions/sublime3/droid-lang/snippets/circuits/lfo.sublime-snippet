@@ -1,0 +1,29 @@
+<snippet>
+  <description>Low frequency oscillator (LFO)</description>
+  <content>
+<![CDATA[[lfo]
+	rate = ${1:}
+	taptempo = ${2:}
+	hz = ${3:}
+	level = ${4:}
+	randomize = ${5:}
+	offset = ${6:}
+	bipolar = ${7:}
+	phase = ${8:}
+	pulsewidth = ${9:}
+	skew = ${10:}
+	sync = ${11:}
+	syncphase = ${12:}
+	waveform = ${13:}
+	output = ${14:}
+	square = ${15:}
+	sawtooth = ${16:}
+	triangle = ${17:}
+	ramp = ${18:}
+	paraboloid = ${19:}
+	sine = ${20:}
+	cosine = ${21:}
+]]></content>
+  <tabTrigger>[lfo]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

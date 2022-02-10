@@ -1,0 +1,21 @@
+<snippet>
+  <description>Clocked CV looper</description>
+  <content>
+<![CDATA[[cvlooper]
+	cvin = ${1:}
+	gatein = ${2:}
+	clock = ${3:}
+	reset = ${4:}
+	length = ${5:}
+	tapespeed = ${6:}
+	loopswitch = ${7:}
+	pause = ${8:}
+	overlay = ${9:}
+	overdub = ${10:}
+	bypass = ${11:}
+	cvout = ${12:}
+	gateout = ${13:}
+]]></content>
+  <tabTrigger>[cvlooper]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

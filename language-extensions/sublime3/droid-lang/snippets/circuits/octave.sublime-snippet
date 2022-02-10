@@ -1,0 +1,16 @@
+<snippet>
+  <description>Multi-VCO octave animator</description>
+  <content>
+<![CDATA[[octave]
+	input = ${1:}
+	spread = ${2:}
+	detune = ${3:}
+	fifths = ${4:}
+	output1 = ${5:}
+	output2 = ${6:}
+	output3 = ${7:}
+	output = ${8:}
+]]></content>
+  <tabTrigger>[octave]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

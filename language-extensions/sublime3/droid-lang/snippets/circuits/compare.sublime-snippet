@@ -1,0 +1,16 @@
+<snippet>
+  <description>Compare two values</description>
+  <content>
+<![CDATA[[compare]
+	input = ${1:}
+	compare = ${2:}
+	ifgreater = ${3:}
+	ifless = ${4:}
+	ifequal = ${5:}
+	precision = ${6:}
+	else = ${7:}
+	output = ${8:}
+]]></content>
+  <tabTrigger>[compare]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

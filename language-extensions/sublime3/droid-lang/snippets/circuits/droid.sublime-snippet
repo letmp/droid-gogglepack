@@ -1,0 +1,28 @@
+<snippet>
+  <description>General DROID controls</description>
+  <content>
+<![CDATA[[droid]
+	ledbrightness = ${1:}
+	maxslope1 = ${2:}
+	maxslope2 = ${3:}
+	maxslope3 = ${4:}
+	maxslope4 = ${5:}
+	maxslope5 = ${6:}
+	maxslope6 = ${7:}
+	maxslope7 = ${8:}
+	maxslope8 = ${9:}
+	maxslope = ${10:}
+	lpfilter1 = ${11:}
+	lpfilter2 = ${12:}
+	lpfilter3 = ${13:}
+	lpfilter4 = ${14:}
+	lpfilter5 = ${15:}
+	lpfilter6 = ${16:}
+	lpfilter7 = ${17:}
+	lpfilter8 = ${18:}
+	lpfilter = ${19:}
+	controllererrors = ${20:}
+]]></content>
+  <tabTrigger>[droid]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

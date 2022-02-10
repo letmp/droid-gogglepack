@@ -1,0 +1,66 @@
+<snippet>
+  <description>Connected buttons</description>
+  <content>
+<![CDATA[[buttongroup]
+	select = ${1:}
+	selectat = ${2:}
+	minactive = ${3:}
+	maxactive = ${4:}
+	button1 = ${5:}
+	button2 = ${6:}
+	button3 = ${7:}
+	button4 = ${8:}
+	button5 = ${9:}
+	button6 = ${10:}
+	button7 = ${11:}
+	button8 = ${12:}
+	button9 = ${13:}
+	button10 = ${14:}
+	button11 = ${15:}
+	button12 = ${16:}
+	button13 = ${17:}
+	button14 = ${18:}
+	button15 = ${19:}
+	button16 = ${20:}
+	button = ${21:}
+	value1 = ${22:}
+	value2 = ${23:}
+	value3 = ${24:}
+	value4 = ${25:}
+	value5 = ${26:}
+	value6 = ${27:}
+	value7 = ${28:}
+	value8 = ${29:}
+	value9 = ${30:}
+	value10 = ${31:}
+	value11 = ${32:}
+	value12 = ${33:}
+	value13 = ${34:}
+	value14 = ${35:}
+	value15 = ${36:}
+	value16 = ${37:}
+	value = ${38:}
+	led1 = ${39:}
+	led2 = ${40:}
+	led3 = ${41:}
+	led4 = ${42:}
+	led5 = ${43:}
+	led6 = ${44:}
+	led7 = ${45:}
+	led8 = ${46:}
+	led9 = ${47:}
+	led10 = ${48:}
+	led11 = ${49:}
+	led12 = ${50:}
+	led13 = ${51:}
+	led14 = ${52:}
+	led15 = ${53:}
+	led16 = ${54:}
+	led = ${55:}
+	output = ${56:}
+	buttonpress = ${57:}
+	longpress = ${58:}
+]]></content>
+  <tabTrigger>[buttongroup]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

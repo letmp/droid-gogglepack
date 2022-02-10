@@ -1,0 +1,13 @@
+<snippet>
+  <description>Copy a signal</description>
+  <content>
+<![CDATA[[copy]
+	input = ${1:}
+	minimum = ${2:}
+	maximum = ${3:}
+	output = ${4:}
+	inverted = ${5:}
+]]></content>
+  <tabTrigger>[copy]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

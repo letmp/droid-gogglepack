@@ -1,0 +1,34 @@
+<snippet>
+  <description>Chord generator</description>
+  <content>
+<![CDATA[[chord]
+	root = ${1:}
+	degree = ${2:}
+	select1 = ${3:}
+	select3 = ${4:}
+	select5 = ${5:}
+	select7 = ${6:}
+	select9 = ${7:}
+	select11 = ${8:}
+	select13 = ${9:}
+	selectfill1 = ${10:}
+	selectfill2 = ${11:}
+	selectfill3 = ${12:}
+	selectfill4 = ${13:}
+	selectfill5 = ${14:}
+	tuningmode = ${15:}
+	tuningpitch = ${16:}
+	transpose = ${17:}
+	pitch = ${18:}
+	spread = ${19:}
+	inversion = ${20:}
+	trigger = ${21:}
+	output1 = ${22:}
+	output2 = ${23:}
+	output3 = ${24:}
+	output4 = ${25:}
+	output = ${26:}
+]]></content>
+  <tabTrigger>[chord]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

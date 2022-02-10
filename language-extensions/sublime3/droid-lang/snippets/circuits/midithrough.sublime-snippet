@@ -1,0 +1,10 @@
+<snippet>
+  <description>MIDI routing through X7</description>
+  <content>
+<![CDATA[[midithrough]
+	fromusb = ${1:}
+	tousb = ${2:}
+]]></content>
+  <tabTrigger>[midithrough]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

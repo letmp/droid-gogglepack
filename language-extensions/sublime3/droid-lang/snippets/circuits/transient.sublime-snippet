@@ -1,0 +1,19 @@
+<snippet>
+  <description>Transient generator</description>
+  <content>
+<![CDATA[[transient]
+	start = ${1:}
+	end = ${2:}
+	duration = ${3:}
+	loop = ${4:}
+	pingpong = ${5:}
+	freeze = ${6:}
+	reset = ${7:}
+	clock = ${8:}
+	output = ${9:}
+	phase = ${10:}
+	endoftransient = ${11:}
+]]></content>
+  <tabTrigger>[transient]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

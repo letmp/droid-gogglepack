@@ -1,0 +1,13 @@
+<snippet>
+  <description>Exponential to linear converter</description>
+  <content>
+<![CDATA[[explin]
+	input = ${1:}
+	startvalue = ${2:}
+	endvalue = ${3:}
+	mix = ${4:}
+	output = ${5:}
+]]></content>
+  <tabTrigger>[explin]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

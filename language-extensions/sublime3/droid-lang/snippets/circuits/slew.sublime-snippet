@@ -1,0 +1,16 @@
+<snippet>
+  <description>Slew limiter</description>
+  <content>
+<![CDATA[[slew]
+	input = ${1:}
+	slew = ${2:}
+	slewup = ${3:}
+	slewdown = ${4:}
+	gate = ${5:}
+	exponential = ${6:}
+	linear = ${7:}
+	scurve = ${8:}
+]]></content>
+  <tabTrigger>[slew]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

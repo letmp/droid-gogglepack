@@ -1,0 +1,32 @@
+<snippet>
+  <description>Musical quantizer</description>
+  <content>
+<![CDATA[[minifonion]
+	root = ${1:}
+	degree = ${2:}
+	select1 = ${3:}
+	select3 = ${4:}
+	select5 = ${5:}
+	select7 = ${6:}
+	select9 = ${7:}
+	select11 = ${8:}
+	select13 = ${9:}
+	selectfill1 = ${10:}
+	selectfill2 = ${11:}
+	selectfill3 = ${12:}
+	selectfill4 = ${13:}
+	selectfill5 = ${14:}
+	tuningmode = ${15:}
+	tuningpitch = ${16:}
+	transpose = ${17:}
+	input = ${18:}
+	trigger = ${19:}
+	bypass = ${20:}
+	noteshift = ${21:}
+	selectnoteshift = ${22:}
+	output = ${23:}
+	notechange = ${24:}
+]]></content>
+  <tabTrigger>[minifonion]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

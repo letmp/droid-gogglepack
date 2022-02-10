@@ -1,0 +1,41 @@
+<snippet>
+  <description>Contour generator</description>
+  <content>
+<![CDATA[[contour]
+	gate = ${1:}
+	trigger = ${2:}
+	retrigger = ${3:}
+	startfromzero = ${4:}
+	abortattack = ${5:}
+	loop = ${6:}
+	predelay = ${7:}
+	attack = ${8:}
+	attackshape = ${9:}
+	hold = ${10:}
+	decay = ${11:}
+	decayshape = ${12:}
+	sustain = ${13:}
+	swell = ${14:}
+	swelltime = ${15:}
+	swelllevel = ${16:}
+	swellshape = ${17:}
+	release = ${18:}
+	releaseshape = ${19:}
+	level = ${20:}
+	velocity = ${21:}
+	pitch = ${22:}
+	taptempo = ${23:}
+	shape = ${24:}
+	zerocrossing = ${25:}
+	output = ${26:}
+	negated = ${27:}
+	inverted = ${28:}
+	endofpredelay = ${29:}
+	endofattack = ${30:}
+	endofhold = ${31:}
+	endofdecay = ${32:}
+	endofrelease = ${33:}
+]]></content>
+  <tabTrigger>[contour]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

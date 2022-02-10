@@ -1,0 +1,16 @@
+<snippet>
+  <description>Euclidean rhythm generator</description>
+  <content>
+<![CDATA[[euklid]
+	clock = ${1:}
+	reset = ${2:}
+	outputsignal = ${3:}
+	length = ${4:}
+	beats = ${5:}
+	offset = ${6:}
+	output = ${7:}
+	offbeats = ${8:}
+]]></content>
+  <tabTrigger>[euklid]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

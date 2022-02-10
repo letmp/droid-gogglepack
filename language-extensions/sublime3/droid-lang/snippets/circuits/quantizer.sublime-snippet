@@ -1,0 +1,13 @@
+<snippet>
+  <description>Non-musical quantizer</description>
+  <content>
+<![CDATA[[quantizer]
+	input = ${1:}
+	trigger = ${2:}
+	steps = ${3:}
+	bypass = ${4:}
+	output = ${5:}
+]]></content>
+  <tabTrigger>[quantizer]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>
