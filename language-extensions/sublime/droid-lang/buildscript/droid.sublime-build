@@ -7,7 +7,7 @@
     },
     "windows":
     {
-        "shell_cmd": "cd $packages/droid-lang/buildscript/ && powershell ./droidcopy.ps1 $file $file_path/$file_base_name.html ./droid.html",
+        "shell_cmd": "powershell -Executionpolicy Bypass -File \"$packages/droid-lang/buildscript/droidcopy.ps1\" \"$file\" \"$file_path/$file_base_name.html\" \"$packages/droid-lang/buildscript/droid.html\"",
     },
     "linux":
     {

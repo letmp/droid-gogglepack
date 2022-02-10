@@ -20,10 +20,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.4.1/paper.css">
   <!-- https://icons.getbootstrap.com/ -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-  <!--<link rel="stylesheet" href="droid.css">-->
   
-  <style>
-    /*  ================================================================ 
+  <style>/*  ================================================================ 
         GLOBAL CSS VARIABLES
     ================================================================*/
 
@@ -65,7 +63,7 @@
 
         --animation-time: 0.75s;
         --animation-time-modal: 0.3s;
-
+        --animation-time-menu: 0.2s;
         
         --color-border: #b1b1b1;
         --color-border-modal: #6e00ff;
@@ -198,21 +196,29 @@
 
 .menu {
     position: fixed;
-    padding: var(--padding-menu) 0;
-    left: 0;
     z-index: 1;
+    left: 0;
+    top: 50px;
+    width: 32px;
+    /*padding: var(--padding-menu) 0;*/
+    padding: var(--padding-menu);
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    transition: all var(--animation-time) ease;
+    transition: all var(--animation-time-menu) ease;
     background: var(--color-background-menu);
     color: #fff;
-    width: calc(2 * var(--padding-sheet));
-    margin-top: calc(2 * var(--padding-sheet));
+    opacity: 0.9;
+    cursor: pointer
 }
-.menu * {opacity: 0; transition: all var(--animation-time) ease; cursor: pointer}
-.menu:hover { width: 32px; padding: var(--padding-menu)}
-.menu:hover * {opacity: 1}
+.menu * {transition: all var(--animation-time-menu) ease;}
+.menu:hover { 
+    opacity: 1;
+    background: var(--color-background-modal)!important;
+}
+.menu:hover i{
+    color: var(--color-background-menu)!important;
+}
 
 /*  ================================================================ 
         SHEETS LAYOUT
@@ -432,8 +438,7 @@
     .bColorDel{color: var(--color-bDel);}
     .bColorLinebreak{color: var(--color-bLinebreak);}
     .bColorClose{color: var(--color-bClose);}
-    .bLoadCache{color: var(--color-bAdd)}
-  </style>
+    .bLoadCache{color: var(--color-bAdd)}</style>
 
 </head>
 
@@ -453,10 +458,7 @@
   
   <div id="code" class="invisible">$droidcomponents</div>
 
-  <!--<script src="droid.js"></script>-->
-
   <script>
-
 /*  ================================================================ 
         MAIN ENTRY
     ================================================================*/
@@ -726,7 +728,7 @@ class DataHandler {
     else{
       for (var line of lineArray) {
         line = line.replace("#","").trim()
-        if (!line.includes(":")) continue; // discard lines that do not contain ":"" 
+        if (!line.includes(":")) continue // discard lines that do not contain ":"" 
 
         // extract all values
         const kv = line.trim().split(":")
@@ -737,6 +739,7 @@ class DataHandler {
         
         // now update properties in the template
         const regIndex = registerTemplateArray.findIndex(regOld => regOld.name == name);
+        if(regIndex==-1) continue
         registerTemplateArray[regIndex].variablename = variablename
         if(type == "g8"){ // check if configured as in or output and update registertype
           let isIn = description.match(/(IN)/)
@@ -1028,7 +1031,7 @@ class Renderer {
   // appends buttons to menu
   buildMenu(){
     let divExport = document.createElement("div")
-    divExport.innerHTML ='<i class="bi bi-list-columns-reverse"></i>'
+    divExport.innerHTML ='<i class="bi bi-code-square"></i>'
     divExport.onclick = function() { window.renderer.modal.showExport()}
     document.querySelector(".menu").appendChild(divExport)
   }
@@ -1622,8 +1625,9 @@ class Modal {
 
 function swap(obj1, key1, obj2, key2) {
    [obj1[key1], obj2[key2]] = [obj2[key2], obj1[key1]];
-}
-  </script>
+}</script>
+
 </body>
 </html>
+
 
