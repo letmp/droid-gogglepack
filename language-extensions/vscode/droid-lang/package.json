@@ -17,6 +17,10 @@
         "Snippets",
         "Themes"
     ],
+    "activationEvents": [
+        "onCommand:droid.buildHtmlFile"
+    ],
+    "main": "./extension.js",
     "contributes": {
         "languages": [{
             "id": "Droid",
@@ -50,6 +54,19 @@
                 "language": "Droid",
                 "path": "./snippets/circuits.code-snippets"
             }
-        ] 
+        ],
+        "commands": [
+            {
+                "command": "extension.buildHtmlFile",
+                "title": "Build HTML File"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "droid.buildHtmlFile",
+                "key": "ctrl+alt+h",
+                "mac": "shift+cmd+h"
+            }
+        ]
     }
 }
