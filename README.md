@@ -12,14 +12,14 @@ The core features are:
   - provide an easy way for others to reuse your patches (or snippets)
 
 ## Downloads
-Head over to the latest [releases](/letmp/droid-pack/releases/latest)
+Head over to the latest [releases](https://github.com/letmp/droid-pack/releases/tag/v0.1)
 
 ## Installation / Customization / Usage notes
 
-- for sublime go [here](/letmp/droid-pack/tree/main/language-extensions/sublime)
-- for vscode go [here](/letmp/droid-pack/tree/main/language-extensions/vscode)
-- for the webapp go [here](/letmp/droid-pack/tree/main/webapp)
+- for sublime go [here](https://github.com/letmp/droid-pack/tree/main/language-extensions/sublime)
+- for vscode go [here](https://github.com/letmp/droid-pack/tree/main/language-extensions/vscode)
+- for the webapp go [here](https://github.com/letmp/droid-pack/tree/main/webapp)
 
 # Contact
 
-If you encounter problems please create an issue over [here](/letmp/droid-pack/issues) or get in contact with me (username **tmp**)on the [discord server](https://discord.gg/9TUcRmH) for droid.
+If you encounter problems please create an issue over [here](https://github.com/letmp/droid-pack/issues) or get in contact with me (username **tmp**)on the [discord server](https://discord.gg/9TUcRmH) for droid.

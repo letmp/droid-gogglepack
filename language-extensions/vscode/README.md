@@ -20,7 +20,7 @@
 
 ### Code Snippets:
 
-- you can find all snippet files in `path-to-package\\droid-lang\\snippets`
+- you can find all snippet files in `path-to-package\droid-lang\snippets`
 - have a look at the available snippets and create a new file for your custom snippets analogously
 
 

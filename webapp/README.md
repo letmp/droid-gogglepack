@@ -1,7 +1,7 @@
 ## Usage
 
 ### From patch to print
-![Workflow Gif](/screencast/workflow.gif)
+![Workflow Gif](https://raw.githubusercontent.com/letmp/droid-pack/main/webapp/screencast/workflow.gif)
 
 - use the snippet feature by typing "comment" and select one of the suggested comments
 - go through all fields by pressing tab and edit these fields
