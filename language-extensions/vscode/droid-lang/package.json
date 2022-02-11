@@ -3,7 +3,7 @@
     "displayName": "Droid Extension",
     "description": "Provides syntax highlighting and snippets for Droid files",
     "version": "0.0.1",
-    "publisher": "le_tmp@gmx.de",
+    "publisher": "modman",
     "keywords": [
         "Droid",
         "Modular",
@@ -20,7 +20,7 @@
     "activationEvents": [
         "onCommand:droid.buildHtmlFile"
     ],
-    "main": "./extension.js",
+    "main": "./buildscript/extension.js",
     "contributes": {
         "languages": [{
             "id": "Droid",
@@ -64,8 +64,8 @@
         "keybindings": [
             {
                 "command": "droid.buildHtmlFile",
-                "key": "ctrl+alt+h",
-                "mac": "shift+cmd+h"
+                "key": "ctrl+shift+b",
+                "mac": "shift+cmd+b"
             }
         ]
     }
