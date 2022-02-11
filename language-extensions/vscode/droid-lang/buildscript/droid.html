@@ -675,12 +675,12 @@ class DataHandler {
           if(register.registertype == "in" && varName != ""){
             mappingInRegion += "[copy] # " + dc.name + ": " + description + "\n\t"
             mappingInRegion += "input = " + name + "\n\t"
-            mappingInRegion += "output = " + varName + "\n"
+            mappingInRegion += "output = _" + varName + "\n"
           }
           // output mappings
           if(register.registertype == "out" && varName != ""){
             mappingOutRegion += "[copy] # " + dc.name + ": " + description + "\n\t"
-            mappingOutRegion += "input = " + varName + "\n\t"
+            mappingOutRegion += "input = _" + varName + "\n\t"
             mappingOutRegion += "output = " + name + "\n"
           }
         }
