@@ -2,6 +2,10 @@ $filefrom=$args[0]
 $fileto=$args[1]
 $filetemplate=$args[2]
 
+if(![System.IO.File]::Exists($filefrom)){
+    Write-Host -ForegroundColor Yellow "Save your file first!"
+    Exit
+}
 # parse droidcomponents
 $droidcontent = Get-Content $filefrom -Encoding UTF8 -Raw
 $pattern = "(# BEGIN DROIDCOMPONENT)(.|\n)*?(END DROIDCOMPONENT)"
