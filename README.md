@@ -1,4 +1,4 @@
-# DROID-PACK
+# DROID-GOGGLEPACK
 This pack provides language-extensions for [Sublime](https://www.sublimetext.com/) and [VSCode](https://code.visualstudio.com/).
 
 The core features are:
