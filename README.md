@@ -4,24 +4,24 @@
 This pack provides language-extensions for the eurorack module [droid](https://www.modulargrid.net/e/der-mann-mit-der-maschine-droid) in [Sublime](https://www.sublimetext.com/) and [VSCode](https://code.visualstudio.com/).
 
 The core features are:
-- Syntax highlighting
+- Syntax highlighting for all relevant parts of the droid programming language
 - Dark & light themes based on Monokai
-- Snippets for all circuits that include all possible input&output parameters
-- Snippets that provide a standardized way to describe your patch
-- Automatically build web-files for your patches to:
-  - generate nice prints of the current hardware/input/output-configuration
-  - easily generate input/output->variable mappings so you don't have to think about register-numberings all the time
-  - provide an easy way for others to reuse your patches (or snippets)
+- Code snippets for all circuits (including input & output parameters)
+- Code snippets that provide a standardized way to describe your patch (and generate print layouts with the webapp)
+- Integrated HTML-file-builder that allows you to:
+  - print your patch configuration and description (hardware-layout / inputs / outputs / variablenamings)
+  - map input & output registers to variables very easily so you don't have to think about register-numberings anymore
+  - provide quick access for other users to understand (and reuse) your patches or only snippets
 
 ## Downloads
 Head over to the latest [releases](https://github.com/letmp/droid-pack/releases/tag/v0.1)
 
 ## Installation / Customization / Usage notes
 
-- for sublime go [here](https://github.com/letmp/droid-pack/tree/main/language-extensions/sublime)
-- for vscode go [here](https://github.com/letmp/droid-pack/tree/main/language-extensions/vscode)
-- for the webapp go [here](https://github.com/letmp/droid-pack/tree/main/webapp)
+- for Sublime3 go [here](https://github.com/letmp/droid-pack/tree/main/language-extensions/sublime)
+- for VSCode go [here](https://github.com/letmp/droid-pack/tree/main/language-extensions/vscode)
+- for the Webapp go [here](https://github.com/letmp/droid-pack/tree/main/webapp)
 
 # Contact
 
-If you encounter problems please create an issue over [here](https://github.com/letmp/droid-pack/issues) or get in contact with me (username **tmp**)on the [discord server](https://discord.gg/9TUcRmH) for droid.
+If you encounter problems please create an issue over [here](https://github.com/letmp/droid-pack/issues) or get in contact with me (username: **tmp**) on the [droid discord server](https://discord.gg/9TUcRmH).
