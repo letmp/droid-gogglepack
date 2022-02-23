@@ -1,7 +1,7 @@
 ![header](https://raw.githubusercontent.com/letmp/droid-goggle-pack/main/header.png)
 
 # DROID-GOGGLEPACK
-This pack provides language-extensions for [Sublime](https://www.sublimetext.com/) and [VSCode](https://code.visualstudio.com/).
+This pack provides language-extensions for the eurorack module [droid](https://www.modulargrid.net/e/der-mann-mit-der-maschine-droid) in [Sublime](https://www.sublimetext.com/) and [VSCode](https://code.visualstudio.com/).
 
 The core features are:
 - Syntax highlighting
