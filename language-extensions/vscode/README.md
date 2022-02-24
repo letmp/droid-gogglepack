@@ -23,4 +23,7 @@
 - you can find all snippet files in `path-to-package\droid-lang\snippets`
 - have a look at the available snippets and create a new file for your custom snippets analogously
 
+## Droid GoggleApp
 
+- The extension comes with a HTML generator (and also a standalone version -> droid.html) for your droid.ini
+- Head over to the [webapp-page](https://github.com/letmp/droid-pack/tree/main/webapp) for the complete manual

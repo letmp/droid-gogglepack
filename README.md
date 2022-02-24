@@ -14,13 +14,13 @@ The core features are:
   - provide quick access for other users to understand (and reuse) your patches or only snippets
 
 ## Downloads
-Head over to the latest [releases](https://github.com/letmp/droid-gogglepack/releases)
+You can find the latest releases [here](https://github.com/letmp/droid-gogglepack/releases)
 
-## Installation / Customization / Usage notes
+## Installation and usage notes
 
-- for Sublime3 go [here](https://github.com/letmp/droid-pack/tree/main/language-extensions/sublime)
-- for VSCode go [here](https://github.com/letmp/droid-pack/tree/main/language-extensions/vscode)
-- for the Webapp go [here](https://github.com/letmp/droid-pack/tree/main/webapp)
+- For Sublime3 go [here](https://github.com/letmp/droid-pack/tree/main/language-extensions/sublime)
+- For VSCode go [here](https://github.com/letmp/droid-pack/tree/main/language-extensions/vscode)
+- For the integrated webapp go [here](https://github.com/letmp/droid-pack/tree/main/webapp)
 
 # Contact
 
