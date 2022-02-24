@@ -14,7 +14,7 @@ The core features are:
   - provide quick access for other users to understand (and reuse) your patches or only snippets
 
 ## Downloads
-Head over to the latest [releases](https://github.com/letmp/droid-pack/releases/tag/v0.1)
+Head over to the latest [releases](https://github.com/letmp/droid-gogglepack/releases)
 
 ## Installation / Customization / Usage notes
 
