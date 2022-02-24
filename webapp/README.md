@@ -1,40 +1,40 @@
 
 
-## From patch to print
+# From patch to print
 
-### Add comments
+## Add comments
 ![comments](https://github.com/letmp/droid-gogglepack/blob/main/webapp/screencast/01_comments.gif)
 - the Sublime3 / VSCode extensions have integrated code snippets for comments
 - just type "comment" and select one
 - you can now go through all fields of the comment with the <kbd>Tab ↹</kbd> key and fill the comment easily
 
-### Create HTML file
+## Create HTML file
 ![save](https://github.com/letmp/droid-gogglepack/blob/main/webapp/screencast/02_save.gif)
 - press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> (Mac: <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>) to generate a html file right next to your droid.ini
 - open the html file and you are ready to print
 
-## From HTML to patch
+# From HTML to patch
 
 - you can find a standalone droid.html file in the downloaded package
 - it can be used to plan your hardware / input / output configuration directly via browser
 
-### Reproduce your hardware-setup
+## Reproduce your hardware-setup
 ![add](https://github.com/letmp/droid-gogglepack/blob/main/webapp/screencast/04_addcompo.gif)
 - add droid components by pressing the upper right add icon of the component that should be the new neighbor
 - delete a droid component by pressing the delete icon
 
-### Variable assignments
+## Variable assignments
 ![edit](https://github.com/letmp/droid-gogglepack/blob/main/webapp/screencast/03_edit.gif)
 - edit all the fields and descriptions
 - you can also go through all fields with <kbd>Tab ↹</kbd>
 
-### Move & Swap
+## Move & Swap
 ![swap](https://github.com/letmp/droid-gogglepack/blob/main/webapp/screencast/06_swap.gif)
 - you can drag and swap droid components
 - variable-assignments to registers can also be moved or swapped
 - only suitable inputs & outputs are highlighted so that input-variables cannot be assigned to outputs accidentally
 
-### Layouting
+## Layouting
 ![linebreak](https://github.com/letmp/droid-gogglepack/blob/main/webapp/screencast/05_linebreak.gif)
 - for layout purposes you can also add a linebreak
 - delete the linebreak with a click on it
@@ -42,7 +42,7 @@
 ![resize](https://github.com/letmp/droid-gogglepack/blob/main/webapp/screencast/08_resize.gif)
 - you can also resize droid components with the +/- icons
 
-### Export to droid.ini
+## Export to droid.ini
 ![export](https://github.com/letmp/droid-gogglepack/blob/main/webapp/screencast/07_export.gif)
 - by clicking on the purple icon on the left you can export all parts needed in your droid.ini:
   - the header comments with all descriptions and variable assignments (note that controllers like p2b8 have register-numberings that correspond to the order of your hardware)
@@ -50,7 +50,8 @@
   - the input & output mappings that map the (correctly numbered) registers to the variables you assigned
   - make sure that output mappings are copied to the END of your patch (otherwise you introduce some latency)
 
-## Adapting patches to your hardware-setup
+
+# Adapting patches to your hardware-setup
 
 ![remap](https://github.com/letmp/droid-gogglepack/blob/main/webapp/screencast/09_remap.gif)
 - open the droid.html file of the patch you want to adapt to your hardware
