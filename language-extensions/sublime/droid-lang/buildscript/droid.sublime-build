@@ -3,14 +3,14 @@
     "shell": true,
     "osx":
     {
-        "cmd": ["cd '$packages/droid-lang/buildscript/'  && ./droidcopy.sh $file $file_path/$file_base_name.html ./droid.html"]
+        "cmd": ["cd '$packages/droid-lang/buildscript/'  && ./scripts/build_osx.sh $file $file_path/$file_base_name.html ./webapp/droid.html"]
     },
     "windows":
     {
-        "shell_cmd": "powershell -Executionpolicy Bypass -File \"$packages/droid-lang/buildscript/droidcopy.ps1\" \"$file\" \"$file_path/$file_base_name.html\" \"$packages/droid-lang/buildscript/droid.html\"",
+        "shell_cmd": "powershell -Executionpolicy Bypass -File \"$packages/droid-lang/buildscript/scripts/build_win.ps1\" \"$file\" \"$file_path/$file_base_name.html\" \"$packages/droid-lang/buildscript/webapp/droid.html\"",
     },
     "linux":
     {
-        "cmd": ["cd '$packages/droid-lang/buildscript/'  && ./droidcopy.sh $file $file_path/$file_base_name.html ./droid.html"]
+        "cmd": ["cd '$packages/droid-lang/buildscript/'  && ./scripts/build_linux.sh $file $file_path/$file_base_name.html ./webapp/droid.html"]
     }
 }

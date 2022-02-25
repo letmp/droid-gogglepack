@@ -36,13 +36,13 @@ If($containsWord -contains $true)
 {
     Write-Host -ForegroundColor Yellow "Sending data via sysex"
 
-    $fileSysexHead= Get-Content "$PSScriptRoot/sendmidi/win/sysexhead.txt"
-    $fileSysexTail= Get-Content "$PSScriptRoot/sendmidi/win/sysextail.txt"
+    $fileSysexHead= Get-Content "$PSScriptRoot/../sendmidi/win/sysexhead.txt"
+    $fileSysexTail= Get-Content "$PSScriptRoot/../sendmidi/win/sysextail.txt"
     
-    $fileSysexTmp= "$PSScriptRoot/sendmidi/tmp.syx"
+    $fileSysexTmp= "$PSScriptRoot/../sendmidi/tmp.syx"
     Set-Content $fileSysexTmp "$fileSysexHead $droidcontent $fileSysexTail"
 
-    $smbin = "$PSScriptRoot/sendmidi/win/sendmidi.exe"
+    $smbin = "$PSScriptRoot/../sendmidi/win/sendmidi.exe"
     & $smbin dev x7 syf $fileSysexTmp
 
     Remove-Item $fileSysexTmp

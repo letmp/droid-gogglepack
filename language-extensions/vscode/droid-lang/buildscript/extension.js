@@ -27,10 +27,13 @@ function buildHtmlFile() {
   const terminal = vscode.window.createTerminal("DroidTerminal")
   // vscode.window.createTerminal("DroidTerminal",process.env.COMSPEC)
   if(process.platform === "win32") {
-    terminal.sendText("powershell -Executionpolicy Bypass -File " + extensionPath + "/buildscript/droidcopy.ps1 " + filePath + " "  + targetPath + " " + extensionPath + "/buildscript/droid.html")
+    terminal.sendText("powershell -Executionpolicy Bypass -File " + extensionPath + "/buildscript/scripts/build_win.ps1 " + filePath + " "  + targetPath + " " + extensionPath + "/buildscript/webapp/droid.html")
   }
-  else { //macos and linux
-    terminal.sendText(extensionPath + "/buildscript/droidcopy.sh " + filePath + " "  + targetPath + " " + extensionPath + "/buildscript/droid.html")
+  else if (process.platform === "darwin") { //macos
+    terminal.sendText(extensionPath + "/buildscript/scripts/build_osx.sh " + filePath + " "  + targetPath + " " + extensionPath + "/buildscript/webapp/droid.html")
+  }
+  else if (process.platform === "linux") { //macos and linux
+    terminal.sendText(extensionPath + "/buildscript/scripts/build_linux.sh " + filePath + " "  + targetPath + " " + extensionPath + "/buildscript/webapp/droid.html")
   } 
   terminal.show();
 }

@@ -12,8 +12,8 @@ $REPLACE_CONTENT_FROM = '<div id=\"code\" class=\"invisible\">'
 $REPLACE_CONTENT_TO = '<div id="code" class="invisible">$droidcomponents'
 $REPLACE_JS_FROM = '<script src=\"droid.js\"><\/script>'
 
-$filetoSublime = "../../../language-extensions/sublime/droid-lang/buildscript/droid.html"
-$filetoVscode = "../../../language-extensions/vscode/droid-lang/buildscript/droid.html"
+$filetoSublime = "../../../language-extensions/sublime/droid-lang/buildscript/webapp/droid.html"
+$filetoVscode = "../../../language-extensions/vscode/droid-lang/buildscript/webapp/droid.html"
 $filetoSublimeStandalone = "../../../language-extensions/sublime/droid.html"
 $filetoVscodeStandalone = "../../../language-extensions/vscode/droid.html"
 $filetoStandalone = "../../droid.html"
