@@ -33,6 +33,11 @@
 If you own the X7 expander, you can use this extension to send patches with the included [sendmidi tool](https://github.com/gbevin/SendMIDI).
 This is achieved by simply adding the following line somewhere in the droid.ini: ```# x7 send```.
 
+If two or more x7 expanders are connected via USB, a the devicename can be specified like that:
+- ```# x7 send "DROID X7 MIDI"```
+- ```# x7 send "DROID X7 MIDI-2"```
+- and so on
+
 The buildprocess is started with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (Mac: <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>).
 The terminal outputs the success status.
 
