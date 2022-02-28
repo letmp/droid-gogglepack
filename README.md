@@ -8,6 +8,7 @@ The core features are:
 - Dark & light themes based on Monokai
 - Code snippets for all circuits (including input & output parameters)
 - Code snippets that provide a standardized way to describe your patch (and generate print layouts with the webapp)
+- Easily upload patches via sysex with your X7 expander
 - Integrated HTML-file-builder that allows you to:
   - print your patch configuration and description (hardware-layout / inputs / outputs / variablenamings)
   - map input & output registers to variables very easily so you don't have to think about register-numberings anymore
