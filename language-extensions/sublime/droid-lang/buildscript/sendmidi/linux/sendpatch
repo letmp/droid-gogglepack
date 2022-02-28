@@ -22,4 +22,3 @@ else
     rm -f $TMPFILENAME
     exit 0
 fi
-

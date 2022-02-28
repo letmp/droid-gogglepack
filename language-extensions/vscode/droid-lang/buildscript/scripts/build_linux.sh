@@ -18,5 +18,5 @@ perl -i -pe "s/$matchstring/$lines/g" $FILE_TO
 if grep -q '# x7 send' "$FILE_FROM"; then
   echo "Sending data via sysex"
   cd $(dirname $0)
-  (cd ../sendmidi/mac/ ; sh droidpatch $FILE_FROM)
+  (cd ../sendmidi/mac/ ; sh sendpatch $FILE_FROM)
 fi
