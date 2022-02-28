@@ -11,7 +11,7 @@ You only need to follow these two steps:
 
 ### Create HTML file
 ![save](https://github.com/letmp/droid-gogglepack/blob/main/webapp/screencast/02_save.gif)
-- Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> (Mac: <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>) to generate a html file right next to your droid.ini
+- Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (Mac: <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) to generate a html file right next to your droid.ini
 - Open the html file and you are ready to print
 
 # From Browser to your Droid-Patch
@@ -52,7 +52,7 @@ If you want to begin and plan your new droid-project in your browser first, you 
 
 # Adapting patches to your hardware-setup
 
-If you are lucky and the creator of the patch you just downloaded used this pack to create the headers and input/output-mappings, then it is really easy to adapt the patch to your setup. All you need is to create the droid.html file by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> (Mac: <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>) in your editor and adapt the variable-assignments to your hardware-setup.
+If you are lucky and the creator of the patch you just downloaded used this pack to create the headers and input/output-mappings, then it is really easy to adapt the patch to your setup. All you need is to create the droid.html file by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (Mac: <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) in your editor and adapt the variable-assignments to your hardware-setup.
 
 ![remap](https://github.com/letmp/droid-gogglepack/blob/main/webapp/screencast/09_remap.gif)
 - Open the droid.html file of the patch you want to adapt to your hardware
