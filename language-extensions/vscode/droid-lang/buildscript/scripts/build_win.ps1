@@ -34,8 +34,6 @@ $x7token = "# X7 send"
 $containsWord = $droidcontent | %{$_ -match $x7token}
 If($containsWord -contains $true)
 {
-    Write-Host -ForegroundColor Yellow "Sending data via sysex"
-
     $fileSysexHead= Get-Content "$PSScriptRoot/../sendmidi/win/sysexhead.txt"
     $fileSysexTail= Get-Content "$PSScriptRoot/../sendmidi/win/sysextail.txt"
     
@@ -43,7 +41,15 @@ If($containsWord -contains $true)
     Set-Content $fileSysexTmp "$fileSysexHead $droidcontent $fileSysexTail"
 
     $smbin = "$PSScriptRoot/../sendmidi/win/sendmidi.exe"
-    & $smbin dev x7 syf $fileSysexTmp
 
+    $x7deviceToken = "(?<=(# X7 send `")).*(?=`")"
+    $x7device = select-string $x7deviceToken -inputobject $droidcontent
+    if ([string]::IsNullOrWhiteSpace($x7device)) {$x7device = "x7" }
+    else { $x7device = $x7device.Matches.groups[0].value }
+    
+    Write-Host -ForegroundColor Yellow "Sending data via sysex to device" $x7device
+
+    & $smbin dev `"$x7device`" syf $fileSysexTmp
+    
     Remove-Item $fileSysexTmp
 }
