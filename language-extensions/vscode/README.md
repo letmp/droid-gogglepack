@@ -27,3 +27,13 @@
 
 - The extension comes with a HTML generator (and also a standalone version -> droid.html) for your droid.ini
 - Head over to the [webapp-page](https://github.com/letmp/droid-pack/tree/main/webapp) for the complete manual
+
+## Sending patches via X7
+
+If you own the X7 expander, you can use this extension to send patches with the included [sendmidi tool](https://github.com/gbevin/SendMIDI).
+This is achieved by simply adding the following line somewhere in the droid.ini: ```# x7 send```.
+
+The buildprocess is started with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (Mac: <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>).
+The terminal outputs the success status.
+
+**Note for OSX-users**: Sending a patch via X7 for the first time will fail. You have to unblock the sendmidi tool due to the security settings of OSX: [Read here](https://support.apple.com/en-us/HT202491) how to do that.
