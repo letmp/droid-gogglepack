@@ -30,7 +30,7 @@ Set-Content $fileto $data
 
 # ========= send filecontent via sysex to x7 expander ========= 
 
-$x7token = "# X7 send"
+$x7token = "# x7 send"
 $containsWord = $droidcontent | %{$_ -match $x7token}
 If($containsWord -contains $true)
 {

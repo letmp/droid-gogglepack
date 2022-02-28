@@ -9,17 +9,15 @@ sed 's/#.*//' $1 >> $TMPFILENAME
 # Write SYSEX end byte
 echo '\0367' >> $TMPFILENAME
 
-
-./sendmidi dev droid syf $TMPFILENAME
+./sendmidi dev "$2" syf $TMPFILENAME
 
 if [ "$?" != 0 ]
 then
-    echo "Error sending MIDI SYSEX message" >&2
+    echo "Error sending MIDI SYSEX message to device $2" >&2
     rm -f $TMPFILENAME
     exit 1
 else
-    echo "Successfully sent $(wc -c < $TMPFILENAME) bytes to DROID X7"
+    echo "Successfully sent $(wc -c < $TMPFILENAME) bytes to device $2"
     rm -f $TMPFILENAME
     exit 0
 fi
-

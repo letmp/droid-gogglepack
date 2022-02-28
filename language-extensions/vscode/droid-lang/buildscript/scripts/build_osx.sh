@@ -18,5 +18,10 @@ perl -i -pe "s/$matchstring/$lines/g" $FILE_TO
 if grep -q '# x7 send' "$FILE_FROM"; then
   echo "Sending data via sysex"
   cd $(dirname $0)
-  (cd ../sendmidi/mac/ ; sh sendpatch $FILE_FROM)
+  dev="$(sed -n '/# x7 send/p' $FILE_FROM)"
+  dev=`echo "$dev" | cut -d'"' -f 2`
+  if [[ $dev == *"x7 send"* ]]; then
+    dev=x7 #no custom device name was set - set x7 as default
+  fi
+  (cd ../sendmidi/mac/ ; sh sendpatch $FILE_FROM "$dev")
 fi
