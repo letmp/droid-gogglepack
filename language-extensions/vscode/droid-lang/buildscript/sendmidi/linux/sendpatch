@@ -5,7 +5,7 @@ TMPFILENAME=$(mktemp /tmp/droidpatch-XXXXXX)
 # Write start sequence (including sysex header)
 echo '\0360\0000\0146\0146P' > $TMPFILENAME
 # Write content but remove comments. They might contain non-ascii characters
-sed 's/#.*//' $1 >> $TMPFILENAME
+sed 's/#.*//' "$1" >> $TMPFILENAME
 # Write SYSEX end byte
 echo '\0367' >> $TMPFILENAME
 

@@ -3,7 +3,7 @@
     "shell": true,
     "osx":
     {
-        "cmd": ["cd '$packages/droid-lang/buildscript/'  && ./scripts/build_osx.sh $file $file_path/$file_base_name.html ./webapp/droid.html"]
+        "cmd": ["cd '$packages/droid-lang/buildscript/'  && ./scripts/build_osx.sh \"$file\" \"$file_path/$file_base_name.html\" ./webapp/droid.html"]
     },
     "windows":
     {
@@ -11,6 +11,6 @@
     },
     "linux":
     {
-        "cmd": ["cd '$packages/droid-lang/buildscript/'  && ./scripts/build_linux.sh $file $file_path/$file_base_name.html ./webapp/droid.html"]
+        "cmd": ["cd '$packages/droid-lang/buildscript/'  && ./scripts/build_linux.sh \"$file\" \"$file_path/$file_base_name.html\" ./webapp/droid.html"]
     }
 }
