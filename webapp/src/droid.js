@@ -623,11 +623,11 @@ class Renderer {
   }
 
   // calls a stateUpdate (after a certain amount of time without input updates)
-  submitTextareaInput(action, droidComponentId, registerId, value){
+  submitTextareaInput(action, droidComponentId, registerId, value, timeout = 500){
     clearTimeout(this.timeout);
     this.timeout = setTimeout(function () {
         window.sh.updateState(action, [droidComponentId, registerId, value])
-    }, 500);
+    }, timeout);
   }
 
   // gets called for every update in the state handler
@@ -844,7 +844,8 @@ class Renderer {
         textareaDesc.placeholder = "_"
         textareaDesc.textContent = dc.content[0].content
         textareaDesc.addEventListener("input", window.renderer.updateTextareaSize)
-        textareaDesc.addEventListener('keyup', e => window.renderer.submitTextareaInput("updateDescription",dc.id, dc.content[0].id, textareaDesc.value));
+        //textareaDesc.addEventListener('keyup', e => window.renderer.submitTextareaInput("updateDescription",dc.id, dc.content[0].id, textareaDesc.value))
+        textareaDesc.addEventListener('blur', e => window.renderer.submitTextareaInput("updateDescription",dc.id, dc.content[0].id, textareaDesc.value, 0))
         divContent.appendChild(textareaDesc)
         divContent.appendChild(document.createElement("br"))
 
@@ -877,7 +878,8 @@ class Renderer {
           textareaVar.addEventListener("input", function () {this.value = this.value.toUpperCase(); });
           textareaVar.textContent = register.variablename
           setTimeout(function () {window.renderer.initTextareaSize(textareaVar)}, 10);
-          textareaVar.addEventListener('keyup', e => window.renderer.submitTextareaInput("updateVariable",dc.id, register.id, textareaVar.value));
+          //textareaVar.addEventListener('keyup', e => window.renderer.submitTextareaInput("updateVariable",dc.id, register.id, textareaVar.value))
+          textareaVar.addEventListener('blur', e => window.renderer.submitTextareaInput("updateVariable",dc.id, register.id, textareaVar.value, 0))
           var textareaDesc = document.createElement("textarea")
           textareaDesc.classList.add('varDescription')
           textareaDesc.spellcheck = false
@@ -885,7 +887,8 @@ class Renderer {
           textareaDesc.addEventListener("input", window.renderer.updateTextareaSize)
           textareaDesc.textContent = register.description
           setTimeout(function () {window.renderer.initTextareaSize(textareaDesc)}, 10);
-          textareaDesc.addEventListener('keyup', e => window.renderer.submitTextareaInput("updateDescription",dc.id, register.id, textareaDesc.value));
+          //textareaDesc.addEventListener('keyup', e => window.renderer.submitTextareaInput("updateDescription",dc.id, register.id, textareaDesc.value))
+          textareaDesc.addEventListener('blur', e => window.renderer.submitTextareaInput("updateDescription",dc.id, register.id, textareaDesc.value, 0))
           var div1 = document.createElement("div")
             var div11 = document.createElement("div")
             var spanRegName = document.createElement("span")
