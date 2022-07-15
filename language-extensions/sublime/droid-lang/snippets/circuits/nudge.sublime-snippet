@@ -1,19 +1,19 @@
 <snippet>
-  <description>Modify -- ``nudge'' -- a value using two buttons</description>
+  <description> Modify a value in steps using two buttons</description>
   <content>
 <![CDATA[[nudge]
-	select = ${1:}
-	selectat = ${2:}
-	buttonup = ${3:}
-	buttondown = ${4:}
-	amount = ${5:}
-	startvalue = ${6:}
-	minimum = ${7:}
-	maximum = ${8:}
-	wrap = ${9:}
-	offset = ${10:}
-	reset = ${11:}
-	persist = ${12:}
+	buttonup = ${1:}
+	buttondown = ${2:}
+	amount = ${3:}
+	startvalue = ${4:}
+	minimum = ${5:}
+	maximum = ${6:}
+	wrap = ${7:}
+	offset = ${8:}
+	reset = ${9:}
+	persist = ${10:}
+	select = ${11:}
+	selectat = ${12:}
 	ledup = ${13:}
 	leddown = ${14:}
 	output = ${15:}

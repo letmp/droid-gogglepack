@@ -1,5 +1,5 @@
 <snippet>
-  <description>Button switching through 4 states (OBSOLETE)</description>
+  <description> Button switching through 4 states (OBSOLETE)</description>
   <content>
 <![CDATA[[fourstatebutton]
 	button = ${1:}

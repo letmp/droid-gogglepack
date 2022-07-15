@@ -1,5 +1,5 @@
 <snippet>
-  <description>Copy a signal</description>
+  <description> Copy a signal</description>
   <content>
 <![CDATA[[copy]
 	input = ${1:}

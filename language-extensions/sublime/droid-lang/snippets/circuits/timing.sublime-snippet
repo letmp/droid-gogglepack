@@ -1,5 +1,5 @@
 <snippet>
-  <description>Shuffle/swing and complex timing generator</description>
+  <description> Shuffle/swing and complex timing generator</description>
   <content>
 <![CDATA[[timing]
 	clock = ${1:}

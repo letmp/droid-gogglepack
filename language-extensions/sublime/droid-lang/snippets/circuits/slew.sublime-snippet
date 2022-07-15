@@ -1,5 +1,5 @@
 <snippet>
-  <description>Slew limiter</description>
+  <description> Slew limiter</description>
   <content>
 <![CDATA[[slew]
 	input = ${1:}

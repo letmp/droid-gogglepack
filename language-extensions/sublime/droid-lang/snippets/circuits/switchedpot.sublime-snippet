@@ -1,5 +1,5 @@
 <snippet>
-  <description>Overlay pot with multiple functions (OBSOLETE)</description>
+  <description> Overlay pot with multiple functions (OBSOLETE)</description>
   <content>
 <![CDATA[[switchedpot]
 	pot = ${1:}

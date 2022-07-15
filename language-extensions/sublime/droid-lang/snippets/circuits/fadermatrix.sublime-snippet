@@ -1,0 +1,85 @@
+<snippet>
+  <description> Matrix of 4x4 virtual motor faders</description>
+  <content>
+<![CDATA[[fadermatrix]
+	fader = ${1:}
+	rowcolumn = ${2:}
+	notches1 = ${3:}
+	notches2 = ${4:}
+	notches3 = ${5:}
+	notches4 = ${6:}
+	notches = ${7:}
+	ledcolor1 = ${8:}
+	ledcolor2 = ${9:}
+	ledcolor3 = ${10:}
+	ledcolor4 = ${11:}
+	ledcolor = ${12:}
+	ledvalue11 = ${13:}
+	ledvalue12 = ${14:}
+	ledvalue13 = ${15:}
+	ledvalue14 = ${16:}
+	ledvalue1 = ${17:}
+	ledvalue21 = ${18:}
+	ledvalue22 = ${19:}
+	ledvalue23 = ${20:}
+	ledvalue24 = ${21:}
+	ledvalue2 = ${22:}
+	ledvalue31 = ${23:}
+	ledvalue32 = ${24:}
+	ledvalue33 = ${25:}
+	ledvalue34 = ${26:}
+	ledvalue3 = ${27:}
+	ledvalue41 = ${28:}
+	ledvalue42 = ${29:}
+	ledvalue43 = ${30:}
+	ledvalue44 = ${31:}
+	ledvalue4 = ${32:}
+	select = ${33:}
+	selectat = ${34:}
+	preset = ${35:}
+	loadpreset = ${36:}
+	savepreset = ${37:}
+	output11 = ${38:}
+	output12 = ${39:}
+	output13 = ${40:}
+	output14 = ${41:}
+	output1 = ${42:}
+	output21 = ${43:}
+	output22 = ${44:}
+	output23 = ${45:}
+	output24 = ${46:}
+	output2 = ${47:}
+	output31 = ${48:}
+	output32 = ${49:}
+	output33 = ${50:}
+	output34 = ${51:}
+	output3 = ${52:}
+	output41 = ${53:}
+	output42 = ${54:}
+	output43 = ${55:}
+	output44 = ${56:}
+	output4 = ${57:}
+	button11 = ${58:}
+	button12 = ${59:}
+	button13 = ${60:}
+	button14 = ${61:}
+	button1 = ${62:}
+	button21 = ${63:}
+	button22 = ${64:}
+	button23 = ${65:}
+	button24 = ${66:}
+	button2 = ${67:}
+	button31 = ${68:}
+	button32 = ${69:}
+	button33 = ${70:}
+	button34 = ${71:}
+	button3 = ${72:}
+	button41 = ${73:}
+	button42 = ${74:}
+	button43 = ${75:}
+	button44 = ${76:}
+	button4 = ${77:}
+]]></content>
+  <tabTrigger>[fadermatrix]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

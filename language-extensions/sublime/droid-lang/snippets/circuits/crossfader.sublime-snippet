@@ -1,5 +1,5 @@
 <snippet>
-  <description>Morph between 8 inputs</description>
+  <description> Morph between 8 inputs</description>
   <content>
 <![CDATA[[crossfader]
 	input1 = ${1:}

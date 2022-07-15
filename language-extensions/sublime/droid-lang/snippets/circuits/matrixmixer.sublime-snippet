@@ -1,20 +1,20 @@
 <snippet>
-  <description>Matrix mixer for CVs</description>
+  <description> Matrix mixer for CVs</description>
   <content>
 <![CDATA[[matrixmixer]
-	select = ${1:}
-	selectat = ${2:}
-	input1 = ${3:}
-	input2 = ${4:}
-	input3 = ${5:}
-	input4 = ${6:}
-	input = ${7:}
-	auxin1 = ${8:}
-	auxin2 = ${9:}
-	auxin3 = ${10:}
-	auxin4 = ${11:}
-	auxin = ${12:}
-	mixmax = ${13:}
+	input1 = ${1:}
+	input2 = ${2:}
+	input3 = ${3:}
+	input4 = ${4:}
+	input = ${5:}
+	auxin1 = ${6:}
+	auxin2 = ${7:}
+	auxin3 = ${8:}
+	auxin4 = ${9:}
+	auxin = ${10:}
+	mixmax = ${11:}
+	startvalue = ${12:}
+	reset = ${13:}
 	button11 = ${14:}
 	button12 = ${15:}
 	button13 = ${16:}
@@ -35,31 +35,33 @@
 	button43 = ${31:}
 	button44 = ${32:}
 	button4 = ${33:}
-	output1 = ${34:}
-	output2 = ${35:}
-	output3 = ${36:}
-	output4 = ${37:}
-	output = ${38:}
-	led11 = ${39:}
-	led12 = ${40:}
-	led13 = ${41:}
-	led14 = ${42:}
-	led1 = ${43:}
-	led21 = ${44:}
-	led22 = ${45:}
-	led23 = ${46:}
-	led24 = ${47:}
-	led2 = ${48:}
-	led31 = ${49:}
-	led32 = ${50:}
-	led33 = ${51:}
-	led34 = ${52:}
-	led3 = ${53:}
-	led41 = ${54:}
-	led42 = ${55:}
-	led43 = ${56:}
-	led44 = ${57:}
-	led4 = ${58:}
+	select = ${34:}
+	selectat = ${35:}
+	output1 = ${36:}
+	output2 = ${37:}
+	output3 = ${38:}
+	output4 = ${39:}
+	output = ${40:}
+	led11 = ${41:}
+	led12 = ${42:}
+	led13 = ${43:}
+	led14 = ${44:}
+	led1 = ${45:}
+	led21 = ${46:}
+	led22 = ${47:}
+	led23 = ${48:}
+	led24 = ${49:}
+	led2 = ${50:}
+	led31 = ${51:}
+	led32 = ${52:}
+	led33 = ${53:}
+	led34 = ${54:}
+	led3 = ${55:}
+	led41 = ${56:}
+	led42 = ${57:}
+	led43 = ${58:}
+	led44 = ${59:}
+	led4 = ${60:}
 ]]></content>
   <tabTrigger>[matrixmixer]</tabTrigger>
   <scope>source.droid</scope>

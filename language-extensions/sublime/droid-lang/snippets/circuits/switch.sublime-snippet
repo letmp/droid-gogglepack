@@ -1,5 +1,5 @@
 <snippet>
-  <description>Adressable/clockable switch</description>
+  <description> Adressable/clockable switch</description>
   <content>
 <![CDATA[[switch]
 	input1 = ${1:}

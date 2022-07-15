@@ -1,5 +1,5 @@
 <snippet>
-  <description>Contour generator</description>
+  <description> Contour generator</description>
   <content>
 <![CDATA[[contour]
 	gate = ${1:}
@@ -10,22 +10,22 @@
 	loop = ${6:}
 	predelay = ${7:}
 	attack = ${8:}
-	attackshape = ${9:}
-	hold = ${10:}
-	decay = ${11:}
-	decayshape = ${12:}
-	sustain = ${13:}
-	swell = ${14:}
-	swelltime = ${15:}
-	swelllevel = ${16:}
-	swellshape = ${17:}
-	release = ${18:}
-	releaseshape = ${19:}
-	level = ${20:}
-	velocity = ${21:}
-	pitch = ${22:}
-	taptempo = ${23:}
-	shape = ${24:}
+	hold = ${9:}
+	decay = ${10:}
+	sustain = ${11:}
+	swell = ${12:}
+	swelltime = ${13:}
+	swelllevel = ${14:}
+	release = ${15:}
+	level = ${16:}
+	velocity = ${17:}
+	pitch = ${18:}
+	taptempo = ${19:}
+	shape = ${20:}
+	attackshape = ${21:}
+	decayshape = ${22:}
+	swellshape = ${23:}
+	releaseshape = ${24:}
 	zerocrossing = ${25:}
 	output = ${26:}
 	negated = ${27:}

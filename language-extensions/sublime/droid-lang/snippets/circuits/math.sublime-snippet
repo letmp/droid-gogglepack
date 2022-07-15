@@ -1,5 +1,5 @@
 <snippet>
-  <description>Math utility circuit</description>
+  <description> Math utility circuit</description>
   <content>
 <![CDATA[[math]
 	input1 = ${1:}

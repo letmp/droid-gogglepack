@@ -1,5 +1,5 @@
 <snippet>
-  <description>MIDI routing through X7</description>
+  <description> MIDI routing through X7</description>
   <content>
 <![CDATA[[midithrough]
 	fromusb = ${1:}

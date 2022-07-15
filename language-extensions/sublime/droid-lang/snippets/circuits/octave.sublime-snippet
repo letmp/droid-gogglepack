@@ -1,5 +1,5 @@
 <snippet>
-  <description>Multi-VCO octave animator</description>
+  <description> Multi-VCO octave animator</description>
   <content>
 <![CDATA[[octave]
 	input = ${1:}

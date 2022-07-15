@@ -1,5 +1,5 @@
 <snippet>
-  <description>Exponential to linear converter</description>
+  <description> Exponential to linear converter</description>
   <content>
 <![CDATA[[explin]
 	input = ${1:}

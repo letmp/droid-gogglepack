@@ -1,0 +1,78 @@
+<snippet>
+  <description> Change number of voices in polyphonic setups</description>
+  <content>
+<![CDATA[[polytool]
+	pitchinput1 = ${1:}
+	pitchinput2 = ${2:}
+	pitchinput3 = ${3:}
+	pitchinput4 = ${4:}
+	pitchinput5 = ${5:}
+	pitchinput6 = ${6:}
+	pitchinput7 = ${7:}
+	pitchinput8 = ${8:}
+	pitchinput9 = ${9:}
+	pitchinput10 = ${10:}
+	pitchinput11 = ${11:}
+	pitchinput12 = ${12:}
+	pitchinput13 = ${13:}
+	pitchinput14 = ${14:}
+	pitchinput15 = ${15:}
+	pitchinput16 = ${16:}
+	pitchinput = ${17:}
+	gateinput1 = ${18:}
+	gateinput2 = ${19:}
+	gateinput3 = ${20:}
+	gateinput4 = ${21:}
+	gateinput5 = ${22:}
+	gateinput6 = ${23:}
+	gateinput7 = ${24:}
+	gateinput8 = ${25:}
+	gateinput9 = ${26:}
+	gateinput10 = ${27:}
+	gateinput11 = ${28:}
+	gateinput12 = ${29:}
+	gateinput13 = ${30:}
+	gateinput14 = ${31:}
+	gateinput15 = ${32:}
+	gateinput16 = ${33:}
+	gateinput = ${34:}
+	roundrobin = ${35:}
+	voiceallocation = ${36:}
+	pitchoutput1 = ${37:}
+	pitchoutput2 = ${38:}
+	pitchoutput3 = ${39:}
+	pitchoutput4 = ${40:}
+	pitchoutput5 = ${41:}
+	pitchoutput6 = ${42:}
+	pitchoutput7 = ${43:}
+	pitchoutput8 = ${44:}
+	pitchoutput9 = ${45:}
+	pitchoutput10 = ${46:}
+	pitchoutput11 = ${47:}
+	pitchoutput12 = ${48:}
+	pitchoutput13 = ${49:}
+	pitchoutput14 = ${50:}
+	pitchoutput15 = ${51:}
+	pitchoutput16 = ${52:}
+	pitchoutput = ${53:}
+	gateoutput1 = ${54:}
+	gateoutput2 = ${55:}
+	gateoutput3 = ${56:}
+	gateoutput4 = ${57:}
+	gateoutput5 = ${58:}
+	gateoutput6 = ${59:}
+	gateoutput7 = ${60:}
+	gateoutput8 = ${61:}
+	gateoutput9 = ${62:}
+	gateoutput10 = ${63:}
+	gateoutput11 = ${64:}
+	gateoutput12 = ${65:}
+	gateoutput13 = ${66:}
+	gateoutput14 = ${67:}
+	gateoutput15 = ${68:}
+	gateoutput16 = ${69:}
+	gateoutput = ${70:}
+]]></content>
+  <tabTrigger>[polytool]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

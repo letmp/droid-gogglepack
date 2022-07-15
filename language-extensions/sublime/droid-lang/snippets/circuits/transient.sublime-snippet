@@ -1,5 +1,5 @@
 <snippet>
-  <description>Transient generator</description>
+  <description> Transient generator</description>
   <content>
 <![CDATA[[transient]
 	start = ${1:}

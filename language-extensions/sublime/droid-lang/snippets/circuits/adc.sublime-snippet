@@ -1,5 +1,5 @@
 <snippet>
-  <description>AD Converter with 12 bits</description>
+  <description> AD Converter with 12 bits</description>
   <content>
 <![CDATA[[adc]
 	input = ${1:}

@@ -1,5 +1,5 @@
 <snippet>
-  <description>Random number generator</description>
+  <description> Random number generator</description>
   <content>
 <![CDATA[[random]
 	clock = ${1:}

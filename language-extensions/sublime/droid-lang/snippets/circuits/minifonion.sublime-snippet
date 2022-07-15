@@ -1,29 +1,29 @@
 <snippet>
-  <description>Musical quantizer</description>
+  <description> Musical quantizer</description>
   <content>
 <![CDATA[[minifonion]
-	root = ${1:}
-	degree = ${2:}
-	select1 = ${3:}
-	select3 = ${4:}
-	select5 = ${5:}
-	select7 = ${6:}
-	select9 = ${7:}
-	select11 = ${8:}
-	select13 = ${9:}
-	selectfill1 = ${10:}
-	selectfill2 = ${11:}
-	selectfill3 = ${12:}
-	selectfill4 = ${13:}
-	selectfill5 = ${14:}
-	tuningmode = ${15:}
-	tuningpitch = ${16:}
-	transpose = ${17:}
-	input = ${18:}
-	trigger = ${19:}
-	bypass = ${20:}
-	noteshift = ${21:}
-	selectnoteshift = ${22:}
+	input = ${1:}
+	trigger = ${2:}
+	bypass = ${3:}
+	noteshift = ${4:}
+	selectnoteshift = ${5:}
+	root = ${6:}
+	degree = ${7:}
+	select1 = ${8:}
+	select3 = ${9:}
+	select5 = ${10:}
+	select7 = ${11:}
+	select9 = ${12:}
+	select11 = ${13:}
+	select13 = ${14:}
+	selectfill1 = ${15:}
+	selectfill2 = ${16:}
+	selectfill3 = ${17:}
+	selectfill4 = ${18:}
+	selectfill5 = ${19:}
+	tuningmode = ${20:}
+	tuningpitch = ${21:}
+	transpose = ${22:}
 	output = ${23:}
 	notechange = ${24:}
 ]]></content>

@@ -1,5 +1,5 @@
 <snippet>
-  <description>Non-musical quantizer</description>
+  <description> Non-musical quantizer</description>
   <content>
 <![CDATA[[quantizer]
 	input = ${1:}

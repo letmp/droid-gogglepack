@@ -1,5 +1,5 @@
 <snippet>
-  <description>Clock divider / multiplier / shifter</description>
+  <description> Clock divider / multiplier / shifter</description>
   <content>
 <![CDATA[[clocktool]
 	clock = ${1:}

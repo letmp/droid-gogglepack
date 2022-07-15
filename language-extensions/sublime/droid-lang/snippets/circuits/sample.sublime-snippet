@@ -1,5 +1,5 @@
 <snippet>
-  <description>Sample \& Hold Circuit</description>
+  <description> Sample \& Hold Circuit</description>
   <content>
 <![CDATA[[sample]
 	input = ${1:}

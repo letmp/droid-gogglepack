@@ -1,5 +1,5 @@
 <snippet>
-  <description>CV mixer</description>
+  <description> CV mixer</description>
   <content>
 <![CDATA[[mixer]
 	input1 = ${1:}

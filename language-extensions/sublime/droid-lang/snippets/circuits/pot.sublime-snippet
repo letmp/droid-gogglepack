@@ -1,16 +1,16 @@
 <snippet>
-  <description>Helper circuit for pots</description>
+  <description> Helper circuit for pots</description>
   <content>
 <![CDATA[[pot]
-	select = ${1:}
-	selectat = ${2:}
-	pot = ${3:}
-	outputscale = ${4:}
-	notch = ${5:}
-	slope = ${6:}
-	ledgauge = ${7:}
-	startvalue = ${8:}
-	reset = ${9:}
+	pot = ${1:}
+	outputscale = ${2:}
+	notch = ${3:}
+	slope = ${4:}
+	ledgauge = ${5:}
+	startvalue = ${6:}
+	reset = ${7:}
+	select = ${8:}
+	selectat = ${9:}
 	output = ${10:}
 	bipolar = ${11:}
 	absbipolar = ${12:}

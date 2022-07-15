@@ -1,35 +1,35 @@
 <snippet>
-  <description>Arpeggiator -- pattern based melody generator</description>
+  <description> Arpeggiator -- pattern based melody generator</description>
   <content>
 <![CDATA[[arpeggio]
-	root = ${1:}
-	degree = ${2:}
-	select1 = ${3:}
-	select3 = ${4:}
-	select5 = ${5:}
-	select7 = ${6:}
-	select9 = ${7:}
-	select11 = ${8:}
-	select13 = ${9:}
-	selectfill1 = ${10:}
-	selectfill2 = ${11:}
-	selectfill3 = ${12:}
-	selectfill4 = ${13:}
-	selectfill5 = ${14:}
-	tuningmode = ${15:}
-	tuningpitch = ${16:}
-	transpose = ${17:}
-	pitch = ${18:}
-	range = ${19:}
-	clock = ${20:}
-	reset = ${21:}
-	pattern = ${22:}
-	direction = ${23:}
-	pingpong = ${24:}
-	butterfly = ${25:}
-	drop = ${26:}
-	octaves = ${27:}
-	startnote = ${28:}
+	pitch = ${1:}
+	range = ${2:}
+	clock = ${3:}
+	reset = ${4:}
+	pattern = ${5:}
+	direction = ${6:}
+	pingpong = ${7:}
+	butterfly = ${8:}
+	drop = ${9:}
+	octaves = ${10:}
+	startnote = ${11:}
+	root = ${12:}
+	degree = ${13:}
+	select1 = ${14:}
+	select3 = ${15:}
+	select5 = ${16:}
+	select7 = ${17:}
+	select9 = ${18:}
+	select11 = ${19:}
+	select13 = ${20:}
+	selectfill1 = ${21:}
+	selectfill2 = ${22:}
+	selectfill3 = ${23:}
+	selectfill4 = ${24:}
+	selectfill5 = ${25:}
+	tuningmode = ${26:}
+	tuningpitch = ${27:}
+	transpose = ${28:}
 	output = ${29:}
 ]]></content>
   <tabTrigger>[arpeggio]</tabTrigger>

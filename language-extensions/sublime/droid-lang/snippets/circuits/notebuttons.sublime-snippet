@@ -1,23 +1,23 @@
 <snippet>
-  <description>Note Selection Buttons</description>
+  <description> Note Selection Buttons</description>
   <content>
 <![CDATA[[notebuttons]
-	select = ${1:}
-	selectat = ${2:}
-	button1 = ${3:}
-	button2 = ${4:}
-	button3 = ${5:}
-	button4 = ${6:}
-	button5 = ${7:}
-	button6 = ${8:}
-	button7 = ${9:}
-	button8 = ${10:}
-	button9 = ${11:}
-	button10 = ${12:}
-	button11 = ${13:}
-	button12 = ${14:}
-	button = ${15:}
-	clock = ${16:}
+	button1 = ${1:}
+	button2 = ${2:}
+	button3 = ${3:}
+	button4 = ${4:}
+	button5 = ${5:}
+	button6 = ${6:}
+	button7 = ${7:}
+	button8 = ${8:}
+	button9 = ${9:}
+	button10 = ${10:}
+	button11 = ${11:}
+	button12 = ${12:}
+	button = ${13:}
+	clock = ${14:}
+	select = ${15:}
+	selectat = ${16:}
 	led1 = ${17:}
 	led2 = ${18:}
 	led3 = ${19:}

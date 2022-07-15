@@ -1,5 +1,5 @@
 <snippet>
-  <description>Helper circuit for pots (OBSOLETE)</description>
+  <description> Helper circuit for pots (OBSOLETE)</description>
   <content>
 <![CDATA[[notchedpot]
 	pot = ${1:}

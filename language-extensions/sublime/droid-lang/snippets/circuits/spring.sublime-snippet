@@ -1,5 +1,5 @@
 <snippet>
-  <description>Physical spring simulation</description>
+  <description> Physical spring simulation</description>
   <content>
 <![CDATA[[spring]
 	mass = ${1:}

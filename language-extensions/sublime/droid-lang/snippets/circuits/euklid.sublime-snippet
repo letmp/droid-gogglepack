@@ -1,5 +1,5 @@
 <snippet>
-  <description>Euclidean rhythm generator</description>
+  <description> Euclidean rhythm generator</description>
   <content>
 <![CDATA[[euklid]
 	clock = ${1:}

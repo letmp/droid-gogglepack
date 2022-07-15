@@ -1,0 +1,67 @@
+<snippet>
+  <description> Create multiple virtual faders in M4 controller</description>
+  <content>
+<![CDATA[[faderbank]
+	firstfader = ${1:}
+	notches = ${2:}
+	ledcolor = ${3:}
+	ledvalue1 = ${4:}
+	ledvalue2 = ${5:}
+	ledvalue3 = ${6:}
+	ledvalue4 = ${7:}
+	ledvalue5 = ${8:}
+	ledvalue6 = ${9:}
+	ledvalue7 = ${10:}
+	ledvalue8 = ${11:}
+	ledvalue9 = ${12:}
+	ledvalue10 = ${13:}
+	ledvalue11 = ${14:}
+	ledvalue12 = ${15:}
+	ledvalue13 = ${16:}
+	ledvalue14 = ${17:}
+	ledvalue15 = ${18:}
+	ledvalue16 = ${19:}
+	ledvalue = ${20:}
+	select = ${21:}
+	selectat = ${22:}
+	preset = ${23:}
+	loadpreset = ${24:}
+	savepreset = ${25:}
+	output1 = ${26:}
+	output2 = ${27:}
+	output3 = ${28:}
+	output4 = ${29:}
+	output5 = ${30:}
+	output6 = ${31:}
+	output7 = ${32:}
+	output8 = ${33:}
+	output9 = ${34:}
+	output10 = ${35:}
+	output11 = ${36:}
+	output12 = ${37:}
+	output13 = ${38:}
+	output14 = ${39:}
+	output15 = ${40:}
+	output16 = ${41:}
+	output = ${42:}
+	button1 = ${43:}
+	button2 = ${44:}
+	button3 = ${45:}
+	button4 = ${46:}
+	button5 = ${47:}
+	button6 = ${48:}
+	button7 = ${49:}
+	button8 = ${50:}
+	button9 = ${51:}
+	button10 = ${52:}
+	button11 = ${53:}
+	button12 = ${54:}
+	button13 = ${55:}
+	button14 = ${56:}
+	button15 = ${57:}
+	button16 = ${58:}
+	button = ${59:}
+]]></content>
+  <tabTrigger>[faderbank]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>

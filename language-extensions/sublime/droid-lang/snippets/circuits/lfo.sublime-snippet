@@ -1,5 +1,5 @@
 <snippet>
-  <description>Low frequency oscillator (LFO)</description>
+  <description> Low frequency oscillator (LFO)</description>
   <content>
 <![CDATA[[lfo]
 	rate = ${1:}

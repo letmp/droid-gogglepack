@@ -1,5 +1,5 @@
 <snippet>
-  <description>Clocked CV shift register</description>
+  <description> Clocked CV shift register</description>
   <content>
 <![CDATA[[queue]
 	input = ${1:}

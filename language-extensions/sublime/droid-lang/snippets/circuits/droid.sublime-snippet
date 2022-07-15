@@ -1,5 +1,5 @@
 <snippet>
-  <description>General DROID controls</description>
+  <description> General DROID controls</description>
   <content>
 <![CDATA[[droid]
 	ledbrightness = ${1:}
@@ -21,7 +21,6 @@
 	lpfilter7 = ${17:}
 	lpfilter8 = ${18:}
 	lpfilter = ${19:}
-	controllererrors = ${20:}
 ]]></content>
   <tabTrigger>[droid]</tabTrigger>
   <scope>source.droid</scope>

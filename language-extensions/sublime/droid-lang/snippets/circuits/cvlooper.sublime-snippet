@@ -1,5 +1,5 @@
 <snippet>
-  <description>Clocked CV looper</description>
+  <description> Clocked CV looper</description>
   <content>
 <![CDATA[[cvlooper]
 	cvin = ${1:}

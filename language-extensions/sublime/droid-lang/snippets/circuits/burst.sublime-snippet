@@ -1,5 +1,5 @@
 <snippet>
-  <description>Generate burst of pulses</description>
+  <description> Generate burst of pulses</description>
   <content>
 <![CDATA[[burst]
 	rate = ${1:}

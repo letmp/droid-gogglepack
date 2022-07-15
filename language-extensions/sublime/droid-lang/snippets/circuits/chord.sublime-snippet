@@ -1,28 +1,28 @@
 <snippet>
-  <description>Chord generator</description>
+  <description> Chord generator</description>
   <content>
 <![CDATA[[chord]
-	root = ${1:}
-	degree = ${2:}
-	select1 = ${3:}
-	select3 = ${4:}
-	select5 = ${5:}
-	select7 = ${6:}
-	select9 = ${7:}
-	select11 = ${8:}
-	select13 = ${9:}
-	selectfill1 = ${10:}
-	selectfill2 = ${11:}
-	selectfill3 = ${12:}
-	selectfill4 = ${13:}
-	selectfill5 = ${14:}
-	tuningmode = ${15:}
-	tuningpitch = ${16:}
-	transpose = ${17:}
-	pitch = ${18:}
-	spread = ${19:}
-	inversion = ${20:}
-	trigger = ${21:}
+	pitch = ${1:}
+	spread = ${2:}
+	inversion = ${3:}
+	trigger = ${4:}
+	root = ${5:}
+	degree = ${6:}
+	select1 = ${7:}
+	select3 = ${8:}
+	select5 = ${9:}
+	select7 = ${10:}
+	select9 = ${11:}
+	select11 = ${12:}
+	select13 = ${13:}
+	selectfill1 = ${14:}
+	selectfill2 = ${15:}
+	selectfill3 = ${16:}
+	selectfill4 = ${17:}
+	selectfill5 = ${18:}
+	tuningmode = ${19:}
+	tuningpitch = ${20:}
+	transpose = ${21:}
 	output1 = ${22:}
 	output2 = ${23:}
 	output3 = ${24:}

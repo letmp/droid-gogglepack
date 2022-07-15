@@ -1,27 +1,27 @@
 <snippet>
-  <description>VCO Calibrator</description>
+  <description> VCO Calibrator</description>
   <content>
 <![CDATA[[calibrator]
-	select = ${1:}
-	selectat = ${2:}
-	input = ${3:}
-	nudgeup = ${4:}
-	nudgedown = ${5:}
-	nudgeamount = ${6:}
-	reset = ${7:}
-	tune0 = ${8:}
-	tune1 = ${9:}
-	tune2 = ${10:}
-	tune3 = ${11:}
-	tune4 = ${12:}
-	tune5 = ${13:}
-	tune6 = ${14:}
-	tune7 = ${15:}
-	tune8 = ${16:}
-	tune9 = ${17:}
-	tune = ${18:}
-	tunelowtail = ${19:}
-	tunehightail = ${20:}
+	input = ${1:}
+	nudgeup = ${2:}
+	nudgedown = ${3:}
+	nudgeamount = ${4:}
+	reset = ${5:}
+	tune0 = ${6:}
+	tune1 = ${7:}
+	tune2 = ${8:}
+	tune3 = ${9:}
+	tune4 = ${10:}
+	tune5 = ${11:}
+	tune6 = ${12:}
+	tune7 = ${13:}
+	tune8 = ${14:}
+	tune9 = ${15:}
+	tune = ${16:}
+	tunelowtail = ${17:}
+	tunehightail = ${18:}
+	select = ${19:}
+	selectat = ${20:}
 	output = ${21:}
 	ledup = ${22:}
 	leddown = ${23:}

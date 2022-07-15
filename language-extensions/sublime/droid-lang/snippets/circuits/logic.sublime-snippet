@@ -1,5 +1,5 @@
 <snippet>
-  <description>Logic operations utility</description>
+  <description> Logic operations utility</description>
   <content>
 <![CDATA[[logic]
 	input1 = ${1:}

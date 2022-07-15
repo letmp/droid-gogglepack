@@ -1,5 +1,5 @@
 <snippet>
-  <description>Eight step sequencer</description>
+  <description> Eight step sequencer</description>
   <content>
 <![CDATA[[sequencer]
 	clock = ${1:}

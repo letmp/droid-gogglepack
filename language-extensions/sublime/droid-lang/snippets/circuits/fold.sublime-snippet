@@ -1,5 +1,5 @@
 <snippet>
-  <description>CV folder -- keep (pitch) CV within certain bounds</description>
+  <description> CV folder -- keep (pitch) CV within certain bounds</description>
   <content>
 <![CDATA[[fold]
 	input = ${1:}

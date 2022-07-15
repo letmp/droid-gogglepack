@@ -1,20 +1,19 @@
 <snippet>
-  <description>Create virtual fader in M4 controller</description>
+  <description> Create virtual fader in M4 controller</description>
   <content>
 <![CDATA[[motorfader]
-	preset = ${1:}
-	loadpreset = ${2:}
-	savepreset = ${3:}
-	select = ${4:}
-	selectat = ${5:}
-	fader = ${6:}
-	block = ${7:}
-	startvalue = ${8:}
-	notches = ${9:}
-	brightness = ${10:}
-	color = ${11:}
-	sharewithnext = ${12:}
-	output = ${13:}
+	fader = ${1:}
+	startvalue = ${2:}
+	notches = ${3:}
+	ledvalue = ${4:}
+	ledcolor = ${5:}
+	sharewithnext = ${6:}
+	select = ${7:}
+	selectat = ${8:}
+	preset = ${9:}
+	loadpreset = ${10:}
+	savepreset = ${11:}
+	output = ${12:}
 ]]></content>
   <tabTrigger>[motorfader]</tabTrigger>
   <scope>source.droid</scope>

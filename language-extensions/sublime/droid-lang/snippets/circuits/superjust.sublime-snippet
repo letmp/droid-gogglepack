@@ -1,5 +1,5 @@
 <snippet>
-  <description>Perfect intonation of up to eight voices</description>
+  <description> Perfect intonation of up to eight voices</description>
   <content>
 <![CDATA[[superjust]
 	input1 = ${1:}

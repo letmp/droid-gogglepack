@@ -1,5 +1,5 @@
 <snippet>
-  <description>DA Converter with 12 bits</description>
+  <description> DA Converter with 12 bits</description>
   <content>
 <![CDATA[[dac]
 	bit1 = ${1:}

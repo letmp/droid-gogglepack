@@ -1,0 +1,57 @@
+<snippet>
+  <description> Sequencer using effir faders (EXPERIMENTAL)</description>
+  <content>
+<![CDATA[[effiquencer]
+	faderblock1 = ${1:}
+	faderblock2 = ${2:}
+	faderblock3 = ${3:}
+	faderblock4 = ${4:}
+	faderblock = ${5:}
+	clock = ${6:}
+	pitchbase = ${7:}
+	pitchrange = ${8:}
+	bar = ${9:}
+	stepoffset = ${10:}
+	autoreset = ${11:}
+	fadermode = ${12:}
+	buttonmode = ${13:}
+	quantize = ${14:}
+	snapshot = ${15:}
+	recall = ${16:}
+	clear = ${17:}
+	cvdefault1 = ${18:}
+	cvdefault2 = ${19:}
+	cvdefault3 = ${20:}
+	cvdefault = ${21:}
+	root = ${22:}
+	degree = ${23:}
+	select1 = ${24:}
+	select3 = ${25:}
+	select5 = ${26:}
+	select7 = ${27:}
+	select9 = ${28:}
+	select11 = ${29:}
+	select13 = ${30:}
+	selectfill1 = ${31:}
+	selectfill2 = ${32:}
+	selectfill3 = ${33:}
+	selectfill4 = ${34:}
+	selectfill5 = ${35:}
+	tuningmode = ${36:}
+	tuningpitch = ${37:}
+	transpose = ${38:}
+	select = ${39:}
+	selectat = ${40:}
+	pitch = ${41:}
+	gate1 = ${42:}
+	gate2 = ${43:}
+	gate3 = ${44:}
+	gate = ${45:}
+	cv1 = ${46:}
+	cv2 = ${47:}
+	cv3 = ${48:}
+	cv = ${49:}
+]]></content>
+  <tabTrigger>[effiquencer]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>
