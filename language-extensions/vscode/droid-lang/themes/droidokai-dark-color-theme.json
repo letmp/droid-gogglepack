@@ -111,10 +111,17 @@
     /*
     ================== EDIT DROID COLORS HERE ==================
     */
+
     {
 			"name": "Comment",
 			"scope": ["comment"],
 			"settings": {"foreground": "#75715e"}
+		},
+
+    {
+			"name": "Regions",
+			"scope": ["start.region", "end.region"],
+			"settings": {"foreground": "#388cf9"}
 		},
 		{
 			"name": "Numeric",
