@@ -21,6 +21,9 @@
 	lpfilter7 = ${17:}
 	lpfilter8 = ${18:}
 	lpfilter = ${19:}
+	m4faderspeed = ${20:}
+	m4notchpower = ${21:}
+	calibrate = ${22:}
 ]]></content>
   <tabTrigger>[droid]</tabTrigger>
   <scope>source.droid</scope>

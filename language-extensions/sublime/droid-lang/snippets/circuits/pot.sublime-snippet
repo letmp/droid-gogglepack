@@ -5,20 +5,24 @@
 	pot = ${1:}
 	outputscale = ${2:}
 	notch = ${3:}
-	slope = ${4:}
-	ledgauge = ${5:}
-	startvalue = ${6:}
-	reset = ${7:}
-	select = ${8:}
-	selectat = ${9:}
-	output = ${10:}
-	bipolar = ${11:}
-	absbipolar = ${12:}
-	lefthalf = ${13:}
-	righthalf = ${14:}
-	lefthalfinv = ${15:}
-	righthalfinv = ${16:}
-	onchange = ${17:}
+	discrete = ${4:}
+	slope = ${5:}
+	ledgauge = ${6:}
+	resetvalue = ${7:}
+	reset = ${8:}
+	select = ${9:}
+	selectat = ${10:}
+	preset = ${11:}
+	loadpreset = ${12:}
+	savepreset = ${13:}
+	output = ${14:}
+	bipolar = ${15:}
+	absbipolar = ${16:}
+	lefthalf = ${17:}
+	righthalf = ${18:}
+	lefthalfinv = ${19:}
+	righthalfinv = ${20:}
+	onchange = ${21:}
 ]]></content>
   <tabTrigger>[pot]</tabTrigger>
   <scope>source.droid</scope>

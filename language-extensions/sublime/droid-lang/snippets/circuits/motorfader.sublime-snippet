@@ -4,16 +4,18 @@
 <![CDATA[[motorfader]
 	fader = ${1:}
 	startvalue = ${2:}
-	notches = ${3:}
-	ledvalue = ${4:}
-	ledcolor = ${5:}
-	sharewithnext = ${6:}
-	select = ${7:}
-	selectat = ${8:}
-	preset = ${9:}
-	loadpreset = ${10:}
-	savepreset = ${11:}
-	output = ${12:}
+	reset = ${3:}
+	resetvalue = ${4:}
+	notches = ${5:}
+	ledvalue = ${6:}
+	ledcolor = ${7:}
+	sharewithnext = ${8:}
+	select = ${9:}
+	selectat = ${10:}
+	preset = ${11:}
+	loadpreset = ${12:}
+	savepreset = ${13:}
+	output = ${14:}
 ]]></content>
   <tabTrigger>[motorfader]</tabTrigger>
   <scope>source.droid</scope>

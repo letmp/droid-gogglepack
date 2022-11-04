@@ -16,11 +16,14 @@
 	startvalue = ${12:}
 	select = ${13:}
 	selectat = ${14:}
-	led = ${15:}
-	output = ${16:}
-	inverted = ${17:}
-	negated = ${18:}
-	longpress = ${19:}
+	preset = ${15:}
+	loadpreset = ${16:}
+	savepreset = ${17:}
+	led = ${18:}
+	output = ${19:}
+	inverted = ${20:}
+	negated = ${21:}
+	longpress = ${22:}
 ]]></content>
   <tabTrigger>[button]</tabTrigger>
   <scope>source.droid</scope>

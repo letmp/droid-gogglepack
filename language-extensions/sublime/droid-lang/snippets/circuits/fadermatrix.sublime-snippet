@@ -1,39 +1,39 @@
 <snippet>
-  <description> Matrix of 4x4 virtual motor faders</description>
+  <description> Matrix of up to 4x4 virtual motor faders</description>
   <content>
 <![CDATA[[fadermatrix]
-	fader = ${1:}
+	firstfader = ${1:}
 	rowcolumn = ${2:}
 	notches1 = ${3:}
 	notches2 = ${4:}
 	notches3 = ${5:}
 	notches4 = ${6:}
 	notches = ${7:}
-	ledcolor1 = ${8:}
-	ledcolor2 = ${9:}
-	ledcolor3 = ${10:}
-	ledcolor4 = ${11:}
-	ledcolor = ${12:}
-	ledvalue11 = ${13:}
-	ledvalue12 = ${14:}
-	ledvalue13 = ${15:}
-	ledvalue14 = ${16:}
-	ledvalue1 = ${17:}
-	ledvalue21 = ${18:}
-	ledvalue22 = ${19:}
-	ledvalue23 = ${20:}
-	ledvalue24 = ${21:}
-	ledvalue2 = ${22:}
-	ledvalue31 = ${23:}
-	ledvalue32 = ${24:}
-	ledvalue33 = ${25:}
-	ledvalue34 = ${26:}
-	ledvalue3 = ${27:}
-	ledvalue41 = ${28:}
-	ledvalue42 = ${29:}
-	ledvalue43 = ${30:}
-	ledvalue44 = ${31:}
-	ledvalue4 = ${32:}
+	ledvalue11 = ${8:}
+	ledvalue12 = ${9:}
+	ledvalue13 = ${10:}
+	ledvalue14 = ${11:}
+	ledvalue1 = ${12:}
+	ledvalue21 = ${13:}
+	ledvalue22 = ${14:}
+	ledvalue23 = ${15:}
+	ledvalue24 = ${16:}
+	ledvalue2 = ${17:}
+	ledvalue31 = ${18:}
+	ledvalue32 = ${19:}
+	ledvalue33 = ${20:}
+	ledvalue34 = ${21:}
+	ledvalue3 = ${22:}
+	ledvalue41 = ${23:}
+	ledvalue42 = ${24:}
+	ledvalue43 = ${25:}
+	ledvalue44 = ${26:}
+	ledvalue4 = ${27:}
+	ledcolor1 = ${28:}
+	ledcolor2 = ${29:}
+	ledcolor3 = ${30:}
+	ledcolor4 = ${31:}
+	ledcolor = ${32:}
 	select = ${33:}
 	selectat = ${34:}
 	preset = ${35:}

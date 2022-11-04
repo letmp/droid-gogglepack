@@ -1,2274 +1,2573 @@
 {
-    "fileTypes": [
-        "ini"
-    ],
+    "fileTypes": ["ini"],
     "name": "droid",
     "patterns": [
-        {
-            "include": "#main"
-        }
-    ],
+    {
+        "include": "#main"
+    }],
     "scopeName": "source.droid",
     "uuid": "",
-    "repository": {
-        "main": {
+    "repository":
+    {
+        "main":
+        {
             "patterns": [
-
-
-
-                {
-                    "include": "#basics"
-                },
-                {
-                    "include": "#controllers"
-                },
-
-
-
-                {
-                    "include": "#compare"
-                },
-                {
-                    "include": "#chord"
-                },
-                {
-                    "include": "#buttongroup"
-                },
-                {
-                    "include": "#midiout"
-                },
-                {
-                    "include": "#burst"
-                },
-                {
-                    "include": "#clocktool"
-                },
-                {
-                    "include": "#lfo"
-                },
-                {
-                    "include": "#random"
-                },
-                {
-                    "include": "#arpeggio"
-                },
-                {
-                    "include": "#sample"
-                },
-                {
-                    "include": "#fold"
-                },
-                {
-                    "include": "#droid"
-                },
-                {
-                    "include": "#superjust"
-                },
-                {
-                    "include": "#sequencer"
-                },
-                {
-                    "include": "#switchedpot"
-                },
-                {
-                    "include": "#matrixmixer"
-                },
-                {
-                    "include": "#slew"
-                },
-                {
-                    "include": "#quantizer"
-                },
-                {
-                    "include": "#nudge"
-                },
-                {
-                    "include": "#calibrator"
-                },
-                {
-                    "include": "#motoquencer"
-                },
-                {
-                    "include": "#contour"
-                },
-                {
-                    "include": "#notebuttons"
-                },
-                {
-                    "include": "#adc"
-                },
-                {
-                    "include": "#crossfader"
-                },
-                {
-                    "include": "#spring"
-                },
-                {
-                    "include": "#explin"
-                },
-                {
-                    "include": "#minifonion"
-                },
-                {
-                    "include": "#pot"
-                },
-                {
-                    "include": "#math"
-                },
-                {
-                    "include": "#euklid"
-                },
-                {
-                    "include": "#notchedpot"
-                },
-                {
-                    "include": "#dac"
-                },
-                {
-                    "include": "#fourstatebutton"
-                },
-                {
-                    "include": "#bernoulli"
-                },
-                {
-                    "include": "#transient"
-                },
-                {
-                    "include": "#octave"
-                },
-                {
-                    "include": "#timing"
-                },
-                {
-                    "include": "#midithrough"
-                },
-                {
-                    "include": "#copy"
-                },
-                {
-                    "include": "#midifileplayer"
-                },
-                {
-                    "include": "#cvlooper"
-                },
-                {
-                    "include": "#button"
-                },
-                {
-                    "include": "#mixer"
-                },
-                {
-                    "include": "#queue"
-                },
-                {
-                    "include": "#midiin"
-                },
-                {
-                    "include": "#switch"
-                },
-                {
-                    "include": "#togglebutton"
-                },
-                {
-                    "include": "#triggerdelay"
-                },
-                {
-                    "include": "#motorfader"
-                },
-                {
-                    "include": "#logic"
-                },
-                {
-                    "include": "#algoquencer"
-                },
-                {
-                    "include": "#illegals"
-                }
-            ]
+            {
+                "include": "#basics"
+            },
+            {
+                "include": "#controllers"
+            },
+            {
+                "include": "#compare"
+            },
+            {
+                "include": "#chord"
+            },
+            {
+                "include": "#buttongroup"
+            },
+            {
+                "include": "#midiout"
+            },
+            {
+                "include": "#burst"
+            },
+            {
+                "include": "#clocktool"
+            },
+            {
+                "include": "#lfo"
+            },
+            {
+                "include": "#random"
+            },
+            {
+                "include": "#arpeggio"
+            },
+            {
+                "include": "#faderbank"
+            },
+            {
+                "include": "#sample"
+            },
+            {
+                "include": "#fold"
+            },
+            {
+                "include": "#droid"
+            },
+            {
+                "include": "#superjust"
+            },
+            {
+                "include": "#sequencer"
+            },
+            {
+                "include": "#switchedpot"
+            },
+            {
+                "include": "#matrixmixer"
+            },
+            {
+                "include": "#fadermatrix"
+            },
+            {
+                "include": "#contour"
+            },
+            {
+                "include": "#queue"
+            },
+            {
+                "include": "#nudge"
+            },
+            {
+                "include": "#calibrator"
+            },
+            {
+                "include": "#motoquencer"
+            },
+            {
+                "include": "#slew"
+            },
+            {
+                "include": "#notebuttons"
+            },
+            {
+                "include": "#adc"
+            },
+            {
+                "include": "#crossfader"
+            },
+            {
+                "include": "#spring"
+            },
+            {
+                "include": "#explin"
+            },
+            {
+                "include": "#minifonion"
+            },
+            {
+                "include": "#pot"
+            },
+            {
+                "include": "#math"
+            },
+            {
+                "include": "#firefacecontrol"
+            },
+            {
+                "include": "#euklid"
+            },
+            {
+                "include": "#notchedpot"
+            },
+            {
+                "include": "#dac"
+            },
+            {
+                "include": "#fourstatebutton"
+            },
+            {
+                "include": "#bernoulli"
+            },
+            {
+                "include": "#transient"
+            },
+            {
+                "include": "#octave"
+            },
+            {
+                "include": "#timing"
+            },
+            {
+                "include": "#midithrough"
+            },
+            {
+                "include": "#copy"
+            },
+            {
+                "include": "#midifileplayer"
+            },
+            {
+                "include": "#cvlooper"
+            },
+            {
+                "include": "#button"
+            },
+            {
+                "include": "#polytool"
+            },
+            {
+                "include": "#mixer"
+            },
+            {
+                "include": "#quantizer"
+            },
+            {
+                "include": "#midiin"
+            },
+            {
+                "include": "#switch"
+            },
+            {
+                "include": "#togglebutton"
+            },
+            {
+                "include": "#triggerdelay"
+            },
+            {
+                "include": "#motorfader"
+            },
+            {
+                "include": "#logic"
+            },
+            {
+                "include": "#algoquencer"
+            },
+            {
+                "include": "#illegals"
+            }]
         },
-        "basics": {
+        "adc":
+        {
             "patterns": [
+            {
+                "begin": "(\\[adc\\])",
+                "beginCaptures":
                 {
-                    "include": "#region"
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
                 },
+                "patterns": [
                 {
-                    "include": "#comment"
-                },
+                    "include": "#inside_adc"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
                 {
-                    "include": "#numeric"
-                },
-                {
-                    "include": "#ioregister"
-                },
-                {
-                    "include": "#cable"
-                },
-                {
-                    "include": "#punct"
-                }
-            ]
-        },
-        "region":{
-            "patterns": [
-                {
-                    "match": "(\\s*//\\s*#?region.*)",
-                    "name": "start.region.droid"
-                },
-                {
-                    "match": "(\\s*//\\s*#?endregion.*)",
-                    "name": "end.region.droid"
-                }
-            ]
-        },
-        "comment": {
-            "patterns": [
-                {
-                    "match": "(//.*)",
-                    "name": "comment.droid"
-                },
-                {
-                    "match": "(#.*)",
-                    "name": "comment.droid"
-                }
-            ]
-        },
-        "numeric": {
-            "patterns": [
-                {
-                    "match": "(on|off|-?([0-9]|[1-9][0-9]*)(.[0-9]+)?[V\\x{0025}]?)",
-                    "name": "constant.numeric.droid"
-                }
-            ]
-        },
-        "ioregister": {
-            "patterns": [
-                {
-                    "match": "([ionION][1-8])",
-                    "name": "support.constant.droid"
-                },
-                {
-                    "match": "([rR](3[0-2]|[1-2]?[0-9]|[0-9]))",
-                    "name": "support.constant.droid"
-                },
-                {
-                    "match": "([gG](1[012]|[1-9]))",
-                    "name": "support.constant.droid"
-                },
-                {
-                    "match": "([xX]1)",
-                    "name": "support.constant.droid"
-                },
-                {
-                    "match": "([lbLB](1[1-6]|[1-9]).([1-2][0-9]|3[0-2]|[1-9]))",
-                    "name": "support.constant.droid"
-                },
-                {
-                    "match": "([psPS](1[1-6]|[1-9]).(10|[1-9]))",
-                    "name": "support.constant.droid"
-                }
-            ]
-        },
-        "cable": {
-            "patterns": [
-                {
-                    "match": "(_[A-Za-z0-9]*)",
-                    "name": "constant.other.droid"
-                }
-            ]
-        },
-        "punct": {
-            "patterns": [
-                {
-                    "match": "([\\x{003d}\\x{002b}-\\x{002f}\\x{002a}\\s])",
-                    "name": "punctuation.droid"
-                }
-            ]
-        },
-        "illegals": {
-            "patterns": [
-                {
-                    "match": "([^\\s])",
-                    "name": "invalid.droid"
-                }
-            ]
-        },
-        "adc": {
-            "patterns": [
-                {
-                    "begin": "(\\[adc\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_adc"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "algoquencer": {
+        "algoquencer":
+        {
             "patterns": [
+            {
+                "begin": "(\\[algoquencer\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[algoquencer\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_algoquencer"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_algoquencer"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "arpeggio": {
+        "arpeggio":
+        {
             "patterns": [
+            {
+                "begin": "(\\[arpeggio\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[arpeggio\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_arpeggio"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_arpeggio"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        
-        "bernoulli": {
+        "basics":
+        {
             "patterns": [
+            {
+                "include": "#comment"
+            },
+            {
+                "include": "#numeric"
+            },
+            {
+                "include": "#ioregister"
+            },
+            {
+                "include": "#cable"
+            },
+            {
+                "include": "#punct"
+            }]
+        },
+        "bernoulli":
+        {
+            "patterns": [
+            {
+                "begin": "(\\[bernoulli\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[bernoulli\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_bernoulli"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_bernoulli"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "burst": {
+        "burst":
+        {
             "patterns": [
+            {
+                "begin": "(\\[burst\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[burst\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_burst"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_burst"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "button": {
+        "button":
+        {
             "patterns": [
+            {
+                "begin": "(\\[button\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[button\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_button"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_button"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "buttongroup": {
+        "buttongroup":
+        {
             "patterns": [
+            {
+                "begin": "(\\[buttongroup\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[buttongroup\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_buttongroup"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_buttongroup"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "calibrator": {
+        "cable":
+        {
             "patterns": [
+            {
+                "match": "(_[A-Za-z0-9]*)",
+                "name": "constant.other.droid"
+            }]
+        },
+        "calibrator":
+        {
+            "patterns": [
+            {
+                "begin": "(\\[calibrator\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[calibrator\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_calibrator"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_calibrator"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "chord": {
+        "chord":
+        {
             "patterns": [
+            {
+                "begin": "(\\[chord\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[chord\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_chord"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_chord"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "clocktool": {
+        "clocktool":
+        {
             "patterns": [
+            {
+                "begin": "(\\[clocktool\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[clocktool\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_clocktool"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_clocktool"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        
-        "compare": {
+        "comment":
+        {
             "patterns": [
+            {
+                "match": "(//.*)",
+                "name": "comment.droid"
+            },
+            {
+                "match": "(#.*)",
+                "name": "comment.droid"
+            }]
+        },
+        "compare":
+        {
+            "patterns": [
+            {
+                "begin": "(\\[compare\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[compare\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_compare"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_compare"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "contour": {
+        "contour":
+        {
             "patterns": [
+            {
+                "begin": "(\\[contour\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[contour\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_contour"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_contour"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "controllers": {
+        "controllers":
+        {
             "patterns": [
-                {
-                    "match": "(\\[p2b8\\]|\\[p4b2\\]|\\[b32\\]|\\[p10\\]|\\[s10\\]|\\[m4\\]|\\[x7\\])",
-                    "name": "support.class.droid"
-                }
-            ]
+            {
+                "match": "(\\[p2b8\\]|\\[p4b2\\]|\\[b32\\]|\\[p10\\]|\\[s10\\]|\\[m4\\]|\\[x7\\])",
+                "name": "support.class.droid"
+            }]
         },
-        "copy": {
+        "copy":
+        {
             "patterns": [
+            {
+                "begin": "(\\[copy\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[copy\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_copy"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_copy"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "crossfader": {
+        "crossfader":
+        {
             "patterns": [
+            {
+                "begin": "(\\[crossfader\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[crossfader\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_crossfader"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_crossfader"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "cvlooper": {
+        "cvlooper":
+        {
             "patterns": [
+            {
+                "begin": "(\\[cvlooper\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[cvlooper\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_cvlooper"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_cvlooper"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "dac": {
+        "dac":
+        {
             "patterns": [
+            {
+                "begin": "(\\[dac\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[dac\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_dac"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_dac"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "droid": {
+        "droid":
+        {
             "patterns": [
+            {
+                "begin": "(\\[droid\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[droid\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_droid"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_droid"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "euklid": {
+        "euklid":
+        {
             "patterns": [
+            {
+                "begin": "(\\[euklid\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[euklid\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_euklid"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_euklid"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "explin": {
+        "explin":
+        {
             "patterns": [
+            {
+                "begin": "(\\[explin\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[explin\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_explin"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_explin"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "fold": {
+        "faderbank":
+        {
             "patterns": [
+            {
+                "begin": "(\\[faderbank\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[fold\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_fold"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_faderbank"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "fourstatebutton": {
+        "fadermatrix":
+        {
             "patterns": [
+            {
+                "begin": "(\\[fadermatrix\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[fourstatebutton\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_fourstatebutton"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_fadermatrix"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "inside_adc": {
+        "firefacecontrol":
+        {
             "patterns": [
-                {
-                    "match": "(minimum|maximum|input)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(bit9|bit8|bit7|bit6|bit5|bit4|bit3|bit2|bit12|bit11|bit10|bit1|bit)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_algoquencer": {
-            "patterns": [
-                {
-                    "match": "(variation|unmutebutton|selectat|select|savepreset|rollsteps|rollstartvelo|rolls|rollcount|reset|reroll|repeats|prevpattern|preset|pitchresolution|pitchlow|pitchhigh|pitch9|pitch8|pitch7|pitch6|pitch5|pitch4|pitch3|pitch2|pitch16|pitch15|pitch14|pitch13|pitch12|pitch11|pitch10|pitch1|pitch|pattern|offbeats|nextpattern|mutebutton|morphs|loadpreset|lengthbutton|length|gatelength|fills|fillorder|distribution|dejavu|clock|button9|button8|button7|button6|button5|button4|button3|button2|button16|button15|button14|button13|button12|button11|button10|button1|button|branches|alternatebutton|alternatebars|activity|accentlow|accenthigh|accentbutton)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(unmuteled|trigger|startofbar|rollvelocity|pitch|muteled|morphled|led9|led8|led7|led6|led5|led4|led3|led2|led16|led15|led14|led13|led12|led11|led10|led1|led|gate|fillsled|branch|barled4|barled3|barled2|barled1|barled|accent)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_arpeggio": {
-            "patterns": [
-                {
-                    "match": "(tuningpitch|tuningmode|transpose|startnote|selectfill5|selectfill4|selectfill3|selectfill2|selectfill1|select9|select7|select5|select3|select13|select11|select1|root|reset|range|pitch|pingpong|pattern|octaves|drop|direction|degree|clock|butterfly)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_bernoulli": {
-            "patterns": [
-                {
-                    "match": "(input|distribution)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output2|output1)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_burst": {
-            "patterns": [
-                {
-                    "match": "(trigger|taptempo|skip|reset|rate|hz|count)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_button": {
-            "patterns": [
-                {
-                    "match": "(value4|value3|value2|value1|value|states|startvalue|selectat|select|reset|onvalue|offvalue|doubleclickmode|button)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output|negated|longpress|led|inverted)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_buttongroup": {
-            "patterns": [
-                {
-                    "match": "(value9|value8|value7|value6|value5|value4|value3|value2|value16|value15|value14|value13|value12|value11|value10|value1|value|selectat|select|minactive|maxactive|button9|button8|button7|button6|button5|button4|button3|button2|button16|button15|button14|button13|button12|button11|button10|button1|button)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output|longpress|led9|led8|led7|led6|led5|led4|led3|led2|led16|led15|led14|led13|led12|led11|led10|led1|led|buttonpress)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_calibrator": {
-            "patterns": [
-                {
-                    "match": "(tunelowtail|tunehightail|tune9|tune8|tune7|tune6|tune5|tune4|tune3|tune2|tune1|tune0|tune|selectat|select|reset|nudgeup|nudgedown|nudgeamount|input)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output|ledup|leddown)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_chord": {
-            "patterns": [
-                {
-                    "match": "(tuningpitch|tuningmode|trigger|transpose|spread|selectfill5|selectfill4|selectfill3|selectfill2|selectfill1|select9|select7|select5|select3|select13|select11|select1|root|pitch|inversion|degree)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output4|output3|output2|output1|output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_clocktool": {
-            "patterns": [
-                {
-                    "match": "(reset|multiply|gatelength|dutycycle|divide|delay|clock)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(outputpitch|output|inputpitch)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_compare": {
-            "patterns": [
-                {
-                    "match": "(precision|input|ifless|ifgreater|ifequal|compare)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_contour": {
-            "patterns": [
-                {
-                    "match": "(zerocrossing|velocity|trigger|taptempo|swelltime|swellshape|swelllevel|swell|sustain|startfromzero|shape|retrigger|releaseshape|release|predelay|pitch|loop|level|hold|gate|decayshape|decay|attackshape|attack|abortattack)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output|negated|inverted|endofrelease|endofpredelay|endofhold|endofdecay|endofattack)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_copy": {
-            "patterns": [
-                {
-                    "match": "(minimum|maximum|input)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output|inverted)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_crossfader": {
-            "patterns": [
-                {
-                    "match": "(input8|input7|input6|input5|input4|input3|input2|input1|input|fade)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_cvlooper": {
-            "patterns": [
-                {
-                    "match": "(tapespeed|reset|pause|overlay|overdub|loopswitch|length|gatein|cvin|clock|bypass)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(gateout|cvout)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_dac": {
-            "patterns": [
-                {
-                    "match": "(minimum|maximum|bit9|bit8|bit7|bit6|bit5|bit4|bit3|bit2|bit12|bit11|bit10|bit1|bit)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_droid": {
-            "patterns": [
-                {
-                    "match": "(maxslope8|maxslope7|maxslope6|maxslope5|maxslope4|maxslope3|maxslope2|maxslope1|maxslope|lpfilter8|lpfilter7|lpfilter6|lpfilter5|lpfilter4|lpfilter3|lpfilter2|lpfilter1|lpfilter|ledbrightness)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(controllererrors)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_euklid": {
-            "patterns": [
-                {
-                    "match": "(reset|offset|length|clock|beats)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output|offbeats)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_explin": {
-            "patterns": [
-                {
-                    "match": "(startvalue|mix|input|endvalue)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_fold": {
-            "patterns": [
-                {
-                    "match": "(minimum|maximum|input|foldby)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_fourstatebutton": {
-            "patterns": [
-                {
-                    "match": "(value4|value3|value2|value1|value|startvalue|reset|button)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output|led)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_lfo": {
-            "patterns": [
-                {
-                    "match": "(waveform|taptempo|syncphase|sync|skew|rate|randomize|pulsewidth|phase|offset|level|hz|bipolar)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(triangle|square|sine|sawtooth|ramp|paraboloid|output|cosine)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_logic": {
-            "patterns": [
-                {
-                    "match": "(threshold|lowvalue|input8|input7|input6|input5|input4|input3|input2|input1|input|highvalue|countvalue)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(xor|or|nor|negated|nand|countlow|count|and)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_math": {
-            "patterns": [
-                {
-                    "match": "(input2|input1|input)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(sum|square|sine|round|root|reciprocal|quotient|product|power|negation|modulo|minimum|maximum|logarithm|floor|difference|cosine|ceil|average|amount)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_matrixmixer": {
-            "patterns": [
-                {
-                    "match": "(selectat|select|mixmax|input4|input3|input2|input1|input|button44|button43|button42|button41|button4|button34|button33|button32|button31|button3|button24|button23|button22|button21|button2|button14|button13|button12|button11|button1|auxin4|auxin3|auxin2|auxin1|auxin)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output4|output3|output2|output1|output|led44|led43|led42|led41|led4|led34|led33|led32|led31|led3|led24|led23|led22|led21|led2|led14|led13|led12|led11|led1)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_midifileplayer": {
-            "patterns": [
-                {
-                    "match": "(voiceallocation|tuningpitch|tuningmode|transpose|track|speed|roundrobin|reset|pitchbendrange|note9|note8|note7|note6|note5|note4|note3|note2|note16|note15|note14|note13|note12|note11|note10|note1|note|lowestnote|loop|holdvelocity|highestnote|file|end|clock|channel|ccnumber4|ccnumber3|ccnumber2|ccnumber1|ccnumber|bendpitch)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(volume|velocity8|velocity7|velocity6|velocity5|velocity4|velocity3|velocity2|velocity1|velocity|trigger8|trigger7|trigger6|trigger5|trigger4|trigger3|trigger2|trigger1|trigger|programchange|program|pressure8|pressure7|pressure6|pressure5|pressure4|pressure3|pressure2|pressure1|pressure|pitchbend|pitch8|pitch7|pitch6|pitch5|pitch4|pitch3|pitch2|pitch1|pitch|notegate9|notegate8|notegate7|notegate6|notegate5|notegate4|notegate3|notegate2|notegate16|notegate15|notegate14|notegate13|notegate12|notegate11|notegate10|notegate1|notegate|modwheel|midiclock|gate8|gate7|gate6|gate5|gate4|gate3|gate2|gate1|gate|error|endoftrack|clockout|cc4|cc3|cc2|cc1|cc|bank)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_midiin": {
-            "patterns": [
-                {
-                    "match": "(voiceallocation|usb|tuningpitch|tuningmode|transpose|systemreset|roundrobin|pitchbendrange|note9|note8|note7|note6|note5|note4|note3|note2|note16|note15|note14|note13|note12|note11|note10|note1|note|lowestnote|holdvelocity|highestnote|channel|channel|ccnumber4|ccnumber3|ccnumber2|ccnumber1|ccnumber|bendpitch)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(volume|velocity8|velocity7|velocity6|velocity5|velocity4|velocity3|velocity2|velocity1|velocity|trigger8|trigger7|trigger6|trigger5|trigger4|trigger3|trigger2|trigger1|trigger|stop|start|running|programchange|program|pressure8|pressure7|pressure6|pressure5|pressure4|pressure3|pressure2|pressure1|pressure|pitchbend|pitch8|pitch7|pitch6|pitch5|pitch4|pitch3|pitch2|pitch1|pitch|notegate9|notegate8|notegate7|notegate6|notegate5|notegate4|notegate3|notegate2|notegate16|notegate15|notegate14|notegate13|notegate12|notegate11|notegate10|notegate1|notegate|modwheel|midiclock|gate8|gate7|gate6|gate5|gate4|gate3|gate2|gate1|gate|continue|clock8t|clock8|clock4|clock16|clock|cc4|cc3|cc2|cc1|cc|bank|active)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_midiout": {
-            "patterns": [
-                {
-                    "match": "(volume|velocity8|velocity7|velocity6|velocity5|velocity4|velocity3|velocity2|velocity1|velocity|usb|updaterate|triggerdelay|systemreset|stop|start|sostenuto|soft|running|programchange|program|pressure8|pressure7|pressure6|pressure5|pressure4|pressure3|pressure2|pressure1|pressure|portamento|pitchtracking|pitchstabilization|pitchbendrange|pitchbend|pitch8|pitch7|pitch6|pitch5|pitch4|pitch3|pitch2|pitch1|pitch|noteoffvelocity8|noteoffvelocity7|noteoffvelocity6|noteoffvelocity5|noteoffvelocity4|noteoffvelocity3|noteoffvelocity2|noteoffvelocity1|noteoffvelocity|notegatevelocity9|notegatevelocity8|notegatevelocity7|notegatevelocity6|notegatevelocity5|notegatevelocity4|notegatevelocity3|notegatevelocity2|notegatevelocity16|notegatevelocity15|notegatevelocity14|notegatevelocity13|notegatevelocity12|notegatevelocity11|notegatevelocity10|notegatevelocity1|notegatevelocity|notegate9|notegate8|notegate7|notegate6|notegate5|notegate4|notegate3|notegate2|notegate16|notegate15|notegate14|notegate13|notegate12|notegate11|notegate10|notegate1|notegate|note9|note8|note7|note6|note5|note4|note3|note2|note16|note15|note14|note13|note12|note11|note10|note1|note|modwheel|midiclock|lowestnote|legato|highestnote|gate8|gate7|gate6|gate5|gate4|gate3|gate2|gate1|gate|damper|clock|channelpressure|channel|ccnumber4|ccnumber3|ccnumber2|ccnumber1|ccnumber|cc4|cc3|cc2|cc1|cc|bank|allsoundoff|allnotesoff|activesensing)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_midithrough": {
-            "patterns": [
-                {
-                    "match": "(tousb|fromusb)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_minifonion": {
-            "patterns": [
-                {
-                    "match": "(tuningpitch|tuningmode|trigger|transpose|selectnoteshift|selectfill5|selectfill4|selectfill3|selectfill2|selectfill1|select9|select7|select5|select3|select13|select11|select1|root|noteshift|input|degree|bypass)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output|notechange)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_mixer": {
-            "patterns": [
-                {
-                    "match": "(input8|input7|input6|input5|input4|input3|input2|input1|input)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output|minimum|maximum|average)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_motoquencer": {
-            "patterns": [
-                {
-                    "match": "(tuningpitch|tuningmode|transpose|stepoffset|snapshot|selectfill5|selectfill4|selectfill3|selectfill2|selectfill1|selectat|select9|select7|select5|select3|select13|select11|select1|select|root|recall|quantize|pitchrange|pitchbase|fadermode|faderblock2|faderblock1|faderblock|degree|cvdefault3|cvdefault2|cvdefault1|cvdefault|clock|clear|buttonmode|bar|autoreset)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(pitch|gate3|gate2|gate1|gate|cv3|cv2|cv1|cv)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_motorfader": {
-            "patterns": [
-                {
-                    "match": "(startvalue|selectat|select|notches|fader|color|brightness|block)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_notchedpot": {
-            "patterns": [
-                {
-                    "match": "(pot|notch)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(righthalfinv|righthalf|output|lefthalfinv|lefthalf|bipolar|absbipolar)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_notebuttons": {
-            "patterns": [
-                {
-                    "match": "(selectat|select|clock|button9|button8|button7|button6|button5|button4|button3|button2|button12|button11|button10|button1|button)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(semitone|output|led9|led8|led7|led6|led5|led4|led3|led2|led12|led11|led10|led1|led)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_nudge": {
-            "patterns": [
-                {
-                    "match": "(wrap|startvalue|selectat|select|reset|persist|offset|minimum|maximum|buttonup|buttondown|amount)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output|ledup|leddown)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_octave": {
-            "patterns": [
-                {
-                    "match": "(spread|input|fifths|detune)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output3|output2|output1|output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_pot": {
-            "patterns": [
-                {
-                    "match": "(slope|selectat|select|pot|outputscale|notch|ledgauge)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(righthalfinv|righthalf|output|onchange|lefthalfinv|lefthalf|bipolar|absbipolar)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_quantizer": {
-            "patterns": [
-                {
-                    "match": "(trigger|steps|input|bypass)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_queue": {
-            "patterns": [
-                {
-                    "match": "(outputpos8|outputpos7|outputpos6|outputpos5|outputpos4|outputpos3|outputpos2|outputpos1|outputpos|input|clock)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output8|output7|output6|output5|output4|output3|output2|output1|output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_random": {
-            "patterns": [
-                {
-                    "match": "(steps|minimum|maximum|clock)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_sample": {
-            "patterns": [
-                {
-                    "match": "(timewindow|sample|input|gate|bypass)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_sequencer": {
-            "patterns": [
-                {
-                    "match": "(transpose|steps|stages|slew8|slew7|slew6|slew5|slew4|slew3|slew2|slew1|slew|reset|repeat8|repeat7|repeat6|repeat5|repeat4|repeat3|repeat2|repeat1|repeat|pitch8|pitch7|pitch6|pitch5|pitch4|pitch3|pitch2|pitch1|pitch|outputscaling|gatelength|gate8|gate7|gate6|gate5|gate4|gate3|gate2|gate1|gate|cv8|cv7|cv6|cv5|cv4|cv3|cv2|cv1|cv|clock|chaintonext)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(pitchoutput|gateoutput|cvoutput)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_slew": {
-            "patterns": [
-                {
-                    "match": "(slewup|slewdown|slew|input|gate)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(scurve|linear|exponential)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_spring": {
-            "patterns": [
-                {
-                    "match": "(startvelocity|startposition|springforce|speed|shoveforce|shove|reset|mass|gravity|friction|flowresistance)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(velocity|position)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_superjust": {
-            "patterns": [
-                {
-                    "match": "(tuningpitch|tuningmode|transpose|input8|input7|input6|input5|input4|input3|input2|input1|input|bypass)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output8|output7|output6|output5|output4|output3|output2|output1|output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_switch": {
-            "patterns": [
-                {
-                    "match": "(reset|offset|input8|input7|input6|input5|input4|input3|input2|input1|input|forward|backward)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output8|output7|output6|output5|output4|output3|output2|output1|output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_switchedpot": {
-            "patterns": [
-                {
-                    "match": "(switch8|switch7|switch6|switch5|switch4|switch3|switch2|switch1|switch|pot|bipolar)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output8|output7|output6|output5|output4|output3|output2|output1|output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_timing": {
-            "patterns": [
-                {
-                    "match": "(timing8|timing7|timing6|timing5|timing4|timing3|timing2|timing1|timing|reset|clock)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_togglebutton": {
-            "patterns": [
-                {
-                    "match": "(switch|startvalue|reset4|reset3|reset2|reset1|reset|onvalue|offvalue|doubleclickmode|button)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(output4|output3|output2|output1|output|negated|led|inverted)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_transient": {
-            "patterns": [
-                {
-                    "match": "(start|reset|pingpong|loop|freeze|end|duration|clock)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(phase|output|endoftransient)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "inside_triggerdelay": {
-            "patterns": [
-                {
-                    "match": "(repeats|mute|input|gatelength|delay|clock)",
-                    "name": "support.variable.droid"
-                },
-                {
-                    "match": "(overflow|output)",
-                    "name": "support.other.variable.droid"
-                },
-                {
-                    "include": "#basics"
-                }
-            ]
-        },
-        "lfo": {
-            "patterns": [
-                {
-                    "begin": "(\\[lfo\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_lfo"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+            {
+                "begin": "(\\[firefacecontrol\\])",
+                "beginCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_firefacecontrol"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "logic": {
+        "fold":
+        {
             "patterns": [
+            {
+                "begin": "(\\[fold\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[logic\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_logic"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_fold"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "math": {
+        "fourstatebutton":
+        {
             "patterns": [
+            {
+                "begin": "(\\[fourstatebutton\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[math\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_math"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_fourstatebutton"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "matrixmixer": {
+        "illegals":
+        {
             "patterns": [
+            {
+                "match": "([^\\s])",
+                "name": "invalid.droid"
+            }]
+        },
+        "inside_adc":
+        {
+            "patterns": [
+            {
+                "match": "(minimum|maximum|input)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(bit9|bit8|bit7|bit6|bit5|bit4|bit3|bit2|bit12|bit11|bit10|bit1|bit)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_algoquencer":
+        {
+            "patterns": [
+            {
+                "match": "(variation|unmutebutton|selectat|select|savepreset|rollsteps|rollstartvelo|rolls|rollcount|reset|reroll|repeats|prevpattern|preset|pitchresolution|pitchlow|pitchhigh|pitch9|pitch8|pitch7|pitch6|pitch5|pitch4|pitch3|pitch2|pitch16|pitch15|pitch14|pitch13|pitch12|pitch11|pitch10|pitch1|pitch|pattern|offbeats|nextpattern|mutebutton|morphs|loadpreset|lengthbutton|length|gatelength|fills|fillorder|distribution|dejavu|clock|clear|button9|button8|button7|button6|button5|button4|button3|button2|button16|button15|button14|button13|button12|button11|button10|button1|button|branches|alternaterepeats|alternatebutton|alternatebars|activity|accentlow|accenthigh|accentbutton)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(unmuteled|trigger|startofbar|rollvelocity|pitch|muteled|morphled|led9|led8|led7|led6|led5|led4|led3|led2|led16|led15|led14|led13|led12|led11|led10|led1|led|gate|fillsled|branch|barled4|barled3|barled2|barled1|barled|accent)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_arpeggio":
+        {
+            "patterns": [
+            {
+                "match": "(tuningpitch|tuningmode|transpose|startnote|selectfill5|selectfill4|selectfill3|selectfill2|selectfill1|select9|select7|select5|select3|select13|select11|select1|root|reset|range|pitch|pingpong|pattern|octaves|drop|direction|degree|clock|butterfly)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_bernoulli":
+        {
+            "patterns": [
+            {
+                "match": "(input|distribution)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output2|output1)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_burst":
+        {
+            "patterns": [
+            {
+                "match": "(trigger|taptempo|skip|reset|rate|hz|count)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_button":
+        {
+            "patterns": [
+            {
+                "match": "(value4|value3|value2|value1|value|states|startvalue|selectat|select|savepreset|reset|preset|onvalue|offvalue|loadpreset|doubleclickmode|button)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output|negated|longpress|led|inverted)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_buttongroup":
+        {
+            "patterns": [
+            {
+                "match": "(value9|value8|value7|value6|value5|value4|value32|value31|value30|value3|value29|value28|value27|value26|value25|value24|value23|value22|value21|value20|value2|value19|value18|value17|value16|value15|value14|value13|value12|value11|value10|value1|value|selectat|select|savepreset|preset|minactive|maxactive|loadpreset|button9|button8|button7|button6|button5|button4|button32|button31|button30|button3|button29|button28|button27|button26|button25|button24|button23|button22|button21|button20|button2|button19|button18|button17|button16|button15|button14|button13|button12|button11|button10|button1|button)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output|longpress|led9|led8|led7|led6|led5|led4|led32|led31|led30|led3|led29|led28|led27|led26|led25|led24|led23|led22|led21|led20|led2|led19|led18|led17|led16|led15|led14|led13|led12|led11|led10|led1|led|buttonpress|buttonoutput9|buttonoutput8|buttonoutput7|buttonoutput6|buttonoutput5|buttonoutput4|buttonoutput32|buttonoutput31|buttonoutput30|buttonoutput3|buttonoutput29|buttonoutput28|buttonoutput27|buttonoutput26|buttonoutput25|buttonoutput24|buttonoutput23|buttonoutput22|buttonoutput21|buttonoutput20|buttonoutput2|buttonoutput19|buttonoutput18|buttonoutput17|buttonoutput16|buttonoutput15|buttonoutput14|buttonoutput13|buttonoutput12|buttonoutput11|buttonoutput10|buttonoutput1|buttonoutput)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_calibrator":
+        {
+            "patterns": [
+            {
+                "match": "(tunelowtail|tunehightail|tune9|tune8|tune7|tune6|tune5|tune4|tune3|tune2|tune1|tune0|tune|selectat|select|reset|nudgeup|nudgedown|nudgeamount|input)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output|ledup|leddown)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_chord":
+        {
+            "patterns": [
+            {
+                "match": "(tuningpitch|tuningmode|trigger|transpose|spread|selectfill5|selectfill4|selectfill3|selectfill2|selectfill1|select9|select7|select5|select3|select13|select11|select1|root|pitch|inversion|degree)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output4|output3|output2|output1|output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_clocktool":
+        {
+            "patterns": [
+            {
+                "match": "(reset|multiply|gatelength|dutycycle|divide|delay|clock)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(outputpitch|output|inputpitch)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_compare":
+        {
+            "patterns": [
+            {
+                "match": "(precision|input|ifless|ifgreater|ifequal|else|compare)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_contour":
+        {
+            "patterns": [
+            {
+                "match": "(zerocrossing|velocity|trigger|taptempo|swelltime|swellshape|swelllevel|swell|sustain|startfromzero|shape|retrigger|releaseshape|release|predelay|pitch|loop|level|hold|gate|decayshape|decay|attackshape|attack|abortattack)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output|negated|inverted|endofrelease|endofpredelay|endofhold|endofdecay|endofattack)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_copy":
+        {
+            "patterns": [
+            {
+                "match": "(minimum|maximum|input)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output|inverted)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_crossfader":
+        {
+            "patterns": [
+            {
+                "match": "(input8|input7|input6|input5|input4|input3|input2|input1|input|fade)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_cvlooper":
+        {
+            "patterns": [
+            {
+                "match": "(tapespeed|reset|pause|overlay|overdub|loopswitch|length|gatein|cvin|clock|bypass)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(gateout|cvout)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_dac":
+        {
+            "patterns": [
+            {
+                "match": "(minimum|maximum|bit9|bit8|bit7|bit6|bit5|bit4|bit3|bit2|bit12|bit11|bit10|bit1|bit)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_droid":
+        {
+            "patterns": [
+            {
+                "match": "(maxslope8|maxslope7|maxslope6|maxslope5|maxslope4|maxslope3|maxslope2|maxslope1|maxslope|m4notchpower|m4faderspeed|lpfilter8|lpfilter7|lpfilter6|lpfilter5|lpfilter4|lpfilter3|lpfilter2|lpfilter1|lpfilter|ledbrightness|calibrate)",
+                "name": "support.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_euklid":
+        {
+            "patterns": [
+            {
+                "match": "(reset|outputsignal|offset|length|clock|beats)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output|offbeats)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_explin":
+        {
+            "patterns": [
+            {
+                "match": "(startvalue|mix|input|endvalue)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_faderbank":
+        {
+            "patterns": [
+            {
+                "match": "(startvalue|selectat|select|savepreset|resetvalue|reset|preset|notches|loadpreset|ledvalue9|ledvalue8|ledvalue7|ledvalue6|ledvalue5|ledvalue4|ledvalue3|ledvalue2|ledvalue16|ledvalue15|ledvalue14|ledvalue13|ledvalue12|ledvalue11|ledvalue10|ledvalue1|ledvalue|ledcolor|firstfader)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output9|output8|output7|output6|output5|output4|output3|output2|output16|output15|output14|output13|output12|output11|output10|output1|output|button9|button8|button7|button6|button5|button4|button3|button2|button16|button15|button14|button13|button12|button11|button10|button1|button)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_fadermatrix":
+        {
+            "patterns": [
+            {
+                "match": "(selectat|select|savepreset|rowcolumn|preset|notches4|notches3|notches2|notches1|notches|loadpreset|ledvalue44|ledvalue43|ledvalue42|ledvalue41|ledvalue4|ledvalue34|ledvalue33|ledvalue32|ledvalue31|ledvalue3|ledvalue24|ledvalue23|ledvalue22|ledvalue21|ledvalue2|ledvalue14|ledvalue13|ledvalue12|ledvalue11|ledvalue1|ledcolor4|ledcolor3|ledcolor2|ledcolor1|ledcolor|firstfader)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output44|output43|output42|output41|output4|output34|output33|output32|output31|output3|output24|output23|output22|output21|output2|output14|output13|output12|output11|output1|button44|button43|button42|button41|button4|button34|button33|button32|button31|button3|button24|button23|button22|button21|button2|button14|button13|button12|button11|button1)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_firefacecontrol":
+        {
+            "patterns": [
+            {
+                "match": "(update|unmute9|unmute8|unmute7|unmute6|unmute5|unmute4|unmute3|unmute2|unmute16|unmute15|unmute14|unmute13|unmute12|unmute11|unmute10|unmute1|unmute|selectat|select|postfader9|postfader8|postfader7|postfader6|postfader5|postfader4|postfader3|postfader2|postfader16|postfader15|postfader14|postfader13|postfader12|postfader11|postfader10|postfader1|postfader|phonesoutput2|phonesoutput1|phonesoutput|pan9|pan8|pan7|pan6|pan5|pan4|pan3|pan2|pan16|pan15|pan14|pan13|pan12|pan11|pan10|pan1|pan|outputmixjin9|outputmixjin8|outputmixjin7|outputmixjin6|outputmixjin5|outputmixjin4|outputmixjin3|outputmixjin2|outputmixjin16|outputmixjin15|outputmixjin14|outputmixjin13|outputmixjin12|outputmixjin11|outputmixjin10|outputmixjin1|outputmixjin|outputmix9in9|outputmix9in8|outputmix9in7|outputmix9in6|outputmix9in5|outputmix9in4|outputmix9in3|outputmix9in2|outputmix9in16|outputmix9in15|outputmix9in14|outputmix9in13|outputmix9in12|outputmix9in11|outputmix9in10|outputmix9in1|outputmix9in|outputmix8in9|outputmix8in8|outputmix8in7|outputmix8in6|outputmix8in5|outputmix8in4|outputmix8in3|outputmix8in2|outputmix8in16|outputmix8in15|outputmix8in14|outputmix8in13|outputmix8in12|outputmix8in11|outputmix8in10|outputmix8in1|outputmix8in|outputmix7in9|outputmix7in8|outputmix7in7|outputmix7in6|outputmix7in5|outputmix7in4|outputmix7in3|outputmix7in2|outputmix7in16|outputmix7in15|outputmix7in14|outputmix7in13|outputmix7in12|outputmix7in11|outputmix7in10|outputmix7in1|outputmix7in|outputmix5in9|outputmix5in8|outputmix5in7|outputmix5in6|outputmix5in5|outputmix5in4|outputmix5in3|outputmix5in2|outputmix5in16|outputmix5in15|outputmix5in14|outputmix5in13|outputmix5in12|outputmix5in11|outputmix5in10|outputmix5in1|outputmix5in|outputmix4in9|outputmix4in8|outputmix4in7|outputmix4in6|outputmix4in5|outputmix4in4|outputmix4in3|outputmix4in2|outputmix4in16|outputmix4in15|outputmix4in14|outputmix4in13|outputmix4in12|outputmix4in11|outputmix4in10|outputmix4in1|outputmix4in|outputmix3in9|outputmix3in8|outputmix3in7|outputmix3in6|outputmix3in5|outputmix3in4|outputmix3in3|outputmix3in2|outputmix3in16|outputmix3in15|outputmix3in14|outputmix3in13|outputmix3in12|outputmix3in11|outputmix3in10|outputmix3in1|outputmix3in|outputmix2in9|outputmix2in8|outputmix2in7|outputmix2in6|outputmix2in5|outputmix2in4|outputmix2in3|outputmix2in2|outputmix2in16|outputmix2in15|outputmix2in14|outputmix2in13|outputmix2in12|outputmix2in11|outputmix2in10|outputmix2in1|outputmix2in|outputmix1in9|outputmix1in8|outputmix1in7|outputmix1in6|outputmix1in5|outputmix1in4|outputmix1in3|outputmix1in2|outputmix1in16|outputmix1in15|outputmix1in14|outputmix1in13|outputmix1in12|outputmix1in11|outputmix1in10|outputmix1in1|outputmix1in|outputmix16in9|outputmix16in8|outputmix16in7|outputmix16in6|outputmix16in5|outputmix16in4|outputmix16in3|outputmix16in2|outputmix16in16|outputmix16in15|outputmix16in14|outputmix16in13|outputmix16in12|outputmix16in11|outputmix16in10|outputmix16in1|outputmix16in|outputmix15in9|outputmix15in8|outputmix15in7|outputmix15in6|outputmix15in5|outputmix15in4|outputmix15in3|outputmix15in2|outputmix15in16|outputmix15in15|outputmix15in14|outputmix15in13|outputmix15in12|outputmix15in11|outputmix15in10|outputmix15in1|outputmix15in|outputmix14in9|outputmix14in8|outputmix14in7|outputmix14in6|outputmix14in5|outputmix14in4|outputmix14in3|outputmix14in2|outputmix14in16|outputmix14in15|outputmix14in14|outputmix14in13|outputmix14in12|outputmix14in11|outputmix14in10|outputmix14in1|outputmix14in|outputmix13in9|outputmix13in8|outputmix13in7|outputmix13in6|outputmix13in5|outputmix13in4|outputmix13in3|outputmix13in2|outputmix13in16|outputmix13in15|outputmix13in14|outputmix13in13|outputmix13in12|outputmix13in11|outputmix13in10|outputmix13in1|outputmix13in|outputmix12in9|outputmix12in8|outputmix12in7|outputmix12in6|outputmix12in5|outputmix12in4|outputmix12in3|outputmix12in2|outputmix12in16|outputmix12in15|outputmix12in14|outputmix12in13|outputmix12in12|outputmix12in11|outputmix12in10|outputmix12in1|outputmix12in|outputmix11in9|outputmix11in8|outputmix11in7|outputmix11in6|outputmix11in5|outputmix11in4|outputmix11in3|outputmix11in2|outputmix11in16|outputmix11in15|outputmix11in14|outputmix11in13|outputmix11in12|outputmix11in11|outputmix11in10|outputmix11in1|outputmix11in|outputmix10in9|outputmix10in8|outputmix10in7|outputmix10in6|outputmix10in5|outputmix10in4|outputmix10in3|outputmix10in2|outputmix10in16|outputmix10in15|outputmix10in14|outputmix10in13|outputmix10in12|outputmix10in11|outputmix10in10|outputmix10in1|outputmix10in|outputlevel9|outputlevel8|outputlevel7|outputlevel6|outputlevel5|outputlevel4|outputlevel3|outputlevel2|outputlevel16|outputlevel15|outputlevel14|outputlevel13|outputlevel12|outputlevel11|outputlevel10|outputlevel1|outputlevel|mainoutput)",
+                "name": "support.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_fold":
+        {
+            "patterns": [
+            {
+                "match": "(minimum|maximum|input|foldby)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_fourstatebutton":
+        {
+            "patterns": [
+            {
+                "match": "(value4|value3|value2|value1|value|startvalue|reset|button)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output|led)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_lfo":
+        {
+            "patterns": [
+            {
+                "match": "(waveform|taptempo|syncphase|sync|skew|rate|randomize|pulsewidth|phase|offset|level|hz|bipolar)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(triangle|square|sine|sawtooth|ramp|paraboloid|output|cosine)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_logic":
+        {
+            "patterns": [
+            {
+                "match": "(threshold|lowvalue|input8|input7|input6|input5|input4|input3|input2|input1|input|highvalue|countvalue)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(xor|or|nor|negated|nand|countlow|count|and)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_math":
+        {
+            "patterns": [
+            {
+                "match": "(input2|input1|input)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(sum|square|sine|round|root|reciprocal|quotient|product|power|negation|modulo|minimum|maximum|logarithm|floor|difference|cosine|ceil|average|amount)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_matrixmixer":
+        {
+            "patterns": [
+            {
+                "match": "(startvalue|selectat|select|savepreset|reset|preset|mixmax|loadpreset|input4|input3|input2|input1|input|button44|button43|button42|button41|button4|button34|button33|button32|button31|button3|button24|button23|button22|button21|button2|button14|button13|button12|button11|button1|auxin4|auxin3|auxin2|auxin1|auxin)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output4|output3|output2|output1|output|led44|led43|led42|led41|led4|led34|led33|led32|led31|led3|led24|led23|led22|led21|led2|led14|led13|led12|led11|led1)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_midifileplayer":
+        {
+            "patterns": [
+            {
+                "match": "(voiceallocation|tuningpitch|tuningmode|transpose|track|speed|roundrobin|reset|pitchbendrange|notegap|note9|note8|note7|note6|note5|note4|note3|note2|note16|note15|note14|note13|note12|note11|note10|note1|note|lowestnote|loop|holdvelocity|highestnote|file|end|clock|channel|ccnumber4|ccnumber3|ccnumber2|ccnumber1|ccnumber|bendpitch)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(volume|velocity8|velocity7|velocity6|velocity5|velocity4|velocity3|velocity2|velocity1|velocity|trigger8|trigger7|trigger6|trigger5|trigger4|trigger3|trigger2|trigger1|trigger|soft|programchange|program|pressure8|pressure7|pressure6|pressure5|pressure4|pressure3|pressure2|pressure1|pressure|portamento|pitchbend|pitch8|pitch7|pitch6|pitch5|pitch4|pitch3|pitch2|pitch1|pitch|notegate9|notegate8|notegate7|notegate6|notegate5|notegate4|notegate3|notegate2|notegate16|notegate15|notegate14|notegate13|notegate12|notegate11|notegate10|notegate1|notegate|modwheel|midiclock|gate8|gate7|gate6|gate5|gate4|gate3|gate2|gate1|gate|error|endoftrack|clockout|cc4|cc3|cc2|cc1|cc|bank)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_midiin":
+        {
+            "patterns": [
+            {
+                "match": "(voiceallocation|usb|tuningpitch|tuningmode|transpose|systemreset|roundrobin|pitchbendrange|notegap|note9|note8|note7|note6|note5|note4|note3|note2|note16|note15|note14|note13|note12|note11|note10|note1|note|lowestnote|holdvelocity|highestnote|channel|channel|ccnumber4|ccnumber3|ccnumber2|ccnumber1|ccnumber|bendpitch)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(volume|velocity8|velocity7|velocity6|velocity5|velocity4|velocity3|velocity2|velocity1|velocity|trigger8|trigger7|trigger6|trigger5|trigger4|trigger3|trigger2|trigger1|trigger|stop|start|soft|running|programchange|program|pressure8|pressure7|pressure6|pressure5|pressure4|pressure3|pressure2|pressure1|pressure|portamento|pitchbend|pitch8|pitch7|pitch6|pitch5|pitch4|pitch3|pitch2|pitch1|pitch|notegate9|notegate8|notegate7|notegate6|notegate5|notegate4|notegate3|notegate2|notegate16|notegate15|notegate14|notegate13|notegate12|notegate11|notegate10|notegate1|notegate|modwheel|midiclock|gate8|gate7|gate6|gate5|gate4|gate3|gate2|gate1|gate|continue|clock8t|clock8|clock4|clock16|clock|cc4|cc3|cc2|cc1|cc|bank|active)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_midiout":
+        {
+            "patterns": [
+            {
+                "match": "(volume|velocity8|velocity7|velocity6|velocity5|velocity4|velocity3|velocity2|velocity1|velocity|usb|updaterate|triggerdelay|systemreset|stop|start|sostenuto|soft|selectat|select|running|programchange|program|pressure8|pressure7|pressure6|pressure5|pressure4|pressure3|pressure2|pressure1|pressure|portamento|pitchtracking|pitchstabilization|pitchbendrange|pitchbend|pitch8|pitch7|pitch6|pitch5|pitch4|pitch3|pitch2|pitch1|pitch|noteoffvelocity8|noteoffvelocity7|noteoffvelocity6|noteoffvelocity5|noteoffvelocity4|noteoffvelocity3|noteoffvelocity2|noteoffvelocity1|noteoffvelocity|notegatevelocity9|notegatevelocity8|notegatevelocity7|notegatevelocity6|notegatevelocity5|notegatevelocity4|notegatevelocity3|notegatevelocity2|notegatevelocity16|notegatevelocity15|notegatevelocity14|notegatevelocity13|notegatevelocity12|notegatevelocity11|notegatevelocity10|notegatevelocity1|notegatevelocity|notegate9|notegate8|notegate7|notegate6|notegate5|notegate4|notegate3|notegate2|notegate16|notegate15|notegate14|notegate13|notegate12|notegate11|notegate10|notegate1|notegate|note9|note8|note7|note6|note5|note4|note3|note2|note16|note15|note14|note13|note12|note11|note10|note1|note|modwheel|midiclock|lowestnote|legato|highestnote|gate8|gate7|gate6|gate5|gate4|gate3|gate2|gate1|gate|delayinitialccs|damper|clock|channelpressure|channel|cctrigger8|cctrigger7|cctrigger6|cctrigger5|cctrigger4|cctrigger3|cctrigger2|cctrigger1|cctrigger|ccnumber8|ccnumber7|ccnumber6|ccnumber5|ccnumber4|ccnumber3|ccnumber2|ccnumber1|ccnumber|cc8|cc7|cc6|cc5|cc4|cc3|cc2|cc1|cc|bank|allsoundoff|allnotesoff|activesensing)",
+                "name": "support.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_midithrough":
+        {
+            "patterns": [
+            {
+                "match": "(tousb|fromusb)",
+                "name": "support.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_minifonion":
+        {
+            "patterns": [
+            {
+                "match": "(tuningpitch|tuningmode|trigger|transpose|selectnoteshift|selectfill5|selectfill4|selectfill3|selectfill2|selectfill1|select9|select7|select5|select3|select13|select11|select1|root|noteshift|input|degree|bypass)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output|notechange)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_mixer":
+        {
+            "patterns": [
+            {
+                "match": "(input8|input7|input6|input5|input4|input3|input2|input1|input)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output|minimum|maximum|average)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_motoquencer":
+        {
+            "patterns": [
+            {
+                "match": "(tuningpitch|tuningmode|transpose|startstep|shiftsteps|selectfill5|selectfill4|selectfill3|selectfill2|selectfill1|selectat|select9|select7|select5|select3|select13|select11|select1|select|savepreset|run|root|reset|recordsilence|recordmode|quantize|preset|pingpong|pattern|pastefaders|pastebuttons|paste|page|numsteps|numfaders|mute|metricsaver|luckyties|luckyspread|luckyskips|luckyshuffle|luckyreverse|luckyrepeats|luckyratchets|luckyrandomizecv|luckyinvert|luckygates|luckygateprob|luckygatepattern|luckyfaders|luckycvs|luckycvdrift|luckychance|luckybuttons|luckyamount|loadpreset|linktonext|keyboardmode|keyboardgate|keyboardcv|holdcv|gatelength|form|firstfader|fadermode|endstep|direction|degree|defaultgate|cvrange|cvnotches|cvbase|copymode|copy|composemode|clock|clearstartend|clear|buttonmode|autoreset)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(startstepout|startofsequence|startofpart|gate|endstepout|cv|currentstep|currentpage)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_motorfader":
+        {
+            "patterns": [
+            {
+                "match": "(startvalue|sharewithnext|selectat|select|savepreset|resetvalue|reset|preset|notches|loadpreset|ledvalue|ledcolor|fader)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_notchedpot":
+        {
+            "patterns": [
+            {
+                "match": "(pot|notch)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(righthalfinv|righthalf|output|lefthalfinv|lefthalf|bipolar|absbipolar)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_notebuttons":
+        {
+            "patterns": [
+            {
+                "match": "(selectat|select|clock|button9|button8|button7|button6|button5|button4|button3|button2|button12|button11|button10|button1|button)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(semitone|output|led9|led8|led7|led6|led5|led4|led3|led2|led12|led11|led10|led1|led)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_nudge":
+        {
+            "patterns": [
+            {
+                "match": "(wrap|startvalue|selectat|select|reset|persist|offset|minimum|maximum|buttonup|buttondown|amount)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output|ledup|leddown)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_octave":
+        {
+            "patterns": [
+            {
+                "match": "(spread|input|fifths|detune)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output3|output2|output1|output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_polytool":
+        {
+            "patterns": [
+            {
+                "match": "(voiceallocation|roundrobin|pitchinput9|pitchinput8|pitchinput7|pitchinput6|pitchinput5|pitchinput4|pitchinput3|pitchinput2|pitchinput16|pitchinput15|pitchinput14|pitchinput13|pitchinput12|pitchinput11|pitchinput10|pitchinput1|pitchinput|gateinput9|gateinput8|gateinput7|gateinput6|gateinput5|gateinput4|gateinput3|gateinput2|gateinput16|gateinput15|gateinput14|gateinput13|gateinput12|gateinput11|gateinput10|gateinput1|gateinput)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(pitchoutput9|pitchoutput8|pitchoutput7|pitchoutput6|pitchoutput5|pitchoutput4|pitchoutput3|pitchoutput2|pitchoutput16|pitchoutput15|pitchoutput14|pitchoutput13|pitchoutput12|pitchoutput11|pitchoutput10|pitchoutput1|pitchoutput|gateoutput9|gateoutput8|gateoutput7|gateoutput6|gateoutput5|gateoutput4|gateoutput3|gateoutput2|gateoutput16|gateoutput15|gateoutput14|gateoutput13|gateoutput12|gateoutput11|gateoutput10|gateoutput1|gateoutput)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_pot":
+        {
+            "patterns": [
+            {
+                "match": "(slope|selectat|select|savepreset|resetvalue|reset|preset|pot|outputscale|notch|loadpreset|ledgauge|discrete)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(righthalfinv|righthalf|output|onchange|lefthalfinv|lefthalf|bipolar|absbipolar)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_quantizer":
+        {
+            "patterns": [
+            {
+                "match": "(trigger|steps|input|bypass)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_queue":
+        {
+            "patterns": [
+            {
+                "match": "(outputpos8|outputpos7|outputpos6|outputpos5|outputpos4|outputpos3|outputpos2|outputpos1|outputpos|input|clock)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output8|output7|output6|output5|output4|output3|output2|output1|output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_random":
+        {
+            "patterns": [
+            {
+                "match": "(steps|minimum|maximum|clock)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_sample":
+        {
+            "patterns": [
+            {
+                "match": "(timewindow|sample|input|gate|bypass)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_sequencer":
+        {
+            "patterns": [
+            {
+                "match": "(transpose|steps|stages|slew8|slew7|slew6|slew5|slew4|slew3|slew2|slew1|slew|reset|repeat8|repeat7|repeat6|repeat5|repeat4|repeat3|repeat2|repeat1|repeat|pitch8|pitch7|pitch6|pitch5|pitch4|pitch3|pitch2|pitch1|pitch|outputscaling|gatelength|gate8|gate7|gate6|gate5|gate4|gate3|gate2|gate1|gate|cv8|cv7|cv6|cv5|cv4|cv3|cv2|cv1|cv|clock|chaintonext)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(pitchoutput|gateoutput|cvoutput)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_slew":
+        {
+            "patterns": [
+            {
+                "match": "(slewup|slewdown|slew|input|gate)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(scurve|linear|exponential)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_spring":
+        {
+            "patterns": [
+            {
+                "match": "(startvelocity|startposition|springforce|speed|shoveforce|shove|reset|mass|gravity|friction|flowresistance)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(velocity|position)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_superjust":
+        {
+            "patterns": [
+            {
+                "match": "(tuningpitch|tuningmode|transpose|input8|input7|input6|input5|input4|input3|input2|input1|input|bypass)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output8|output7|output6|output5|output4|output3|output2|output1|output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_switch":
+        {
+            "patterns": [
+            {
+                "match": "(reset|offset|input8|input7|input6|input5|input4|input3|input2|input1|input|forward|backward)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output8|output7|output6|output5|output4|output3|output2|output1|output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_switchedpot":
+        {
+            "patterns": [
+            {
+                "match": "(switch8|switch7|switch6|switch5|switch4|switch3|switch2|switch1|switch|pot|bipolar)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output8|output7|output6|output5|output4|output3|output2|output1|output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_timing":
+        {
+            "patterns": [
+            {
+                "match": "(timing8|timing7|timing6|timing5|timing4|timing3|timing2|timing1|timing|reset|clock)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_togglebutton":
+        {
+            "patterns": [
+            {
+                "match": "(startvalue|reset|onvalue|offvalue|doubleclickmode|button)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(output|negated|led|inverted)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_transient":
+        {
+            "patterns": [
+            {
+                "match": "(start|reset|pingpong|loop|freeze|end|duration|clock)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(phase|output|endoftransient)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "inside_triggerdelay":
+        {
+            "patterns": [
+            {
+                "match": "(repeats|mute|input|gatelength|delay|clock)",
+                "name": "support.variable.droid"
+            },
+            {
+                "match": "(overflow|output)",
+                "name": "support.other.variable.droid"
+            },
+            {
+                "include": "#basics"
+            }]
+        },
+        "ioregister":
+        {
+            "patterns": [
+            {
+                "match": "([ionION][1-8])",
+                "name": "support.constant.droid"
+            },
+            {
+                "match": "([rR](3[0-2]|[1-2]?[0-9]|[0-9]))",
+                "name": "support.constant.droid"
+            },
+            {
+                "match": "([gG](1[012]|[1-9]))",
+                "name": "support.constant.droid"
+            },
+            {
+                "match": "([xX]1)",
+                "name": "support.constant.droid"
+            },
+            {
+                "match": "([lbLB](1[1-6]|[1-9]).([1-2][0-9]|3[0-2]|[1-9]))",
+                "name": "support.constant.droid"
+            },
+            {
+                "match": "([psPS](1[1-6]|[1-9]).(10|[1-9]))",
+                "name": "support.constant.droid"
+            }]
+        },
+        "lfo":
+        {
+            "patterns": [
+            {
+                "begin": "(\\[lfo\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[matrixmixer\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_matrixmixer"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_lfo"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "midifileplayer": {
+        "logic":
+        {
             "patterns": [
+            {
+                "begin": "(\\[logic\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[midifileplayer\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_midifileplayer"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_logic"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "midiin": {
+        "math":
+        {
             "patterns": [
+            {
+                "begin": "(\\[math\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[midiin\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_midiin"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_math"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "midiout": {
+        "matrixmixer":
+        {
             "patterns": [
+            {
+                "begin": "(\\[matrixmixer\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[midiout\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_midiout"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_matrixmixer"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "midithrough": {
+        "midifileplayer":
+        {
             "patterns": [
+            {
+                "begin": "(\\[midifileplayer\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[midithrough\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_midithrough"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_midifileplayer"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "minifonion": {
+        "midiin":
+        {
             "patterns": [
+            {
+                "begin": "(\\[midiin\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[minifonion\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_minifonion"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_midiin"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "mixer": {
+        "midiout":
+        {
             "patterns": [
+            {
+                "begin": "(\\[midiout\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[mixer\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_mixer"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_midiout"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "motoquencer": {
+        "midithrough":
+        {
             "patterns": [
+            {
+                "begin": "(\\[midithrough\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[motoquencer\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_motoquencer"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_midithrough"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "motorfader": {
+        "minifonion":
+        {
             "patterns": [
+            {
+                "begin": "(\\[minifonion\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[motorfader\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_motorfader"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_minifonion"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "notchedpot": {
+        "mixer":
+        {
             "patterns": [
+            {
+                "begin": "(\\[mixer\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[notchedpot\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_notchedpot"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_mixer"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "notebuttons": {
+        "motoquencer":
+        {
             "patterns": [
+            {
+                "begin": "(\\[motoquencer\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[notebuttons\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_notebuttons"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_motoquencer"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "nudge": {
+        "motorfader":
+        {
             "patterns": [
+            {
+                "begin": "(\\[motorfader\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[nudge\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_nudge"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_motorfader"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "octave": {
+        "notchedpot":
+        {
             "patterns": [
+            {
+                "begin": "(\\[notchedpot\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[octave\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_octave"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_notchedpot"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "pot": {
+        "notebuttons":
+        {
             "patterns": [
+            {
+                "begin": "(\\[notebuttons\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[pot\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_pot"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_notebuttons"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "quantizer": {
+        "nudge":
+        {
             "patterns": [
+            {
+                "begin": "(\\[nudge\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[quantizer\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_quantizer"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_nudge"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "queue": {
+        "numeric":
+        {
             "patterns": [
+            {
+                "match": "(on|off|-?([0-9]|[1-9][0-9]*)(.[0-9]+)?[V\\x{0025}]?)",
+                "name": "constant.numeric.droid"
+            }]
+        },
+        "octave":
+        {
+            "patterns": [
+            {
+                "begin": "(\\[octave\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[queue\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_queue"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_octave"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "random": {
+        "polytool":
+        {
             "patterns": [
+            {
+                "begin": "(\\[polytool\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[random\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_random"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_polytool"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "sample": {
+        "pot":
+        {
             "patterns": [
+            {
+                "begin": "(\\[pot\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[sample\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_sample"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_pot"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "sequencer": {
+        "punct":
+        {
             "patterns": [
+            {
+                "match": "([\\x{003d}\\x{002b}-\\x{002f}\\x{002a}\\s])",
+                "name": "punctuation.droid"
+            }]
+        },
+        "quantizer":
+        {
+            "patterns": [
+            {
+                "begin": "(\\[quantizer\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[sequencer\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_sequencer"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_quantizer"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "slew": {
+        "queue":
+        {
             "patterns": [
+            {
+                "begin": "(\\[queue\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[slew\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_slew"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_queue"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "spring": {
+        "random":
+        {
             "patterns": [
+            {
+                "begin": "(\\[random\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[spring\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_spring"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_random"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "superjust": {
+        "sample":
+        {
             "patterns": [
+            {
+                "begin": "(\\[sample\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[superjust\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_superjust"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_sample"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "switch": {
+        "sequencer":
+        {
             "patterns": [
+            {
+                "begin": "(\\[sequencer\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[switch\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_switch"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_sequencer"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "switchedpot": {
+        "slew":
+        {
             "patterns": [
+            {
+                "begin": "(\\[slew\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[switchedpot\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_switchedpot"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_slew"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "timing": {
+        "spring":
+        {
             "patterns": [
+            {
+                "begin": "(\\[spring\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[timing\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_timing"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_spring"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "togglebutton": {
+        "superjust":
+        {
             "patterns": [
+            {
+                "begin": "(\\[superjust\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[togglebutton\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_togglebutton"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_superjust"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "transient": {
+        "switch":
+        {
             "patterns": [
+            {
+                "begin": "(\\[switch\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[transient\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_transient"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_switch"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
         },
-        "triggerdelay": {
+        "switchedpot":
+        {
             "patterns": [
+            {
+                "begin": "(\\[switchedpot\\])",
+                "beginCaptures":
                 {
-                    "begin": "(\\[triggerdelay\\])",
-                    "beginCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "include": "#inside_triggerdelay"
-                        }
-                    ],
-                    "end": "(?=\\[)",
-                    "endCaptures": {
-                        "1": {
-                            "name": "support.class.droid"
-                        }
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_switchedpot"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
                     }
                 }
-            ]
+            }]
+        },
+        "timing":
+        {
+            "patterns": [
+            {
+                "begin": "(\\[timing\\])",
+                "beginCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_timing"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                }
+            }]
+        },
+        "togglebutton":
+        {
+            "patterns": [
+            {
+                "begin": "(\\[togglebutton\\])",
+                "beginCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_togglebutton"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                }
+            }]
+        },
+        "transient":
+        {
+            "patterns": [
+            {
+                "begin": "(\\[transient\\])",
+                "beginCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_transient"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                }
+            }]
+        },
+        "triggerdelay":
+        {
+            "patterns": [
+            {
+                "begin": "(\\[triggerdelay\\])",
+                "beginCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                },
+                "patterns": [
+                {
+                    "include": "#inside_triggerdelay"
+                }],
+                "end": "(?=\\[)",
+                "endCaptures":
+                {
+                    "1":
+                    {
+                        "name": "support.class.droid"
+                    }
+                }
+            }]
         }
     }
 }

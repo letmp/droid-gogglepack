@@ -50,7 +50,6 @@ contexts:
     - include: octave
     - include: timing
     - include: midithrough
-    - include: effiquencer
     - include: copy
     - include: midifileplayer
     - include: cvlooper
@@ -176,7 +175,7 @@ contexts:
       pop: true
       captures:
         0: support.class.droid
-    - match: '(value9|value8|value7|value6|value5|value4|value32|value31|value30|value3|value29|value28|value27|value26|value25|value24|value23|value22|value21|value20|value2|value19|value18|value17|value16|value15|value14|value13|value12|value11|value10|value1|value|selectat|select|minactive|maxactive|button9|button8|button7|button6|button5|button4|button32|button31|button30|button3|button29|button28|button27|button26|button25|button24|button23|button22|button21|button20|button2|button19|button18|button17|button16|button15|button14|button13|button12|button11|button10|button1|button)'
+    - match: '(value9|value8|value7|value6|value5|value4|value32|value31|value30|value3|value29|value28|value27|value26|value25|value24|value23|value22|value21|value20|value2|value19|value18|value17|value16|value15|value14|value13|value12|value11|value10|value1|value|selectat|select|savepreset|preset|minactive|maxactive|loadpreset|button9|button8|button7|button6|button5|button4|button32|button31|button30|button3|button29|button28|button27|button26|button25|button24|button23|button22|button21|button20|button2|button19|button18|button17|button16|button15|button14|button13|button12|button11|button10|button1|button)'
       captures:
         0: support.variable.droid
     - match: '(output|longpress|led9|led8|led7|led6|led5|led4|led32|led31|led30|led3|led29|led28|led27|led26|led25|led24|led23|led22|led21|led20|led2|led19|led18|led17|led16|led15|led14|led13|led12|led11|led10|led1|led|buttonpress|buttonoutput9|buttonoutput8|buttonoutput7|buttonoutput6|buttonoutput5|buttonoutput4|buttonoutput32|buttonoutput31|buttonoutput30|buttonoutput3|buttonoutput29|buttonoutput28|buttonoutput27|buttonoutput26|buttonoutput25|buttonoutput24|buttonoutput23|buttonoutput22|buttonoutput21|buttonoutput20|buttonoutput2|buttonoutput19|buttonoutput18|buttonoutput17|buttonoutput16|buttonoutput15|buttonoutput14|buttonoutput13|buttonoutput12|buttonoutput11|buttonoutput10|buttonoutput1|buttonoutput)'
@@ -195,7 +194,7 @@ contexts:
       pop: true
       captures:
         0: support.class.droid
-    - match: '(volume|velocity8|velocity7|velocity6|velocity5|velocity4|velocity3|velocity2|velocity1|velocity|usb|updaterate|triggerdelay|systemreset|stop|start|sostenuto|soft|selectat|select|running|programchange|program|pressure8|pressure7|pressure6|pressure5|pressure4|pressure3|pressure2|pressure1|pressure|portamento|pitchtracking|pitchstabilization|pitchbendrange|pitchbend|pitch8|pitch7|pitch6|pitch5|pitch4|pitch3|pitch2|pitch1|pitch|noteoffvelocity8|noteoffvelocity7|noteoffvelocity6|noteoffvelocity5|noteoffvelocity4|noteoffvelocity3|noteoffvelocity2|noteoffvelocity1|noteoffvelocity|notegatevelocity9|notegatevelocity8|notegatevelocity7|notegatevelocity6|notegatevelocity5|notegatevelocity4|notegatevelocity3|notegatevelocity2|notegatevelocity16|notegatevelocity15|notegatevelocity14|notegatevelocity13|notegatevelocity12|notegatevelocity11|notegatevelocity10|notegatevelocity1|notegatevelocity|notegate9|notegate8|notegate7|notegate6|notegate5|notegate4|notegate3|notegate2|notegate16|notegate15|notegate14|notegate13|notegate12|notegate11|notegate10|notegate1|notegate|note9|note8|note7|note6|note5|note4|note3|note2|note16|note15|note14|note13|note12|note11|note10|note1|note|modwheel|midiclock|lowestnote|legato|highestnote|gate8|gate7|gate6|gate5|gate4|gate3|gate2|gate1|gate|damper|clock|channelpressure|channel|cctrigger8|cctrigger7|cctrigger6|cctrigger5|cctrigger4|cctrigger3|cctrigger2|cctrigger1|cctrigger|ccnumber8|ccnumber7|ccnumber6|ccnumber5|ccnumber4|ccnumber3|ccnumber2|ccnumber1|ccnumber|cc8|cc7|cc6|cc5|cc4|cc3|cc2|cc1|cc|bank|allsoundoff|allnotesoff|activesensing)'
+    - match: '(volume|velocity8|velocity7|velocity6|velocity5|velocity4|velocity3|velocity2|velocity1|velocity|usb|updaterate|triggerdelay|systemreset|stop|start|sostenuto|soft|selectat|select|running|programchange|program|pressure8|pressure7|pressure6|pressure5|pressure4|pressure3|pressure2|pressure1|pressure|portamento|pitchtracking|pitchstabilization|pitchbendrange|pitchbend|pitch8|pitch7|pitch6|pitch5|pitch4|pitch3|pitch2|pitch1|pitch|noteoffvelocity8|noteoffvelocity7|noteoffvelocity6|noteoffvelocity5|noteoffvelocity4|noteoffvelocity3|noteoffvelocity2|noteoffvelocity1|noteoffvelocity|notegatevelocity9|notegatevelocity8|notegatevelocity7|notegatevelocity6|notegatevelocity5|notegatevelocity4|notegatevelocity3|notegatevelocity2|notegatevelocity16|notegatevelocity15|notegatevelocity14|notegatevelocity13|notegatevelocity12|notegatevelocity11|notegatevelocity10|notegatevelocity1|notegatevelocity|notegate9|notegate8|notegate7|notegate6|notegate5|notegate4|notegate3|notegate2|notegate16|notegate15|notegate14|notegate13|notegate12|notegate11|notegate10|notegate1|notegate|note9|note8|note7|note6|note5|note4|note3|note2|note16|note15|note14|note13|note12|note11|note10|note1|note|modwheel|midiclock|lowestnote|legato|highestnote|gate8|gate7|gate6|gate5|gate4|gate3|gate2|gate1|gate|delayinitialccs|damper|clock|channelpressure|channel|cctrigger8|cctrigger7|cctrigger6|cctrigger5|cctrigger4|cctrigger3|cctrigger2|cctrigger1|cctrigger|ccnumber8|ccnumber7|ccnumber6|ccnumber5|ccnumber4|ccnumber3|ccnumber2|ccnumber1|ccnumber|cc8|cc7|cc6|cc5|cc4|cc3|cc2|cc1|cc|bank|allsoundoff|allnotesoff|activesensing)'
       captures:
         0: support.variable.droid
     - include: basics
@@ -306,7 +305,7 @@ contexts:
       pop: true
       captures:
         0: support.class.droid
-    - match: '(selectat|select|savepreset|preset|notches|loadpreset|ledvalue9|ledvalue8|ledvalue7|ledvalue6|ledvalue5|ledvalue4|ledvalue3|ledvalue2|ledvalue16|ledvalue15|ledvalue14|ledvalue13|ledvalue12|ledvalue11|ledvalue10|ledvalue1|ledvalue|ledcolor|firstfader)'
+    - match: '(startvalue|selectat|select|savepreset|resetvalue|reset|preset|notches|loadpreset|ledvalue9|ledvalue8|ledvalue7|ledvalue6|ledvalue5|ledvalue4|ledvalue3|ledvalue2|ledvalue16|ledvalue15|ledvalue14|ledvalue13|ledvalue12|ledvalue11|ledvalue10|ledvalue1|ledvalue|ledcolor|firstfader)'
       captures:
         0: support.variable.droid
     - match: '(output9|output8|output7|output6|output5|output4|output3|output2|output16|output15|output14|output13|output12|output11|output10|output1|output|button9|button8|button7|button6|button5|button4|button3|button2|button16|button15|button14|button13|button12|button11|button10|button1|button)'
@@ -363,7 +362,7 @@ contexts:
       pop: true
       captures:
         0: support.class.droid
-    - match: '(maxslope8|maxslope7|maxslope6|maxslope5|maxslope4|maxslope3|maxslope2|maxslope1|maxslope|lpfilter8|lpfilter7|lpfilter6|lpfilter5|lpfilter4|lpfilter3|lpfilter2|lpfilter1|lpfilter|ledbrightness)'
+    - match: '(maxslope8|maxslope7|maxslope6|maxslope5|maxslope4|maxslope3|maxslope2|maxslope1|maxslope|m4notchpower|m4faderspeed|lpfilter8|lpfilter7|lpfilter6|lpfilter5|lpfilter4|lpfilter3|lpfilter2|lpfilter1|lpfilter|ledbrightness|calibrate)'
       captures:
         0: support.variable.droid
     - include: basics
@@ -436,7 +435,7 @@ contexts:
       pop: true
       captures:
         0: support.class.droid
-    - match: '(startvalue|selectat|select|reset|mixmax|input4|input3|input2|input1|input|button44|button43|button42|button41|button4|button34|button33|button32|button31|button3|button24|button23|button22|button21|button2|button14|button13|button12|button11|button1|auxin4|auxin3|auxin2|auxin1|auxin)'
+    - match: '(startvalue|selectat|select|savepreset|reset|preset|mixmax|loadpreset|input4|input3|input2|input1|input|button44|button43|button42|button41|button4|button34|button33|button32|button31|button3|button24|button23|button22|button21|button2|button14|button13|button12|button11|button1|auxin4|auxin3|auxin2|auxin1|auxin)'
       captures:
         0: support.variable.droid
     - match: '(output4|output3|output2|output1|output|led44|led43|led42|led41|led4|led34|led33|led32|led31|led3|led24|led23|led22|led21|led2|led14|led13|led12|led11|led1)'
@@ -455,7 +454,7 @@ contexts:
       pop: true
       captures:
         0: support.class.droid
-    - match: '(selectat|select|savepreset|rowcolumn|preset|notches4|notches3|notches2|notches1|notches|loadpreset|ledvalue44|ledvalue43|ledvalue42|ledvalue41|ledvalue4|ledvalue34|ledvalue33|ledvalue32|ledvalue31|ledvalue3|ledvalue24|ledvalue23|ledvalue22|ledvalue21|ledvalue2|ledvalue14|ledvalue13|ledvalue12|ledvalue11|ledvalue1|ledcolor4|ledcolor3|ledcolor2|ledcolor1|ledcolor|fader)'
+    - match: '(selectat|select|savepreset|rowcolumn|preset|notches4|notches3|notches2|notches1|notches|loadpreset|ledvalue44|ledvalue43|ledvalue42|ledvalue41|ledvalue4|ledvalue34|ledvalue33|ledvalue32|ledvalue31|ledvalue3|ledvalue24|ledvalue23|ledvalue22|ledvalue21|ledvalue2|ledvalue14|ledvalue13|ledvalue12|ledvalue11|ledvalue1|ledcolor4|ledcolor3|ledcolor2|ledcolor1|ledcolor|firstfader)'
       captures:
         0: support.variable.droid
     - match: '(output44|output43|output42|output41|output4|output34|output33|output32|output31|output3|output24|output23|output22|output21|output2|output14|output13|output12|output11|output1|button44|button43|button42|button41|button4|button34|button33|button32|button31|button3|button24|button23|button22|button21|button2|button14|button13|button12|button11|button1)'
@@ -550,10 +549,10 @@ contexts:
       pop: true
       captures:
         0: support.class.droid
-    - match: '(tuningpitch|tuningmode|transpose|startstep|shiftsteps|selectfill5|selectfill4|selectfill3|selectfill2|selectfill1|selectat|select9|select7|select5|select3|select13|select11|select1|select|savepreset|root|reset|quantize|preset|pingpong|pattern|page|numsteps|numfaders|mute|metricsaver|luckyties|luckyspread|luckyskips|luckyshuffle|luckyreverse|luckyrepeats|luckyratchets|luckyrandomizecv|luckyinvert|luckygates|luckygateprob|luckyfaders|luckycvs|luckycvdrift|luckychance|luckybuttons|luckyamount|loadpreset|linktonext|holdcv|gatelength|form|firstfader|fadermode|endstep|direction|degree|cvrange|cvbase|composemode|clock|clear|buttonmode|autoreset)'
+    - match: '(tuningpitch|tuningmode|transpose|startstep|shiftsteps|selectfill5|selectfill4|selectfill3|selectfill2|selectfill1|selectat|select9|select7|select5|select3|select13|select11|select1|select|savepreset|run|root|reset|recordsilence|recordmode|quantize|preset|pingpong|pattern|pastefaders|pastebuttons|paste|page|numsteps|numfaders|mute|metricsaver|luckyties|luckyspread|luckyskips|luckyshuffle|luckyreverse|luckyrepeats|luckyratchets|luckyrandomizecv|luckyinvert|luckygates|luckygateprob|luckygatepattern|luckyfaders|luckycvs|luckycvdrift|luckychance|luckybuttons|luckyamount|loadpreset|linktonext|keyboardmode|keyboardgate|keyboardcv|holdcv|gatelength|form|firstfader|fadermode|endstep|direction|degree|defaultgate|cvrange|cvnotches|cvbase|copymode|copy|composemode|clock|clearstartend|clear|buttonmode|autoreset)'
       captures:
         0: support.variable.droid
-    - match: '(startstepout|startofsequence|startofpart|gate|endstepout|cv)'
+    - match: '(startstepout|startofsequence|startofpart|gate|endstepout|cv|currentstep|currentpage)'
       captures:
         0: support.other.variable.droid
     - include: basics
@@ -702,7 +701,7 @@ contexts:
       pop: true
       captures:
         0: support.class.droid
-    - match: '(startvalue|slope|selectat|select|reset|pot|outputscale|notch|ledgauge)'
+    - match: '(slope|selectat|select|savepreset|resetvalue|reset|preset|pot|outputscale|notch|loadpreset|ledgauge|discrete)'
       captures:
         0: support.variable.droid
     - match: '(righthalfinv|righthalf|output|onchange|lefthalfinv|lefthalf|bipolar|absbipolar)'
@@ -913,25 +912,6 @@ contexts:
         0: support.variable.droid
     - include: basics
 
-  effiquencer:
-    - match: '(\[effiquencer\])'
-      push: inside_effiquencer
-      captures:
-        0: support.class.droid
-
-  inside_effiquencer:
-    - match: '(?=\[)'
-      pop: true
-      captures:
-        0: support.class.droid
-    - match: '(tuningpitch|tuningmode|transpose|stepoffset|snapshot|selectfill5|selectfill4|selectfill3|selectfill2|selectfill1|selectat|select9|select7|select5|select3|select13|select11|select1|select|root|recall|quantize|pitchrange|pitchbase|fadermode|faderblock4|faderblock3|faderblock2|faderblock1|faderblock|degree|cvdefault3|cvdefault2|cvdefault1|cvdefault|clock|clear|buttonmode|bar|autoreset)'
-      captures:
-        0: support.variable.droid
-    - match: '(pitch|gate3|gate2|gate1|gate|cv3|cv2|cv1|cv)'
-      captures:
-        0: support.other.variable.droid
-    - include: basics
-
   copy:
     - match: '(\[copy\])'
       push: inside_copy
@@ -1000,7 +980,7 @@ contexts:
       pop: true
       captures:
         0: support.class.droid
-    - match: '(value4|value3|value2|value1|value|states|startvalue|selectat|select|reset|onvalue|offvalue|doubleclickmode|button)'
+    - match: '(value4|value3|value2|value1|value|states|startvalue|selectat|select|savepreset|reset|preset|onvalue|offvalue|loadpreset|doubleclickmode|button)'
       captures:
         0: support.variable.droid
     - match: '(output|negated|longpress|led|inverted)'
@@ -1152,7 +1132,7 @@ contexts:
       pop: true
       captures:
         0: support.class.droid
-    - match: '(startvalue|sharewithnext|selectat|select|savepreset|preset|notches|loadpreset|ledvalue|ledcolor|fader)'
+    - match: '(startvalue|sharewithnext|selectat|select|savepreset|resetvalue|reset|preset|notches|loadpreset|ledvalue|ledcolor|fader)'
       captures:
         0: support.variable.droid
     - match: '(output)'

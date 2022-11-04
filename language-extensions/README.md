@@ -40,7 +40,7 @@ Visual Studio Code
 Installation
 ------------
 - Copy "droid-lang" to 
-	- WIN: %USERPROFILE%\.vscode\extensions
+	- WIN: %USERPROFILE%\\.vscode\extensions
 	- MAC/LINUX: ~/.vscode/extensions
 - Set the Droid Color Scheme via menu:
 	- File -> Settings -> Color Scheme -> Droidokai Dark / Droidokai Light
@@ -48,7 +48,7 @@ Installation
 Customization
 --------------
 - Color Scheme:
-	- Open the %USERPROFILE%\.vscode\extensions\droid-lang directory in vscode
+	- Open the %USERPROFILE%\\.vscode\extensions\droid-lang directory in vscode
 	- Duplicate "droidokai-dark-color-theme.json" in the themes directory
 	and give it a new name.
 	- Open "package.json" and add your newly created json file in the "themes" section

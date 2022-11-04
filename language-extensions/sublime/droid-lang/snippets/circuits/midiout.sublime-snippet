@@ -137,26 +137,27 @@
 	cctrigger7 = ${133:}
 	cctrigger8 = ${134:}
 	cctrigger = ${135:}
-	bank = ${136:}
-	program = ${137:}
-	programchange = ${138:}
-	start = ${139:}
-	stop = ${140:}
-	running = ${141:}
-	systemreset = ${142:}
-	allnotesoff = ${143:}
-	allsoundoff = ${144:}
-	damper = ${145:}
-	portamento = ${146:}
-	sostenuto = ${147:}
-	soft = ${148:}
-	legato = ${149:}
-	clock = ${150:}
-	midiclock = ${151:}
-	activesensing = ${152:}
-	updaterate = ${153:}
-	select = ${154:}
-	selectat = ${155:}
+	delayinitialccs = ${136:}
+	bank = ${137:}
+	program = ${138:}
+	programchange = ${139:}
+	start = ${140:}
+	stop = ${141:}
+	running = ${142:}
+	systemreset = ${143:}
+	allnotesoff = ${144:}
+	allsoundoff = ${145:}
+	damper = ${146:}
+	portamento = ${147:}
+	sostenuto = ${148:}
+	soft = ${149:}
+	legato = ${150:}
+	clock = ${151:}
+	midiclock = ${152:}
+	activesensing = ${153:}
+	updaterate = ${154:}
+	select = ${155:}
+	selectat = ${156:}
 ]]></content>
   <tabTrigger>[midiout]</tabTrigger>
   <scope>source.droid</scope>

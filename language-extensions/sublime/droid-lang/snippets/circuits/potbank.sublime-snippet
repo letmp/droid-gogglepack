@@ -1,0 +1,36 @@
+<snippet>
+  <description> Helper circuit for a bank of up to eight pots</description>
+  <content>
+<![CDATA[[potbank]
+	pot1 = ${1:}
+	pot2 = ${2:}
+	pot3 = ${3:}
+	pot4 = ${4:}
+	pot5 = ${5:}
+	pot6 = ${6:}
+	pot7 = ${7:}
+	pot8 = ${8:}
+	pot = ${9:}
+	outputscale = ${10:}
+	notch = ${11:}
+	ledgauge = ${12:}
+	startvalue = ${13:}
+	reset = ${14:}
+	select = ${15:}
+	selectat = ${16:}
+	preset = ${17:}
+	loadpreset = ${18:}
+	savepreset = ${19:}
+	output1 = ${20:}
+	output2 = ${21:}
+	output3 = ${22:}
+	output4 = ${23:}
+	output5 = ${24:}
+	output6 = ${25:}
+	output7 = ${26:}
+	output8 = ${27:}
+	output = ${28:}
+]]></content>
+  <tabTrigger>[potbank]</tabTrigger>
+  <scope>source.droid</scope>
+</snippet>
