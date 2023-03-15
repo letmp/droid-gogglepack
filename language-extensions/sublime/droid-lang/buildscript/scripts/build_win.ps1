@@ -37,6 +37,9 @@ If($containsWord -contains $true)
     $fileSysexHead= Get-Content "$PSScriptRoot/../sendmidi/win/sysexhead.txt"
     $fileSysexTail= Get-Content "$PSScriptRoot/../sendmidi/win/sysextail.txt"
     
+    # remove tabs and spaces
+    $droidcontent = $droidcontent -replace '(^\s+|\s+$)','' -replace '\t+',''
+
     $fileSysexTmp= "$PSScriptRoot/../sendmidi/tmp.syx"
     Set-Content $fileSysexTmp "$fileSysexHead $droidcontent $fileSysexTail"
 
