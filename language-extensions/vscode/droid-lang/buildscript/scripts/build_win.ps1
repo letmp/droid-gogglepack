@@ -37,22 +37,24 @@ If($containsWord -contains $true)
     $fileSysexHead= Get-Content "$PSScriptRoot/../sendmidi/win/sysexhead.txt"
     $fileSysexTail= Get-Content "$PSScriptRoot/../sendmidi/win/sysextail.txt"
     
-     # remove tabs and spaces
-    $droidcontent = $droidcontent -replace '(^\s+|\s+$)','' -replace '\t+',''
+    # remove tabs, spaces & comments
+    $droidcontent = $droidcontent -replace '(^\s+|\s+$)','' -replace '\t+','' -replace '(#)(.*)','' -replace '\s+\r\n+', "`r`n"
 
+    # write temporary file
     $fileSysexTmp= "$PSScriptRoot/../sendmidi/tmp.syx"
     Set-Content $fileSysexTmp "$fileSysexHead $droidcontent $fileSysexTail"
 
-    $smbin = "$PSScriptRoot/../sendmidi/win/sendmidi.exe"
-
+    # parse content for the x7 device name
     $x7deviceToken = "(?<=(# X7 send `")).*(?=`")"
     $x7device = select-string $x7deviceToken -inputobject $droidcontent
     if ([string]::IsNullOrWhiteSpace($x7device)) {$x7device = "x7" }
     else { $x7device = $x7device.Matches.groups[0].value }
     
+    # send the content of the temporary file
     Write-Host -ForegroundColor Yellow "Sending data via sysex to device" $x7device
-
-    & $smbin dev `"$x7device`" syf $fileSysexTmp
+    $smbin = "$PSScriptRoot/../sendmidi/win/sendmidi.exe"
+    & $smbin dev `"$x7device`" syf $fileSysexTmp | Out-Null # the output of sendmidi is piped to null
     
+    # delete temporary file
     Remove-Item $fileSysexTmp
 }
