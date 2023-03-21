@@ -36,6 +36,12 @@ If($containsWord -contains $true)
 {
     $fileSysexHead= Get-Content "$PSScriptRoot/../sendmidi/win/sysexhead.txt"
     $fileSysexTail= Get-Content "$PSScriptRoot/../sendmidi/win/sysextail.txt"
+
+    # parse content for the x7 device name
+    $x7deviceToken = "(?<=(# X7 send `")).*(?=`")"
+    $x7device = select-string $x7deviceToken -inputobject $droidcontent
+    if ([string]::IsNullOrWhiteSpace($x7device)) {$x7device = "x7" }
+    else { $x7device = $x7device.Matches.groups[0].value }
     
     # remove tabs, spaces & comments
     $droidcontent = $droidcontent -replace '(^\s+|\s+$)','' -replace '\t+','' -replace '(#)(.*)','' -replace '\s+\r\n+', "`r`n"
@@ -43,12 +49,6 @@ If($containsWord -contains $true)
     # write temporary file
     $fileSysexTmp= "$PSScriptRoot/../sendmidi/tmp.syx"
     Set-Content $fileSysexTmp "$fileSysexHead $droidcontent $fileSysexTail"
-
-    # parse content for the x7 device name
-    $x7deviceToken = "(?<=(# X7 send `")).*(?=`")"
-    $x7device = select-string $x7deviceToken -inputobject $droidcontent
-    if ([string]::IsNullOrWhiteSpace($x7device)) {$x7device = "x7" }
-    else { $x7device = $x7device.Matches.groups[0].value }
     
     # send the content of the temporary file
     Write-Host -ForegroundColor Yellow "Sending data via sysex to device" $x7device
